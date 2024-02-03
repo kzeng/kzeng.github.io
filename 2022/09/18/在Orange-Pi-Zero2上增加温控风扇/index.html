@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    
+
+    
+<script>!function(){var e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,t=localStorage.getItem("use-color-scheme")||"auto";("dark"===t||e&&"light"!==t)&&document.documentElement.classList.toggle("dark",!0)}()</script>
+    
+
+<meta charset="utf-8" >
+
+<title>在Orange Pi Zero2上增加温控风扇</title>
+<meta name="keywords" content="在Orange Pi Zero2上增加温控风扇, 老曾的博客">
+<meta name="description" content="目标为大负荷时高温Orangepi Zero2 板子降温，增加一个可控的自动启停的5V风扇。
+Orange Pi Zero2香橙派是一款开源的单板卡片电脑，新一代的arm64开发板，它可以运行Android TV 10、Ubuntu 和 D">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="在Orange Pi Zero2上增加温控风扇">
+<meta property="og:description" content="目标为大负荷时高温Orangepi Zero2 板子降温，增加一个可控的自动启停的5V风扇。
+Orange Pi Zero2香橙派是一款开源的单板卡片电脑，新一代的arm64开发板，它可以运行Android TV 10、Ubuntu 和 D">
+
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="/style/main.css">
+
+  <link rel="stylesheet" href="/style/simple-lightbox.min.css"><meta name="generator" content="Hexo 6.3.0"></head>
+  <body>
+    <div id="app" class="main">
+
+<div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://blog.mitoto.cn">
+        <img class="avatar" src="/images/avatar.png" alt="logo" width="32px" height="32px">
+      </a>
+      <a href="https://blog.mitoto.cn">
+        <h1 class="site-title">老曾的博客</h1>
+      </a>
+    </div>
+    <div class="right">
+        <i class="icon menu-switch icon-menu-outline" ></i>
+    </div>
+  </div>
+</div>
+
+<div class="menu-container" style="height: 0;opacity: 0;">
+<nav class="menu-list">
+  
+    
+      <a href="/" class="menu purple-link">
+        首页
+      </a>
+    
+  
+    
+      <a href="/tags" class="menu purple-link">
+        标签
+      </a>
+    
+  
+    
+      <a href="/archives" class="menu purple-link">
+        归档
+      </a>
+    
+  
+    
+      <a href="/about" class="menu purple-link">
+        关于
+      </a>
+    
+  
+</nav>
+</div>
+
+
+
+  <div class="content-container">
+    <div class="post-detail">
+      
+      <h2 class="post-title">在Orange Pi Zero2上增加温控风扇</h2>
+      <div class="post-info post-detail-info">
+        <span><i class="icon icon-calendar-outline"></i> 2022-09-18</span>
+        
+          <span>
+          <i class="icon icon-pricetags-outline"></i>
+            
+              <a href="/tags/%E7%89%A9%E8%81%94%E7%BD%91/">
+              物联网
+                
+              </a>
+            
+          </span>
+        
+      </div>
+      <div class="post-content-wrapper">
+        <div class="post-content">
+          <h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><p>为大负荷时高温Orangepi Zero2 板子降温，增加一个可控的自动启停的5V风扇。</p>
+<h3 id="Orange-Pi-Zero2"><a href="#Orange-Pi-Zero2" class="headerlink" title="Orange Pi Zero2"></a>Orange Pi Zero2</h3><p>香橙派是一款开源的单板卡片电脑，新一代的arm64开发板，它可以运行Android TV 10、Ubuntu 和 Debian 等操作系统。香橙派开发板（Orange Pi Zero 2）使用全志H616 系统级芯片，同时拥有 1GB DDR3 内存。</p>
+<h4 id="Orange-Pi-Zero-2-的硬件特性"><a href="#Orange-Pi-Zero-2-的硬件特性" class="headerlink" title="Orange-Pi-Zero-2-的硬件特性"></a>Orange-Pi-Zero-2-的硬件特性</h4><p><a class="simple-lightbox" target="_blank" rel="noopener" href="https://s1.ax1x.com/2022/09/25/xEZhLj.md.jpg"><img   src="/images/loading.svg" data-src="https://s1.ax1x.com/2022/09/25/xEZhLj.md.jpg"  alt="硬件特性" lazyload></a></p>
+<h4 id="顶层视图"><a href="#顶层视图" class="headerlink" title="顶层视图"></a>顶层视图</h4><p><a class="simple-lightbox" target="_blank" rel="noopener" href="https://s1.ax1x.com/2022/09/25/xEZOlF.md.jpg"><img   src="/images/loading.svg" data-src="https://s1.ax1x.com/2022/09/25/xEZOlF.md.jpg"  alt="顶层视图" lazyload></a></p>
+<h4 id="底层视图"><a href="#底层视图" class="headerlink" title="底层视图"></a>底层视图</h4><p><a class="simple-lightbox" target="_blank" rel="noopener" href="https://s1.ax1x.com/2022/09/25/xEeA6e.md.jpg"><img   src="/images/loading.svg" data-src="https://s1.ax1x.com/2022/09/25/xEeA6e.md.jpg"  alt="底层视图" lazyload></a></p>
+<h4 id="Orange-Pi-Zero-2-开发板-26-pin-接口引脚的功能"><a href="#Orange-Pi-Zero-2-开发板-26-pin-接口引脚的功能" class="headerlink" title="Orange-Pi-Zero-2-开发板-26-pin-接口引脚的功能"></a>Orange-Pi-Zero-2-开发板-26-pin-接口引脚的功能</h4><p><a class="simple-lightbox" target="_blank" rel="noopener" href="https://s1.ax1x.com/2022/09/25/xEeat0.md.jpg"><img   src="/images/loading.svg" data-src="https://s1.ax1x.com/2022/09/25/xEeat0.md.jpg"  alt="Orange-Pi-Zero-2-开发板-26-pin-接口引脚的功能" lazyload></a></p>
+<h3 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h3><p><a class="simple-lightbox" target="_blank" rel="noopener" href="https://s1.ax1x.com/2022/09/25/xEPQAO.md.jpg"><img   src="/images/loading.svg" data-src="https://s1.ax1x.com/2022/09/25/xEPQAO.md.jpg"  alt="连接" lazyload></a></p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在oangepi zero2 上实验通过</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> configparser</span><br><span class="line"></span><br><span class="line"><span class="comment"># 采用wpi编号， 对应orangepi zero2 的pin 7 (gpio)</span></span><br><span class="line">FAN_GPIO = <span class="number">2</span></span><br><span class="line">os.system(<span class="string">&#x27;gpio mode &#x27;</span>+<span class="built_in">str</span>(FAN_GPIO)+<span class="string">&#x27; out&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">	<span class="comment"># temp_hight = 50</span></span><br><span class="line">	<span class="comment"># temp_low =49 </span></span><br><span class="line">	<span class="comment"># monitor_interval = 10</span></span><br><span class="line">	<span class="comment"># opi_fan_auto = off</span></span><br><span class="line">    <span class="comment"># 以上参数亦可来自某个配置文件，如下所示</span></span><br><span class="line">	cf = configparser.ConfigParser()</span><br><span class="line">	cf.read(<span class="string">&quot;Config.ini&quot;</span>)</span><br><span class="line">	temp_hight = <span class="built_in">int</span>(cf.get(<span class="string">&quot;fan&quot;</span>, <span class="string">&quot;temp_hight&quot;</span>))</span><br><span class="line">	temp_low = <span class="built_in">int</span>(cf.get(<span class="string">&quot;fan&quot;</span>, <span class="string">&quot;temp_low&quot;</span>))</span><br><span class="line">	monitor_interval = <span class="built_in">int</span>(cf.get(<span class="string">&quot;fan&quot;</span>, <span class="string">&quot;monitor_interval&quot;</span>))</span><br><span class="line">	opi_fan_auto = cf.get(<span class="string">&quot;fan&quot;</span>, <span class="string">&quot;opi_fan_auto&quot;</span>)</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> opi_fan_auto == <span class="string">&quot;on&quot;</span>:</span><br><span class="line">	    <span class="comment"># get cpu temp</span></span><br><span class="line">		temp=os.popen(<span class="string">&#x27;cat /sys/class/thermal/thermal_zone0/temp&#x27;</span>).readlines()[<span class="number">0</span>]</span><br><span class="line">		cpu_temp=<span class="built_in">int</span>(temp)/<span class="number">1000</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">#print(&quot;cpu temp: &quot;+str(cpu_temp))</span></span><br><span class="line">		current_time = time.strftime(<span class="string">&quot;%Y-%m-%d %H:%M:%S&quot;</span>,time.localtime())</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> cpu_temp &gt;= temp_hight:</span><br><span class="line">			os.system(<span class="string">&#x27;gpio write &#x27;</span>+<span class="built_in">str</span>(FAN_GPIO)+<span class="string">&#x27; 0&#x27;</span>)</span><br><span class="line">			<span class="built_in">print</span>(<span class="string">&quot;Time:&#123;&#125;\tCPU Temp:&#123;&#125;\t\tFan Status:&#123;&#125;&quot;</span>.<span class="built_in">format</span>(current_time, cpu_temp, <span class="string">&#x27;Running&#x27;</span>))</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> cpu_temp &lt;= temp_low:</span><br><span class="line">			os.system(<span class="string">&#x27;gpio write &#x27;</span>+<span class="built_in">str</span>(FAN_GPIO)+<span class="string">&#x27; 1&#x27;</span>)</span><br><span class="line">			<span class="built_in">print</span>(<span class="string">&quot;Time:&#123;&#125;\tCPU Temp:&#123;&#125;\t\tFan Status:&#123;&#125;&quot;</span>.<span class="built_in">format</span>(current_time, cpu_temp, <span class="string">&#x27;Stopped&#x27;</span>))</span><br><span class="line"></span><br><span class="line">		time.sleep(monitor_interval)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="集成"><a href="#集成" class="headerlink" title="集成"></a>集成</h3><p><a class="simple-lightbox" target="_blank" rel="noopener" href="https://s1.ax1x.com/2022/09/25/xEPLb6.md.jpg"><img   src="/images/loading.svg" data-src="https://s1.ax1x.com/2022/09/25/xEPLb6.md.jpg"  alt="集成" lazyload></a></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3>
+        </div>
+          
+        <div class="top-div">
+          <ol class="top-box"><li class="top-box-item top-box-level-3"><a class="top-box-link" href="#%E7%9B%AE%E6%A0%87"><span class="top-box-text">目标</span></a></li><li class="top-box-item top-box-level-3"><a class="top-box-link" href="#Orange-Pi-Zero2"><span class="top-box-text">Orange Pi Zero2</span></a></li><li class="top-box-item top-box-level-3"><a class="top-box-link" href="#%E8%BF%9E%E6%8E%A5"><span class="top-box-text">连接</span></a></li><li class="top-box-item top-box-level-3"><a class="top-box-link" href="#%E4%BB%A3%E7%A0%81"><span class="top-box-text">代码</span></a></li><li class="top-box-item top-box-level-3"><a class="top-box-link" href="#%E9%9B%86%E6%88%90"><span class="top-box-text">集成</span></a></li><li class="top-box-item top-box-level-3"><a class="top-box-link" href="#%E5%8F%82%E8%80%83"><span class="top-box-text">参考</span></a></li></ol>
+        </div>
+          
+      </div>
+    </div>
+
+    
+      <div class="next-post">
+        <a class="purple-link" href="/2022/09/12/%E7%94%A8Hexo%E7%8E%A9Github-Page%E8%A1%A5%E9%81%97/">
+          <h3 class="post-title">
+            下一篇：用Hexo玩Github Page补遗
+          </h3>
+        </a>
+      </div>
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+<footer>
+<div class="site-footer">
+  <div class="social-container">
+    
+      
+        <a aria-label="跳转至github" href="https://github.com/f-dong" target="_blank">
+          <i class="icon icon-github"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  
+    Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> <a href="https://github.com/f-dong/hexo-theme-minimalism" target="_blank">Theme</a>
+  
+  
+  
+  
+  
+  
+</div>
+</footer>
+
+
+      </div>
+    </div>
+    
+<script id="hexo-configurations"> window.theme_config = {"image":{"lazyload_enable":true,"photo_zoom":"simple-lightbox"}}; window.is_post = true; </script>
+
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+  <script src="/js/simple-lightbox.min.js"></script><script>document.addEventListener('DOMContentLoaded', function() {new SimpleLightbox('.post-detail .simple-lightbox', {fileExt: false,captionsData:'alt'});});</script></body>
+</html>
+
