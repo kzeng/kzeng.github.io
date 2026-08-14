@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-14T23:13:31.322633+00:00'
+generated-at: '2026-08-14T23:45:03.438715+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 202.146.222.89
@@ -135,15 +135,6 @@ proxies:
   sni: xship.top
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: starlink-ft.251313.xyz
-  port: 443
-  type: hysteria2
-  password: https://xship.top
-  auth: https://xship.top
-  sni: xship.top
-  skip-cert-verify: true
-  udp: true
 - name: 🇺🇸 美国 | USA 17
   server: 104.19.214.98
   port: 2087
@@ -157,6 +148,15 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  udp: true
+- name: 🇺🇸 美国 | USA
+  server: starlink-ft.251313.xyz
+  port: 443
+  type: hysteria2
+  password: https://xship.top
+  auth: https://xship.top
+  sni: xship.top
+  skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 104.16.248.48
@@ -198,22 +198,6 @@ proxies:
     headers:
       Host: d7pu5mzr9c4b0.cloudfront.net
   udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 157.254.227.163
-  port: 443
-  type: vmess
-  uuid: eba24d1d-0c2b-4b67-862f-cae68626f3fa
-  alterId: 0
-  cipher: auto
-  tls: true
-  alpn:
-  - ''
-  skip-cert-verify: true
-  servername: xc166.meiziba5566.com
-  network: ws
-  ws-opts:
-    path: /cae68626f3fa
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: pro-crane.rooster465.autos
   port: 443
@@ -221,6 +205,14 @@ proxies:
   password: FH72359861
   skip-cert-verify: true
   udp: true
+- name: 🇨🇦 加拿大 | CAN 2
+  server: vpn-ca-001.fastervpn.world
+  port: 443
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-ca-001.fastervpn.world
+  skip-cert-verify: true
 - name: 🇩🇪 德国 | DEU 2
   server: 5.83.129.143
   port: 26691
@@ -234,14 +226,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇨🇦 加拿大 | CAN 2
-  server: vpn-ca-001.fastervpn.world
-  port: 443
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-ca-001.fastervpn.world
-  skip-cert-verify: true
 - name: 🇬🇧 英国 | GBR 4
   server: www.speedtest.net
   port: 8443
@@ -280,6 +264,13 @@ proxies:
     headers:
       Host: vod.ensf.top
   udp: true
+- name: 🇨🇦 加拿大 | CAN
+  server: 51.222.12.127
+  port: 445
+  type: ss
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+  udp: true
 - name: 🇨🇿 捷克 | CZE
   server: 103.119.18.115
   port: 443
@@ -309,13 +300,6 @@ proxies:
     path: /api/v1/irc
     headers:
       Host: vod.ensf.top
-  udp: true
-- name: 🇨🇦 加拿大 | CAN
-  server: 51.222.12.127
-  port: 445
-  type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 104.18.32.47
@@ -379,6 +363,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ytw2awn
   udp: true
+- name: 🇵🇱 波兰 | POL 2
+  server: 54.36.174.140
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ytw2awn
+  udp: true
 - name: 🇨🇭 瑞士 | CHE
   server: 45.143.200.245
   port: 443
@@ -394,13 +385,6 @@ proxies:
     path: /api/v1/irc
     headers:
       Host: vod.ensf.top
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 54.36.174.140
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ytw2awn
   udp: true
 - type: trojan
   name: 未知TROJAN-230|free-nodes
@@ -589,29 +573,28 @@ proxy-groups:
   - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 32
   - 🇺🇸 美国 | USA 27
-  - 🇺🇸 美国 | USA 2
   - 🇳🇱 荷兰 | NLD 7
-  - 🇩🇪 德国 | DEU 2
   - 🇨🇦 加拿大 | CAN 2
+  - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR 4
   - 🇮🇳 印度 | IND
   - 🇳🇱 荷兰 | NLD 8
+  - 🇨🇦 加拿大 | CAN
   - 🇨🇿 捷克 | CZE
   - 🇳🇱 荷兰 | NLD 4
-  - 🇨🇦 加拿大 | CAN
   - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 5
   - 🇮🇪 爱尔兰 | IRL
   - 🇵🇱 波兰 | POL
   - 🇫🇷 法国 | FRA 9
   - 🇨🇦 加拿大 | CAN 3
-  - 🇨🇭 瑞士 | CHE
   - 🇵🇱 波兰 | POL 2
+  - 🇨🇭 瑞士 | CHE
   - 未知TROJAN-230|free-nodes
   - 🇩🇪 德国 | DEU 14
   - 🇩🇪 德国 | DEU 4
@@ -649,26 +632,25 @@ proxy-groups:
   - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 17
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 32
   - 🇺🇸 美国 | USA 27
-  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇨🇦 加拿大 | CAN
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 2
+  - 🇨🇦 加拿大 | CAN
   - 🇨🇦 加拿大 | CAN 3
-  - 🇺🇸 美国 | USA 24
   - 🇨🇦 加拿大 | CAN 2
   - 🇵🇱 波兰 | POL 2
   - 🇺🇸 美国 | USA 30
+  - 未知TROJAN-230|free-nodes
+  - 🇫🇷 法国 | FRA 9
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
