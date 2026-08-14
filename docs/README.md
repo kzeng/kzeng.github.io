@@ -1,0 +1,1 @@
+here put clash.yaml from free-proxy-airport actions
