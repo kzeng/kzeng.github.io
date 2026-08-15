@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-15T19:15:15.470819+00:00'
+generated-at: '2026-08-15T19:43:03.072770+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 7
   server: hy2-tw.starq.me
@@ -173,14 +173,6 @@ proxies:
   password: FH72359861
   skip-cert-verify: true
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 8-210-142-69.liao.kdns.fr
-  port: 50160
-  type: hysteria2
-  password: c2601f6c59ed832f9129533608eea8eb
-  auth: c2601f6c59ed832f9129533608eea8eb
-  sni: 8-210-142-69.liao.kdns.fr
-  skip-cert-verify: true
 - name: 🇭🇰 香港 | HKG 9
   server: 47.239.6.251
   port: 13779
@@ -202,6 +194,15 @@ proxies:
   password: b07baf8fca580933cc39e6e5a6671a5d
   auth: b07baf8fca580933cc39e6e5a6671a5d
   sni: 138-2-67-146.liao.kdns.fr
+  skip-cert-verify: true
+- name: 🇭🇰 香港 | HKG 11
+  server: v9.hdacd.com
+  port: 30809
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
 - name: 🇯🇵 日本 | JPN
   server: loyal-killdeer.rooster465.autos
@@ -384,20 +385,14 @@ proxies:
   password: FH72359861
   skip-cert-verify: true
   udp: true
-- name: 🇰🇬 KG_63
-  server: 81.85.75.85
-  port: 443
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
-    short-id: 4a46213c935e2ee4
-  servername: baltic.cendora.ru
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
+- name: 🇰🇷 韩国 | KOR 10
+  server: 152-69-231-175.liao.kdns.fr
+  port: 50160
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  auth: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 | KOR 3
   server: complete-narwhal.rooster465.autos
   port: 443
@@ -504,13 +499,6 @@ proxies:
   auth: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
   sni: grape-honk.yyuyy.com
   skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 | AUS
-  server: national-stingray.rooster465.autos
-  port: 443
-  type: trojan
-  password: FH72359861
-  sni: national-stingray.rooster465.autos
-  skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 | IRL
   server: 54.216.139.140
   port: 443
@@ -519,6 +507,13 @@ proxies:
   sni: cunning-grub.rooster465.autos
   skip-cert-verify: true
   udp: true
+- name: 🇦🇺 澳大利亚 | AUS
+  server: national-stingray.rooster465.autos
+  port: 443
+  type: trojan
+  password: FH72359861
+  sni: national-stingray.rooster465.autos
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 | POL
   server: 94.183.157.121
   port: 443
@@ -636,6 +631,19 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
+- name: 🇹🇷 土耳其 | TUR 2
+  server: sb1.artinnet.shop
+  port: 443
+  type: vless
+  uuid: bef7acd0-8b81-431d-bcce-a76c3da658ae
+  tls: true
+  reality-opts:
+    public-key: xyMx8lBZ6dn2EO6G3Alt_7bQueu_eZgQ4kZEbMFXL3E
+    short-id: ce
+  servername: w.wiki
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇬🇧 英国 | GBR
   server: 144.24.229.230
   port: 61312
@@ -677,9 +685,9 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG 10
   - 🇯🇵 日本 | JPN 4
-  - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 9
   - 🇸🇬 新加坡 | SGP 2
+  - 🇭🇰 香港 | HKG 11
   - 🇯🇵 日本 | JPN
   - 🇭🇰 香港 | HKG 8
   - 🇺🇸 美国 | USA 20
@@ -700,7 +708,7 @@ proxy-groups:
   - 🇰🇷 韩国 | KOR 4
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD 4
-  - 🇰🇬 KG_63
+  - 🇰🇷 韩国 | KOR 10
   - 🇰🇷 韩国 | KOR 3
   - 🇰🇷 韩国 | KOR 9
   - 🇹🇼 🇨🇳 台湾 | TWN
@@ -713,8 +721,8 @@ proxy-groups:
   - 🇮🇪 爱尔兰 | IRL 2
   - 🇩🇪 德国 | DEU 5
   - 🇨🇳 CN_01
-  - 🇦🇺 澳大利亚 | AUS
   - 🇮🇪 爱尔兰 | IRL
+  - 🇦🇺 澳大利亚 | AUS
   - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 4
@@ -726,6 +734,7 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 3
   - 🇮🇪 爱尔兰 | IRL 3
   - 🇳🇱 荷兰 | NLD 9
+  - 🇹🇷 土耳其 | TUR 2
   - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD 5
   - 🇰🇷 韩国 | KOR 7
@@ -740,8 +749,8 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG 10
-  - 🇭🇰 香港 | HKG
   - 🇭🇰 香港 | HKG 9
+  - 🇭🇰 香港 | HKG 11
   - 🇭🇰 香港 | HKG 8
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -778,17 +787,17 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 20
+  - 🇺🇸 美国 | USA 22
   - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 5
+  - 🇯🇵 日本 | JPN 11
   - 🇳🇱 荷兰 | NLD 2
   - 🇳🇱 荷兰 | NLD 8
   - 🇺🇸 美国 | USA 6
   - 🇬🇧 英国 | GBR
   - 🇩🇪 德国 | DEU 4
   - 🇭🇰 香港 | HKG 4
-  - 🇯🇵 日本 | JPN 11
-  - 🇯🇵 日本 | JPN 4
-  - 🇯🇵 日本 | JPN 6
+  - 🇺🇸 美国 | USA 5
+  - 🇮🇪 爱尔兰 | IRL 3
   - 🇮🇪 爱尔兰 | IRL
   url: http://www.gstatic.com/generate_204
   interval: 120
