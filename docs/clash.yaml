@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-15T21:42:46.533627+00:00'
+generated-at: '2026-08-15T22:11:13.063315+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 7
   server: hy2-tw.starq.me
@@ -260,20 +260,6 @@ proxies:
   client-fingerprint: ios
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 51.81.223.225
-  port: 11094
-  type: vless
-  uuid: f1fa0ad9-b122-4b7c-da82-4bea9edc48dd
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 9dnXiXxP4xgvtTVRj9SBFdyO6mjGvVhWD8qVZZLCCCk
-    short-id: a356addf
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 15
   server: 107-173-165-41.liao.kdns.fr
   port: 50160
@@ -362,6 +348,20 @@ proxies:
   password: FH72359861
   skip-cert-verify: true
   udp: true
+- name: 🇰🇬 KG_63
+  server: 81.85.75.85
+  port: 443
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
+    short-id: 4a46213c935e2ee4
+  servername: baltic.cendora.ru
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇰🇷 韩国 | KOR 3
   server: complete-narwhal.rooster465.autos
   port: 443
@@ -430,6 +430,16 @@ proxies:
   password: FH72359861
   skip-cert-verify: true
   udp: true
+- name: 🇩🇰 丹麦 | DNK
+  server: dk86.mechvpn.online
+  port: 443
+  type: hysteria2
+  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  auth: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+  sni: dk86.mechvpn.online
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: 🇩🇪 德国 | DEU 5
   server: 78.159.247.253
   port: 2027
@@ -444,16 +454,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇰 丹麦 | DNK
-  server: dk86.mechvpn.online
-  port: 443
-  type: hysteria2
-  password: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  auth: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
-  sni: dk86.mechvpn.online
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: 🇮🇪 爱尔兰 | IRL 2
   server: balanced-heron.rooster465.autos
   port: 443
@@ -468,6 +468,13 @@ proxies:
   auth: 0wdsa_nJXEWRj9jz9J9xMgtx_n7gzfK_m8
   sni: grape-honk.yyuyy.com
   skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 | AUS
+  server: national-stingray.rooster465.autos
+  port: 443
+  type: trojan
+  password: FH72359861
+  sni: national-stingray.rooster465.autos
+  skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 | IRL
   server: 54.216.139.140
   port: 443
@@ -476,13 +483,6 @@ proxies:
   sni: cunning-grub.rooster465.autos
   skip-cert-verify: true
   udp: true
-- name: 🇦🇺 澳大利亚 | AUS
-  server: national-stingray.rooster465.autos
-  port: 443
-  type: trojan
-  password: FH72359861
-  sni: national-stingray.rooster465.autos
-  skip-cert-verify: true
 - name: 🇵🇱 波兰 | POL
   server: 94.183.157.121
   port: 443
@@ -511,13 +511,6 @@ proxies:
     headers:
       Host: forfreeuse.rtqa.ru
   udp: true
-- name: 🇧🇷 巴西 | BRA
-  server: 163.176.56.46
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 2f/hSnAF5GDhyve8brmwep/LzS1dKM8uaWRYsvIobFw=
-  udp: true
 - type: trojan
   name: 未知TROJAN-230|free-nodes
   server: 104.19.64.105
@@ -531,6 +524,13 @@ proxies:
     path: /assignment
     headers:
       host: www.calmlunch.com
+- name: 🇧🇷 巴西 | BRA
+  server: 163.176.56.46
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2f/hSnAF5GDhyve8brmwep/LzS1dKM8uaWRYsvIobFw=
+  udp: true
 - name: 🇮🇪 爱尔兰 | IRL 4
   server: v4.hdacd.com
   port: 30804
@@ -605,6 +605,19 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
+- name: 🇹🇷 土耳其 | TUR 2
+  server: sb1.artinnet.shop
+  port: 443
+  type: vless
+  uuid: bef7acd0-8b81-431d-bcce-a76c3da658ae
+  tls: true
+  reality-opts:
+    public-key: xyMx8lBZ6dn2EO6G3Alt_7bQueu_eZgQ4kZEbMFXL3E
+    short-id: ce
+  servername: w.wiki
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇬🇧 英国 | GBR
   server: 144.24.229.230
   port: 61312
@@ -627,6 +640,19 @@ proxies:
   password: FH72359861
   sni: loyal-molly.rooster465.autos
   skip-cert-verify: true
+- name: 🇪🇸 西班牙 | ESP
+  server: 185.18.250.252
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -656,7 +682,6 @@ proxy-groups:
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 22
   - 🇮🇪 爱尔兰 | IRL 5
@@ -668,6 +693,7 @@ proxy-groups:
   - 🇰🇷 韩国 | KOR 4
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD 4
+  - 🇰🇬 KG_63
   - 🇰🇷 韩国 | KOR 3
   - 🇰🇷 韩国 | KOR 9
   - 🇹🇼 🇨🇳 台湾 | TWN
@@ -676,16 +702,16 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 3
   - 🇰🇷 韩国 | KOR 5
   - 🇮🇪 爱尔兰 | IRL 6
-  - 🇩🇪 德国 | DEU 5
   - 🇩🇰 丹麦 | DNK
+  - 🇩🇪 德国 | DEU 5
   - 🇮🇪 爱尔兰 | IRL 2
   - 🇨🇳 CN_01
-  - 🇮🇪 爱尔兰 | IRL
   - 🇦🇺 澳大利亚 | AUS
+  - 🇮🇪 爱尔兰 | IRL
   - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 8
-  - 🇧🇷 巴西 | BRA
   - 未知TROJAN-230|free-nodes
+  - 🇧🇷 巴西 | BRA
   - 🇮🇪 爱尔兰 | IRL 4
   - 🇰🇷 韩国 | KOR
   - 🇳🇱 荷兰 | NLD 2
@@ -693,9 +719,11 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 3
   - 🇮🇪 爱尔兰 | IRL 3
   - 🇳🇱 荷兰 | NLD 9
+  - 🇹🇷 土耳其 | TUR 2
   - 🇬🇧 英国 | GBR
   - 🇳🇱 荷兰 | NLD 5
   - 🇰🇷 韩国 | KOR 7
+  - 🇪🇸 西班牙 | ESP
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -735,7 +763,6 @@ proxy-groups:
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 22
   url: http://www.gstatic.com/generate_204
@@ -744,18 +771,18 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 15
-  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 5
   - 🇯🇵 日本 | JPN 11
   - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 2
   - 🇬🇧 英国 | GBR
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 22
-  - 🇧🇷 巴西 | BRA
   - 🇭🇰 香港 | HKG 4
-  - 🇮🇪 爱尔兰 | IRL 3
-  - 🇮🇪 爱尔兰 | IRL
+  - 🇺🇸 美国 | USA 22
+  - 🇯🇵 日本 | JPN 5
+  - 🇺🇸 美国 | USA 6
+  - 🇯🇵 日本 | JPN 8
+  - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
