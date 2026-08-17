@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-17T22:15:29.786402+00:00'
+generated-at: '2026-08-17T22:48:02.481281+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 13
   server: stable-python.rooster465.autos
@@ -60,14 +60,6 @@ proxies:
   servername: cdnjs.cloudflare.com
   client-fingerprint: chrome
   network: tcp
-- name: 🇸🇬 新加坡 | SGP 7
-  server: 13.212.174.21
-  port: 443
-  type: trojan
-  password: PQ05174892
-  sni: fleet-pony.rooster465.autos
-  skip-cert-verify: true
-  udp: true
 - name: 🇯🇵 日本 | JPN 3
   server: 14.137.238.40
   port: 10000
@@ -75,6 +67,14 @@ proxies:
   uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
   tls: false
   network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 7
+  server: 13.212.174.21
+  port: 443
+  type: trojan
+  password: PQ05174892
+  sni: fleet-pony.rooster465.autos
+  skip-cert-verify: true
   udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: fleet-pony.rooster465.autos
@@ -217,6 +217,19 @@ proxies:
   client-fingerprint: ios
   network: tcp
   udp: true
+- name: 美國丨yoyapai.com_8
+  type: vless
+  server: 45.155.52.231
+  port: 443
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  servername: ru2.skydrgn-online.online
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
+    short-id: 0b
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸 美国 | USA 19
   server: 154.9.227.146
   port: 2053
@@ -246,19 +259,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: movie
-  udp: true
-- name: 美國丨yoyapai.com_8
-  type: vless
-  server: 45.155.52.231
-  port: 443
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-  servername: ru2.skydrgn-online.online
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-    short-id: 0b
-  skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国 | USA 17
   server: 169.40.42.74
@@ -584,8 +584,8 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 6
-  - 🇸🇬 新加坡 | SGP 7
   - 🇯🇵 日本 | JPN 3
+  - 🇸🇬 新加坡 | SGP 7
   - 🇸🇬 新加坡 | SGP 3
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 6
@@ -599,9 +599,9 @@ proxy-groups:
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 10
+  - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 13
-  - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 27
@@ -663,9 +663,9 @@ proxy-groups:
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 10
+  - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 13
-  - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 27
@@ -677,15 +677,15 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 25
-  - 🇺🇸 美国 | USA 17
-  - 🇺🇸 美国 | USA 13
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA 10
   - 🇳🇱_NL荷蘭丨yoyapai.com
-  - 🇺🇸 美国 | USA 22
+  - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 13
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
