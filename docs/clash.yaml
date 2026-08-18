@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-18T21:15:10.073596+00:00'
+generated-at: '2026-08-18T21:45:42.888038+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: legible-ocelot.rooster465.autos
@@ -23,14 +23,6 @@ proxies:
   password: HC04361579
   sni: exact-sawfish.rooster465.autos
   skip-cert-verify: true
-  udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: 139.180.198.220
-  port: 52143
-  type: vless
-  uuid: 2942bae7-9dcf-4a2e-f928-933c0ab3eab0
-  tls: false
-  network: tcp
   udp: true
 - name: 🇯🇵 日本 | JPN 6
   server: settling-shad.rooster465.autos
@@ -172,6 +164,13 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇳🇱 荷兰 | NLD 7
+  server: 92.5.228.26
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 5Xn2qHoVdu6aJjp6R2KjKrk10+qFniNh5OjKW93TdWk=
+  udp: true
 - name: 🇬🇧 英国 | GBR 4
   server: 129.151.77.35
   port: 61312
@@ -200,6 +199,20 @@ proxies:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 195.133.23.200
+  port: 10998
+  type: ss
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+- name: 🇰🇷 韩国 | KOR 4
+  server: 3.39.237.40
+  port: 56001
+  type: hysteria2
+  password: NjpqMyHOlMjWTcjE
+  auth: NjpqMyHOlMjWTcjE
+  sni: kor-ls-6.nebulacloud.win
+  skip-cert-verify: true
 - name: 🇳🇱 荷兰 | NLD
   server: one-for-all.levikogjgfdd.ir
   port: 443
@@ -214,20 +227,6 @@ proxies:
     headers:
       Host: josni.hoyes.cloudns.ch
   udp: true
-- name: 🇰🇷 韩国 | KOR 4
-  server: 3.39.237.40
-  port: 56001
-  type: hysteria2
-  password: NjpqMyHOlMjWTcjE
-  auth: NjpqMyHOlMjWTcjE
-  sni: kor-ls-6.nebulacloud.win
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 195.133.23.200
-  port: 10998
-  type: ss
-  cipher: aes-256-gcm
-  password: 81a20429165df87e
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 45.8.158.176
   port: 10801
@@ -283,20 +282,6 @@ proxies:
     path: /5f72f180-b21b-4b7a-8484-240759096785
     headers:
       Host: apjhdggyx.com
-  udp: true
-- name: 🇩🇪 德国 | DEU 5
-  server: 23.165.200.168
-  port: 49527
-  type: vless
-  uuid: 853a3bff-2583-4908-9f16-934bb3077d24
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: IbI4GjOoEE7mFvOyegC2bdADUgDjzpz24OIIhQhzdnc
-    short-id: 9c4b91b9
-  servername: apple.com
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇳🇱_NL荷蘭丨yoyapai.com
   type: ss
@@ -412,20 +397,6 @@ proxies:
       Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   skip-cert-verify: true
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 129.121.95.159
-  port: 443
-  type: vless
-  uuid: f6190ff2-864c-46cf-ac16-93908c069b75
-  tls: true
-  servername: 129.121.95.159
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /connect
-    headers:
-      Host: 129.121.95.159
-  udp: true
 - name: 🇬🇧 英国 | GBR 5
   server: 129.151.66.31
   port: 61312
@@ -461,7 +432,6 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 8
-  - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN 6
   - 🇭🇰 香港 | HKG 10
   - 🇸🇬 新加坡 | SGP 3
@@ -474,19 +444,19 @@ proxy-groups:
   - 美國丨yoyapai.com_8
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
+  - 🇳🇱 荷兰 | NLD 7
   - 🇬🇧 英国 | GBR 4
   - 🇳🇱 荷兰 | NLD 8
   - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD
-  - 🇰🇷 韩国 | KOR 4
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇰🇷 韩国 | KOR 4
+  - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇰🇷 韩国 | KOR 3
   - 🇰🇷 韩国 | KOR 8
   - 🇷🇺 俄罗斯 | RUS
   - 🇫🇷 法国 | FRA 20
   - 🇫🇮 荷蘭
-  - 🇩🇪 德国 | DEU 5
   - 🇳🇱_NL荷蘭丨yoyapai.com
   - 🇩🇪 德国 | DEU 6
   - 🇨🇭 瑞士 | CHE 2
@@ -497,7 +467,6 @@ proxy-groups:
   - 🇩🇪 德国 | DEU
   - 🇳🇴 挪威 | NOR
   - 🇹🇭 Thailand泰国丨yoyapai.com
-  - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR 5
   - 🇫🇷 法国 | FRA 8
   - 🇳🇱 荷兰 | NLD 5
@@ -514,7 +483,6 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 | JPN 5
   - 🇯🇵 日本 | JPN 8
-  - 🇯🇵 日本 | JPN 3
   - 🇯🇵 日本 | JPN 6
   - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
@@ -534,13 +502,13 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 20
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 12
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 20
+  - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 7
+  - 🇳🇱_NL荷蘭丨yoyapai.com
   - 🇬🇧 英国 | GBR 4
-  - 🇺🇸 美国 | USA 14
   - 🇬🇧 英国 | GBR 5
   url: http://www.gstatic.com/generate_204
   interval: 120
