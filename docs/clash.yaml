@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-18T20:13:22.221026+00:00'
+generated-at: '2026-08-18T20:47:19.076473+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 5
   server: legible-ocelot.rooster465.autos
@@ -89,18 +89,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 64.83.12.153
-  port: 443
-  type: vmess
-  uuid: 9d476209-d8bd-9536-6e8d-61c97ec114db
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  udp: true
 - name: 🇺🇸 美国 | USA 16
   server: 172.67.118.45
   port: 443
@@ -177,20 +165,6 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: sC1RiQOK5Ts5zgUYDwB/AGFbqjpytI0/AczgkgCCnew=
-- name: 🇳🇱 荷兰 | NLD 4
-  server: one-for-all.levikogjgfdd.ir
-  port: 443
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: true
-  servername: hhlfy.twiladaphne.ndjp.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 8
   server: 206.189.7.80
   port: 5446
@@ -198,20 +172,6 @@ proxies:
   password: fg20mtCFHy
   sni: inxgc.southbyte.xyz
   skip-cert-verify: true
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: one-for-all.levikogjgfdd.ir
-  port: 443
-  type: vless
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  servername: josni.hoyes.cloudns.ch
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: josni.hoyes.cloudns.ch
   udp: true
 - name: 🇰🇷 韩国 | KOR 4
   server: 3.39.237.40
@@ -227,6 +187,34 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: 81a20429165df87e
+- name: 🇳🇱 荷兰 | NLD 4
+  server: one-for-all.levikogjgfdd.ir
+  port: 443
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: true
+  servername: hhlfy.twiladaphne.ndjp.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  udp: true
+- name: 🇳🇱 荷兰 | NLD
+  server: one-for-all.levikogjgfdd.ir
+  port: 443
+  type: vless
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  servername: josni.hoyes.cloudns.ch
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: josni.hoyes.cloudns.ch
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 45.8.158.176
   port: 10801
@@ -255,12 +243,6 @@ proxies:
   servername: cdnjs.cloudflare.com
   client-fingerprint: chrome
   network: tcp
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 195.133.23.5
-  port: 20998
-  type: ss
-  cipher: aes-256-gcm
-  password: d99c422199e62b6b
 - name: 🇫🇷 法国 | FRA 20
   server: 15.237.189.197
   port: 443
@@ -268,6 +250,12 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 195.133.23.5
+  port: 20998
+  type: ss
+  cipher: aes-256-gcm
+  password: d99c422199e62b6b
 - name: 🇫🇮 荷蘭
   type: vmess
   server: 185.246.152.159
@@ -297,6 +285,14 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇳🇱_NL荷蘭丨yoyapai.com
+  type: ss
+  server: 82.38.31.35
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  skip-cert-verify: true
+  udp: true
 - name: 🇩🇪 德国 | DEU 6
   server: savesafe.co
   port: 443
@@ -324,21 +320,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇹🇭泰国丨yoyapai.com
-  type: vless
-  server: 3.170.185.91
-  port: 443
-  uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
-  network: ws
-  servername: d1yxsk0zprgivr.cloudfront.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: d1yxsk0zprgivr.cloudfront.net
-  skip-cert-verify: true
   udp: true
 - name: 🇨🇭 瑞士 | CHE
   server: translate.magazinetut.online
@@ -458,7 +439,6 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 5
   - 美國丨yoyapai.com_8
@@ -466,21 +446,21 @@ proxy-groups:
   - 🇺🇸 美国 | USA 12
   - 🇳🇱 荷兰 | NLD 7
   - 🇬🇧 英国 | GBR 4
-  - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD 8
-  - 🇳🇱 荷兰 | NLD
   - 🇰🇷 韩国 | KOR 4
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇰🇷 韩国 | KOR 3
   - 🇰🇷 韩国 | KOR 8
-  - 🇷🇺 俄罗斯 | RUS
   - 🇫🇷 法国 | FRA 20
+  - 🇷🇺 俄罗斯 | RUS
   - 🇫🇮 荷蘭
   - 🇩🇪 德国 | DEU 5
+  - 🇳🇱_NL荷蘭丨yoyapai.com
   - 🇩🇪 德国 | DEU 6
   - 🇨🇭 瑞士 | CHE 2
-  - 🇹🇭泰国丨yoyapai.com
   - 🇨🇭 瑞士 | CHE
   - 🇸🇪 瑞典 | SWE
   - 🇰🇷 韩国 | KOR
@@ -512,7 +492,6 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 5
   - 美國丨yoyapai.com_8
@@ -523,14 +502,14 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇳🇱 荷兰 | NLD
   - 🇺🇸 美国 | USA 20
-  - 🇬🇧 英国 | GBR 5
-  - 🇬🇧 英国 | GBR 4
+  - 🇳🇱 荷兰 | NLD 4
+  - 🇺🇸 美国 | USA 12
+  - 🇸🇬 新加坡 | SGP 2
   - 🇺🇸 美国 | USA 14
-  - 🇳🇱 荷兰 | NLD 7
+  - 🇬🇧 英国 | GBR 4
+  - 🇫🇷 法国 | FRA 20
+  - 🇳🇱_NL荷蘭丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
