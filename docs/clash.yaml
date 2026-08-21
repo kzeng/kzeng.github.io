@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-21T15:56:54.761380+00:00'
+generated-at: '2026-08-21T16:24:19.512752+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: vip-jp-4.hkd4fwmg.vip
@@ -31,6 +31,13 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: AvgbFIV7Cex5/qT5UZZfczfm4HvieP7cS50XxXtw+EA=
   udp: true
+- name: 🇯🇵 日本 | JPN 4
+  server: 121.46.230.136
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+  udp: true
 - name: 🇺🇸 美国 | USA 30
   server: 104.16.79.73
   port: 443
@@ -52,21 +59,6 @@ proxies:
   password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
   sni: www.microsoft.com
   skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: rush-w1niu.teeopp.online
-  port: 443
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /video/v4sx3q/zxzrurkc.m3u8
-    headers:
-      Host: rush-w1niu.teeopp.online
   udp: true
 - name: 🇺🇸 美国 | USA 15
   server: 129.153.203.166
@@ -360,35 +352,6 @@ proxies:
   uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
   tls: false
   network: tcp
-- name: 🇮🇩 印尼 | IDN
-  server: 16.79.28.237
-  port: 26001
-  type: hysteria2
-  password: l25nJa8z0D5pT6jl
-  auth: l25nJa8z0D5pT6jl
-  sni: id-ls-c-4.nebulacloud.win
-  skip-cert-verify: true
-- name: 🇲🇴 澳门 | MAC
-  server: jpaws.ccwink.photos
-  port: 6897
-  type: vless
-  uuid: a157bb84-dd84-4ad8-86b0-0656bc76e4d1
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: X2thmYgL8pXZBmFxMOPo3oIYAga5CTMEd-YMcJHk4Es
-    short-id: 54efd54cf3e7
-  servername: docs.aws.amazon.com
-  client-fingerprint: firefox
-  network: tcp
-- name: 🇰🇷 韩国 | KOR 13
-  server: 150-230-252-217.liao.kdns.fr
-  port: 50160
-  type: hysteria2
-  password: 9cfc9458e48c028ec03ff86ebc71c744
-  auth: 9cfc9458e48c028ec03ff86ebc71c744
-  sni: 150-230-252-217.liao.kdns.fr
-  skip-cert-verify: true
 - name: 🇩🇪 德国 | DEU
   server: deu0003ntrhy01.tcp-reset-club.net
   port: 443
@@ -467,9 +430,9 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
   - 🇸🇬 新加坡 | SGP
+  - 🇯🇵 日本 | JPN 4
   - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
@@ -497,9 +460,6 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 4
   - 🇲🇾 马来西亚 | MYS
   - 🇨🇴 哥伦比亚 | COL
-  - 🇮🇩 印尼 | IDN
-  - 🇲🇴 澳门 | MAC
-  - 🇰🇷 韩国 | KOR 13
   - 🇩🇪 德国 | DEU
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇱🇻 拉脱维亚 | LVA
@@ -519,11 +479,7 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG 5
-  - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 20
+  - 🇯🇵 日本 | JPN 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -531,7 +487,6 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
@@ -549,8 +504,8 @@ proxy-groups:
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 19
   - 🇺🇸US美國丨yoyapai.com_5
   url: http://www.gstatic.com/generate_204
   interval: 120
