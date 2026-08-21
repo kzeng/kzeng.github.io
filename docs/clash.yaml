@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-21T16:59:44.390507+00:00'
+generated-at: '2026-08-21T17:29:41.916591+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: vip-jp-4.hkd4fwmg.vip
@@ -24,12 +24,12 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ljqdalu13..
   udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: 121.46.230.136
-  port: 65443
+- name: 🇸🇬 新加坡 | SGP
+  server: 168.107.84.216
+  port: 56927
   type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
+  cipher: 2022-blake3-chacha20-poly1305
+  password: AvgbFIV7Cex5/qT5UZZfczfm4HvieP7cS50XxXtw+EA=
   udp: true
 - name: 🇺🇸 美国 | USA 30
   server: 104.16.79.73
@@ -68,6 +68,23 @@ proxies:
     headers:
       Host: rush-w1niu.teeopp.online
   udp: true
+- name: 🇺🇸 美国 | USA 16
+  server: piracy-android.video-streams.org
+  port: 443
+  type: vless
+  uuid: c7f0b683-61ea-48c5-93f1-783459ba2124
+  tls: true
+  alpn:
+  - http/1.1
+  packet-encoding: xudp
+  servername: piracy-android.video-streams.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: piracy-android.video-streams.org
+  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: us01.duotg.top
   port: 38261
@@ -104,6 +121,19 @@ proxies:
       Host: support.zoom.us.yxls.eu.cc
   skip-cert-verify: true
   udp: true
+- name: 美國丨yoyapai.com_8
+  type: vless
+  server: 45.155.52.231
+  port: 443
+  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  servername: ru2.skydrgn-online.online
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
+    short-id: 0b
+  skip-cert-verify: true
+  udp: true
 - name: 🇺🇸 美国 | USA 19
   server: 104.19.109.202
   port: 443
@@ -117,19 +147,6 @@ proxies:
     path: /@zyzzzoao
     headers:
       Host: cf.udpid.org
-  udp: true
-- name: 美國丨yoyapai.com_8
-  type: vless
-  server: 45.155.52.231
-  port: 443
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-  servername: ru2.skydrgn-online.online
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-    short-id: 0b
-  skip-cert-verify: true
   udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 45.205.0.6
@@ -192,6 +209,20 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇺🇦 乌克兰 | UKR
+  server: cfd.130209.xyz
+  port: 443
+  type: vless
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
+  tls: true
+  servername: ukraine.142568.xyz
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /assets/dist/app-update-payload.dat
+    headers:
+      Host: ukraine.142568.xyz
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 109.196.101.18
   port: 4100
@@ -203,6 +234,20 @@ proxies:
     path: /v1
     headers:
       Host: live.ok.ru
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: cdn4.velnaro.ir
+  port: 443
+  type: vless
+  uuid: d2615adf-96c4-414e-9126-eedf9ec9f0c0
+  tls: true
+  servername: cdn4.velnaro.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /happy-2026-fall
+    headers:
+      Host: cdn4.velnaro.ir
   udp: true
 - name: 🇫🇮 荷蘭
   type: vmess
@@ -218,20 +263,6 @@ proxies:
     path: /5f72f180-b21b-4b7a-8484-240759096785
     headers:
       Host: apjhdggyx.com
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: cdn4.velnaro.ir
-  port: 443
-  type: vless
-  uuid: d2615adf-96c4-414e-9126-eedf9ec9f0c0
-  tls: true
-  servername: cdn4.velnaro.ir
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /happy-2026-fall
-    headers:
-      Host: cdn4.velnaro.ir
   udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
   server: 138.124.4.128
@@ -370,20 +401,6 @@ proxies:
   servername: eu-west.cendora.ru
   client-fingerprint: qq
   network: tcp
-- name: 🇹🇭 Thailand泰国丨yoyapai.com
-  type: vless
-  server: 18.239.134.69
-  port: 80
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
-  network: ws
-  tls: false
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-  skip-cert-verify: true
-  udp: true
 - name: 🇬🇧 英国 | GBR
   server: 5.152.223.193
   port: 443
@@ -432,24 +449,26 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
-  - 🇯🇵 日本 | JPN 4
+  - 🇸🇬 新加坡 | SGP
   - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸US美國丨yoyapai.com_5
-  - 🇺🇸 美国 | USA 19
   - 美國丨yoyapai.com_8
+  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 2
   - 🇫🇷 法国 | FRA 6
   - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 7
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD
+  - 🇺🇦 乌克兰 | UKR
   - 🇷🇺 俄罗斯 | RUS
-  - 🇫🇮 荷蘭
   - 🇩🇪 德国 | DEU 3
+  - 🇫🇮 荷蘭
   - 🇪🇪 爱沙尼亚 | EST
   - 🇳🇱_NL荷蘭丨yoyapai.com
   - 🇩🇪 德国 | DEU 6
@@ -464,7 +483,6 @@ proxy-groups:
   - 🇩🇪 德国 | DEU
   - 🇨🇴 哥伦比亚 | COL 2
   - 🇱🇻 拉脱维亚 | LVA
-  - 🇹🇭 Thailand泰国丨yoyapai.com
   - 🇬🇧 英国 | GBR
   - 🇩🇪 德国 | DEU 12
   - 🇪🇸 西班牙 | ESP
@@ -481,7 +499,11 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 4
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 5
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸 美国 | USA 30
+  - 🇺🇸 美国 | USA 20
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -490,11 +512,12 @@ proxy-groups:
   - 🇺🇸 美国 | USA 30
   - 🇺🇸 美国 | USA 20
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸US美國丨yoyapai.com_5
-  - 🇺🇸 美国 | USA 19
   - 美國丨yoyapai.com_8
+  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -502,12 +525,13 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 30
-  - 🇺🇸 美国 | USA 20
-  - 🇺🇸US美國丨yoyapai.com_5
   - 🇺🇸 美国 | USA 2
+  - 🇺🇸US美國丨yoyapai.com_5
+  - 🇫🇷 法国 | FRA 6
   - 🇨🇴 哥伦比亚 | COL
+  - 🇳🇱_NL荷蘭丨yoyapai.com
+  - 🇩🇪 德国 | DEU 2
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇺🇸 美国 | USA 19
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
