@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-25T17:53:24.334163+00:00'
+generated-at: '2026-08-25T18:25:22.589784+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 155.117.224.127
@@ -275,20 +275,6 @@ proxies:
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
   udp: true
-- name: 🇧🇬 保加利亚 | BGR 6
-  server: 94.72.140.210
-  port: 443
-  type: vless
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  tls: true
-  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /pg/10086-dfc816f117c49173
-    headers:
-      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 77.91.78.51
   port: 443
@@ -302,6 +288,20 @@ proxies:
     path: /pg/10086-dfc816f117c49173
     headers:
       Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  udp: true
+- name: 🇧🇬 保加利亚 | BGR 6
+  server: 94.72.140.210
+  port: 443
+  type: vless
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  tls: true
+  servername: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pg/10086-dfc816f117c49173
+    headers:
+      Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
   udp: true
 - name: 🇫🇷 法国 | FRA 5
   server: 217.60.37.28
@@ -511,6 +511,20 @@ proxies:
     headers:
       Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
   udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 89.23.113.51
+  port: 8443
+  type: vless
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pg/10086-dfc816f117c49173
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  udp: true
 - name: 🇺🇦 乌克兰 | UKR
   server: kkvlvvq-a.catcat321.com
   port: 20066
@@ -707,6 +721,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   skip-cert-verify: true
+  udp: true
+- name: 🇮🇪 爱尔兰 | IRL
+  server: 34.243.114.244
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇪🇪 爱沙尼亚 | EST 3
   server: 5.45.126.36
@@ -906,12 +927,6 @@ proxies:
     headers:
       Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
   udp: true
-- name: 🇧🇷 巴西 | BRA
-  server: 147.15.47.5
-  port: 59319
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: BFQyHWB20qvH0asuixcidL1wLU6XLdmFzANF3GjLFQw=
 - name: 🇩🇪 德国 | DEU 14
   server: 91.199.154.97
   port: 443
@@ -968,6 +983,12 @@ proxies:
     headers:
       Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
   udp: true
+- name: 🇲🇾 马来西亚 | MYS
+  server: 118.107.222.231
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 - name: 🇪🇪爱沙尼亚丨yoyapai.com
   type: trojan
   server: 109.206.241.10
@@ -976,40 +997,6 @@ proxies:
   sni: russiapower.accesscam.org
   skip-cert-verify: true
   tls: true
-  udp: true
-- name: 🇲🇾 马来西亚 | MYS
-  server: 118.107.222.231
-  port: 65443
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇵🇱 波兰 | POL 4
-  server: 91.149.253.26
-  port: 443
-  type: vless
-  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
-  tls: true
-  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /pg/10086-dfc816f117c49173
-    headers:
-      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: nt02.hirbilon.net
-  port: 443
-  type: vless
-  uuid: c72997ae-c6e1-4ead-8ca1-dd39dcde8384
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 7ktX54khBm6yULcC-MYNj_qElBu6hwmcAsJjP5UcXHk
-    short-id: 05f6a5418c2a6865
-  servername: nt02.hirbilon.net
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇧🇬 保加利亚 | BGR 5
   server: 13.140.29.45
@@ -1024,6 +1011,20 @@ proxies:
     path: /pg/10086-dfc816f117c49173
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
+  udp: true
+- name: 🇵🇱 波兰 | POL 4
+  server: 91.149.253.26
+  port: 443
+  type: vless
+  uuid: 9ce4c9e2-1dcc-abe8-9abf-9bf8bc1269f6
+  tls: true
+  servername: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pg/10086-dfc816f117c49173
+    headers:
+      Host: j.n.i.l.6.m.7.3.o.t.e.s.j.3.us.art-us.kdns.fr
   udp: true
 - name: 🇫🇷 法国 | FRA
   server: 104.253.79.6
@@ -1087,14 +1088,6 @@ proxies:
     path: /pg/10086-dfc816f117c49173
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
-  udp: true
-- name: 🇲🇴 澳门 | MAC
-  server: kkvlvvq-a.catcat321.com
-  port: 20068
-  type: trojan
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  sni: hk.catxstar.com
-  skip-cert-verify: true
   udp: true
 - name: 🇳🇱 荷兰 | NLD 12
   server: 88.218.248.195
@@ -1250,6 +1243,14 @@ proxies:
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
   udp: true
+- name: 🇺🇦 乌克兰 | UKR 2
+  server: hkdcrtc-e.catcat321.com
+  port: 20066
+  type: trojan
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+  udp: true
 - name: 🇬🇧 英国 | GBR 3
   server: 91.149.238.31
   port: 443
@@ -1264,12 +1265,18 @@ proxies:
     headers:
       Host: 8.o.8.e.t.g.7.w.8.n.e.1.l.e.us.art-us.kdns.fr
   udp: true
-- name: 🇺🇦 乌克兰 | UKR 2
-  server: hkdcrtc-e.catcat321.com
-  port: 20066
-  type: trojan
-  password: a126f35c-e832-4115-8593-b723ade3f7be
-  sni: hk.catxstar.com
+- name: 🇹🇭 Thailand泰国丨yoyapai.com
+  type: vless
+  server: 18.239.134.69
+  port: 80
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
   skip-cert-verify: true
   udp: true
 - name: 🇸🇪 瑞典 | SWE 10
@@ -1367,8 +1374,8 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 12
   - 🇫🇷 法国 | FRA 6
-  - 🇧🇬 保加利亚 | BGR 6
   - 🇳🇱 荷兰 | NLD 7
+  - 🇧🇬 保加利亚 | BGR 6
   - 🇫🇷 法国 | FRA 5
   - 🇫🇷 法国 | FRA 7
   - 🇬🇧 英国 | GBR 4
@@ -1384,6 +1391,7 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD
   - 🇨🇿 捷克 | CZE
   - 🇱🇹 立陶宛 | LTU
+  - 🇷🇺 俄罗斯 | RUS 3
   - 🇺🇦 乌克兰 | UKR
   - 🇸🇪 瑞典 | SWE 2
   - 🇩🇰 丹麦 | DNK 2
@@ -1399,6 +1407,7 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 5
   - 🇳🇱 荷兰 | NLD 15
   - 🇳🇱_NL荷蘭丨yoyapai.com
+  - 🇮🇪 爱尔兰 | IRL
   - 🇪🇪 爱沙尼亚 | EST 3
   - 🇦🇹 奥地利 | AUT 2
   - 🇩🇪 德国 | DEU 6
@@ -1413,22 +1422,19 @@ proxy-groups:
   - 🇱🇹 立陶宛 | LTU 2
   - 🇪🇪 爱沙尼亚 | EST 4
   - 🇩🇪 德国 | DEU 13
-  - 🇧🇷 巴西 | BRA
   - 🇩🇪 德国 | DEU 14
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
-  - 🇪🇪爱沙尼亚丨yoyapai.com
   - 🇲🇾 马来西亚 | MYS
-  - 🇵🇱 波兰 | POL 4
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇪🇪爱沙尼亚丨yoyapai.com
   - 🇧🇬 保加利亚 | BGR 5
+  - 🇵🇱 波兰 | POL 4
   - 🇫🇷 法国 | FRA
   - 🇹🇭 泰国 | THA
   - 🇳🇱 荷兰 | NLD 2
   - 🇸🇪 瑞典 | SWE 6
   - 🇩🇪 德国 | DEU 9
-  - 🇲🇴 澳门 | MAC
   - 🇳🇱 荷兰 | NLD 12
   - 🇧🇬 保加利亚 | BGR 3
   - 🇪🇪 爱沙尼亚 | EST 6
@@ -1440,8 +1446,9 @@ proxy-groups:
   - 🇸🇪 瑞典 | SWE 8
   - 🇧🇬 保加利亚 | BGR 4
   - 🇳🇱 荷兰 | NLD 9
-  - 🇬🇧 英国 | GBR 3
   - 🇺🇦 乌克兰 | UKR 2
+  - 🇬🇧 英国 | GBR 3
+  - 🇹🇭 Thailand泰国丨yoyapai.com
   - 🇸🇪 瑞典 | SWE 10
   - 🇬🇧 英国 | GBR 5
   - 🇩🇪 德国 | DEU 12
@@ -1486,23 +1493,23 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 8
   - 🇺🇸US美國丨yoyapai.com_6
-  - 🇺🇸 美国 | USA 12
-  - 🇳🇱_NL荷蘭丨yoyapai.com
-  - 🇧🇷 巴西 | BRA
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 4
+  - 🇮🇪 爱尔兰 | IRL
+  - 🇺🇸 美国 | USA 10
+  - 🇳🇱_NL荷蘭丨yoyapai.com
+  - 🇹🇭 泰国 | THA
   - 🇪🇪爱沙尼亚丨yoyapai.com
-  - 🇬🇧 英国 | GBR 2
+  - 🇯🇵 日本 | JPN 4
   - 🇬🇧 英国 | GBR 3
-  - 🇬🇧 英国 | GBR 6
-  - 🇫🇷 法国 | FRA 2
-  - 🇫🇷 法国 | FRA 7
-  - 🇫🇷 法国 | FRA
+  - 🇯🇵 日本 | JPN 3
+  - 🇬🇧 英国 | GBR 4
   - 🇬🇧 英国 | GBR 5
-  - 🇫🇷 法国 | FRA 5
-  - 🇫🇷 法国 | FRA 3
+  - 🇬🇧 英国 | GBR 6
+  - 🇳🇱 荷兰 | NLD 12
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
