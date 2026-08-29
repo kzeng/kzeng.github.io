@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-08-29T15:42:29.352516+00:00'
+generated-at: '2026-08-29T19:01:10.000822+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 13
   server: 52.221.220.242
@@ -37,19 +37,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 5
-  server: freev2.cloudflare.182682.xyz
-  port: 443
+- name: 🇯🇵 日本 | JPN 6
+  server: 13.231.69.194
+  port: 35229
   type: vless
-  uuid: e30a03ae-bae9-444d-ba48-2ac641c42db7
+  uuid: caaa44ad-b3d5-4f55-9507-5b57942f6922
   tls: true
-  servername: do-sgp1.xhs152.shop
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: do-sgp1.xhs152.shop
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: JKEgmSckzu3wmGo2_wl8Xij0-PsE8QOvrEO6jS8IfFY
+    short-id: '0056222303'
+  servername: www.nvidia.com
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇸🇬 新加坡 | SGP 7
   server: 13.214.194.139
@@ -62,20 +62,6 @@ proxies:
     public-key: Qsm5dVTgDmOCvRwi8M_WVE8EmeK6Ot9i-XIfCmM1zGg
     short-id: 702186e48d5646
   servername: www.intel.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN 6
-  server: 13.231.69.194
-  port: 35229
-  type: vless
-  uuid: caaa44ad-b3d5-4f55-9507-5b57942f6922
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: JKEgmSckzu3wmGo2_wl8Xij0-PsE8QOvrEO6jS8IfFY
-    short-id: '0056222303'
-  servername: www.nvidia.com
   client-fingerprint: firefox
   network: tcp
   udp: true
@@ -134,14 +120,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: sg1.xiaoliyu.cyou
-  port: 1933
-  type: hysteria2
-  password: 39b27e20-16f5-45a1-8139-7c9b7f51b6f8
-  auth: 39b27e20-16f5-45a1-8139-7c9b7f51b6f8
-  sni: sg1.xiaoliyu.cyou
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 | SGP 16
   server: 158.178.239.69
   port: 56927
@@ -149,18 +127,35 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: 2xgDpUvct/rw6f6wfqQ0NeQzZZ9N8PLvCTuRt1OVBhg=
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: usa1.milkabebar.ir
-  port: 10694
-  type: vless
-  uuid: 76bbe281-1c85-4df7-9008-fa49a1a615c2
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
   tls: true
-  reality-opts:
-    public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
-    short-id: a0fbc54d937aaccb
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: firefox
-  network: tcp
+  ws-opts:
+    path: /assignment
+  udp: true
+- name: 🇺🇸 美国 | USA 26
+  server: 199.232.78.160
+  port: 443
+  type: vless
+  uuid: XpnTeam-33
+  tls: true
+  alpn:
+  - http/1.1
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+  udp: true
 - name: 🇺🇸 美国 | USA 21
   server: 162.35.231.81
   port: 443
@@ -184,18 +179,19 @@ proxies:
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 2
+  server: 45.33.62.166
+  port: 43595
+  type: vless
+  uuid: 2642f590-2bce-4031-8f93-7eed983621f5
   tls: true
-  ws-opts:
-    path: /assignment
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: waNzNRIL_3TaF3UfgeAy1M5r8YVUeOA0nx3jPiXYZSE
+    short-id: e482c0320674c651
+  servername: www.amd.com
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇺🇸 美國節點丨yoyapai.com
   type: vless
@@ -254,20 +250,6 @@ proxies:
     path: /images
     headers:
       Host: huojian.usfaster.top
-- name: 🇺🇸 美国 | USA 2
-  server: 45.33.62.166
-  port: 43595
-  type: vless
-  uuid: 2642f590-2bce-4031-8f93-7eed983621f5
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: waNzNRIL_3TaF3UfgeAy1M5r8YVUeOA0nx3jPiXYZSE
-    short-id: e482c0320674c651
-  servername: www.amd.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 7
   server: 158.178.155.37
   port: 45819
@@ -335,21 +317,6 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 6
-  server: 144.24.226.15
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: m03E8gi3urOxgrIv7T06vEoae3ctMWTS2XnYst6jJSI=
-  udp: true
-- name: 🇩🇿 DZ_02
-  server: 85.204.107.170
-  port: 8443
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  auth: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 6
   server: 104.155.197.135
   port: 12069
@@ -363,6 +330,21 @@ proxies:
   servername: www.amd.com
   client-fingerprint: firefox
   network: tcp
+- name: 🇩🇿 DZ_02
+  server: 85.204.107.170
+  port: 8443
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  auth: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
+- name: 🇬🇧 英国 | GBR 6
+  server: 144.24.226.15
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: m03E8gi3urOxgrIv7T06vEoae3ctMWTS2XnYst6jJSI=
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: ru05.abvpn.ru
   port: 443
@@ -391,13 +373,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 9
-  server: 129.151.75.124
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: TbDsEKY6SRYS4BL5BQVtccFR+k4tD9WSRLEabwzqHlo=
-  udp: true
 - name: 🇱🇹 立陶宛 | LTU
   server: lt.superbuba.top
   port: 443
@@ -411,6 +386,13 @@ proxies:
   servername: lt.superbuba.top
   client-fingerprint: firefox
   network: tcp
+  udp: true
+- name: 🇬🇧 英国 | GBR 9
+  server: 129.151.75.124
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: TbDsEKY6SRYS4BL5BQVtccFR+k4tD9WSRLEabwzqHlo=
   udp: true
 - name: 🇸🇪 瑞典 | SWE 2
   server: de57.tranzit-net.ru
@@ -509,6 +491,13 @@ proxies:
   auth: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
   sni: hopp-legend-se.roxa.org
   skip-cert-verify: true
+- name: 🇧🇷 巴西 | BRA
+  server: 144.22.210.207
+  port: 59319
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: bJqLdTAJymgdGwNASsjxuR4N7THATrNjW/6mZv77qRw=
+  udp: true
 - name: 🇸🇪 瑞典 | SWE
   server: 2.27.23.115
   port: 443
@@ -531,14 +520,6 @@ proxies:
   auth: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 84.235.163.101
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  network: tcp
-  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 78.129.184.117
   port: 443
@@ -568,6 +549,14 @@ proxies:
   sni: russiapower.accesscam.org
   skip-cert-verify: true
   tls: true
+  udp: true
+- name: 🇳🇱 荷兰 | NLD 6
+  server: 84.235.163.101
+  port: 62145
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  tls: false
+  network: tcp
   udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 141.148.237.51
@@ -604,26 +593,26 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 109.169.84.72
-  port: 443
-  type: vless
-  uuid: 7f437070-a14e-4355-bfbc-a6036a6bb040
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: vvpu_ljhBuTWmM9w5Hl6jj8ZTiE_JYq29S77zNDeCjQ
-    short-id: ff6975658b6cefce
-  servername: strapi.io
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇬🇧 英国 | GBR
   server: 18.170.37.90
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇹🇭 Thailand泰国丨yoyapai.com
+  type: vless
+  server: 18.239.134.69
+  port: 80
+  uuid: de27291c-15a9-4256-9ba7-ad517569877e
+  network: ws
+  tls: false
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
+  skip-cert-verify: true
+  udp: true
 - name: 🇵🇱 波兰 | POL 3
   server: 144.31.49.47
   port: 443
@@ -659,38 +648,36 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP 13
   - 🇯🇵 日本 | JPN 5
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇸🇬 新加坡 | SGP 7
   - 🇯🇵 日本 | JPN 6
+  - 🇸🇬 新加坡 | SGP 7
   - 🇸🇬 新加坡 | SGP 18
   - 🇸🇬 新加坡 | SGP 6
   - 🇸🇬 新加坡 | SGP 19
   - 🇸🇬 新加坡 | SGP 14
   - 🇯🇵 日本 | JPN
-  - 🇸🇬 新加坡 | SGP 4
   - 🇸🇬 新加坡 | SGP 16
-  - 🇺🇸 美国 | USA 9
+  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美國節點丨yoyapai.com
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 2
   - 🇳🇱 荷兰 | NLD 7
   - 🇫🇷 法国 | FRA 7
   - 🇩🇪 德国 | DEU 2
   - 🇬🇧 英国 | GBR 4
   - 🇳🇱 荷兰 | NLD 8
-  - 🇬🇧 英国 | GBR 6
-  - 🇩🇿 DZ_02
   - 🇹🇼 🇨🇳 台湾 | TWN 6
+  - 🇩🇿 DZ_02
+  - 🇬🇧 英国 | GBR 6
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD
-  - 🇬🇧 英国 | GBR 9
   - 🇱🇹 立陶宛 | LTU
+  - 🇬🇧 英国 | GBR 9
   - 🇸🇪 瑞典 | SWE 2
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇩🇪 德国 | DEU 3
@@ -701,19 +688,20 @@ proxy-groups:
   - 🇮🇪 爱尔兰 | IRL
   - 🇹🇼 🇨🇳 台湾 | TWN 4
   - 🇬🇧 英国 | GBR 7
+  - 🇧🇷 巴西 | BRA
   - 🇸🇪 瑞典 | SWE
   - 🇩🇿 DZ_03
-  - 🇳🇱 荷兰 | NLD 6
   - 🇬🇧 英国 | GBR 2
   - 🇲🇾 马来西亚 | MYS
   - 🇪🇪爱沙尼亚丨yoyapai.com
+  - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 2
   - 🇹🇭 泰国 | THA
   - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 3
   - 🇨🇴 哥伦比亚 | COL 2
-  - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR
+  - 🇹🇭 Thailand泰国丨yoyapai.com
   - 🇵🇱 波兰 | POL 3
   - 🇬🇧 英国 | GBR 5
   - 🇬🇧 英国 | GBR 8
@@ -724,9 +712,9 @@ proxy-groups:
   proxies:
   - 🇸🇬 新加坡 | SGP 13
   - 🇯🇵 日本 | JPN 5
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇸🇬 新加坡 | SGP 7
   - 🇯🇵 日本 | JPN 6
+  - 🇸🇬 新加坡 | SGP 7
+  - 🇸🇬 新加坡 | SGP 18
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -740,16 +728,16 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 9
+  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 26
   - 🇺🇸 美国 | USA 21
   - 🇺🇸 美国 | USA 8
-  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 2
   - 🇺🇸 美國節點丨yoyapai.com
   - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 18
   - 🇺🇸 美国 | USA 23
   - 🇺🇸 美国 | USA 28
-  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
@@ -758,15 +746,14 @@ proxy-groups:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 2
   - 🇮🇪 爱尔兰 | IRL
-  - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇳🇱 荷兰 | NLD 7
   - 🇩🇪 德国 | DEU 3
+  - 🇳🇱 荷兰 | NLD 2
+  - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR 8
-  - 🇩🇪 德国 | DEU
-  - 🇬🇧 英国 | GBR 6
   - 🇳🇱_NL荷蘭丨yoyapai.com
+  - 🇯🇵 日本 | JPN 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
