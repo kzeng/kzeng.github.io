@@ -64,5 +64,5 @@ summaryLength = 120
     keys = ["title", "summary", "content", "tags", "categories", "permalink"]
 
   [params.homeInfoParams]
-    Title = 'KZeng'
-    Content = '记录与归档 · 全部内容按时间倒序排列'
+    Title = 'Hi here 👋'
+    Content = 'Welcome to my blog.'
