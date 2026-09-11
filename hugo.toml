@@ -1,0 +1,68 @@
+baseURL = 'https://kzeng.github.io/'
+languageCode = 'zh-cn'
+defaultContentLanguage = 'zh'
+hasCJKLanguage = true          # 中文分词：影响字数/阅读时间/摘要截断
+title = 'KZeng'
+theme = 'PaperMod'
+enableRobotsTXT = true
+summaryLength = 120
+
+# ---------- 分页 ----------
+[pagination]
+  pagerSize = 20               # 首页/列表页每页条数
+  path = 'page'                # 分页地址形如 /page/2/
+
+# ---------- 输出格式：JSON 用于站内搜索索引 ----------
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# ---------- 分类法 ----------
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+
+# ---------- 菜单 ----------
+[[menu.main]]
+  name = '归档'
+  url = '/archives/'
+  weight = 10
+[[menu.main]]
+  name = '标签'
+  url = '/tags/'
+  weight = 20
+[[menu.main]]
+  name = '搜索'
+  url = '/search/'
+  weight = 30
+
+[params]
+  author = 'kzeng'
+  env = 'production'
+  description = 'KZeng 的内容归档'
+  keywords = ['笔记', '随笔']
+  DateFormat = '2006-01-02'
+  defaultTheme = 'auto'        # 明暗主题：auto / light / dark，访客可点右上角切换
+
+  ShowToc = true               # 详情页右侧目录
+  TocOpen = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true      # 上一篇 / 下一篇
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowShareButtons = false
+  ShowFullTextinRSS = true
+  hideMeta = false
+
+  [params.fuseOpts]           # 搜索（Fuse.js 模糊匹配）
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4            # 越小越精确，中文建议 0.3~0.4
+    minMatchCharLength = 2
+    limit = 30
+    keys = ["title", "summary", "content", "tags", "categories", "permalink"]
+
+  [params.homeInfoParams]
+    Title = 'KZeng'
+    Content = '记录与归档 · 全部内容按时间倒序排列'
