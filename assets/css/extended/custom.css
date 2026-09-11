@@ -1,0 +1,16 @@
+.first-entry.home-info {
+    min-height: auto;
+    margin: var(--gap) 0;
+}
+
+.first-entry.home-info .entry-header {
+    margin-bottom: 0.5rem;
+}
+
+.first-entry.home-info .entry-content {
+    margin: 0.5rem 0;
+}
+
+.first-entry.home-info .entry-footer {
+    margin-top: 0.5rem;
+}
