@@ -1,0 +1,401 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: true
+unified-delay: true
+tcp-concurrent: true
+global-client-fingerprint: chrome
+generated-by: free-proxy-airport-v7
+generated-at: '2026-09-11T08:54:51.814589+00:00'
+proxies:
+- name: 🇸🇬 新加坡 | SGP
+  server: 172.64.146.211
+  port: 2096
+  type: vless
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 2
+  server: 162.159.43.187
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
+- name: 🇭🇰 香港 | HKG
+  server: 9ed08d0c-tlheo0-tvb36r-1qwom.hk3.hyhuawei.com
+  port: 443
+  type: vless
+  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+  tls: true
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  servername: updates.cdn-apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: 104.17.170.99
+  port: 2053
+  type: vless
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  tls: true
+  servername: mianfei-73q.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=154.3.33.43
+    headers:
+      Host: mianfei-73q.pages.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: 104.16.150.130
+  port: 2087
+  type: vless
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
+  udp: true
+- name: 🇺🇸 美国 | USA 12
+  server: 172.67.67.241
+  port: 2053
+  type: vless
+  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
+  tls: true
+  servername: mianfei-73q.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=154.3.33.43
+    headers:
+      Host: mianfei-73q.pages.dev
+  udp: true
+- name: 🇺🇸 美国 | USA 23
+  server: 8.47.69.0
+  port: 443
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.pleadcourt.org
+  udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 199.232.78.160
+  port: 443
+  type: vless
+  uuid: XpnTeam-11
+  tls: true
+  alpn:
+  - http/1.1
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 4
+  server: 135.106.142.209
+  port: 443
+  type: vless
+  uuid: 82282910-54a0-0032-b2df-86bfbce8ed36
+  tls: true
+  reality-opts:
+    public-key: fz_xpZfQks3oa9c_d1OSokmTgmJuGbvFMkyK0Qt8w3I
+    short-id: 0066a7326f06d426
+  servername: alfastat.ru
+  client-fingerprint: edge
+  network: xhttp
+  xhttp-opts:
+    path: /assets
+    host: alfastat.ru
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 161.104.38.98
+  port: 443
+  type: vless
+  uuid: 82282910-54a0-0032-b2df-86bfbce8ed36
+  tls: true
+  reality-opts:
+    public-key: kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE
+    short-id: 8ba6e72ee60667f6
+  servername: donatov.net
+  client-fingerprint: edge
+  network: xhttp
+  xhttp-opts:
+    path: /assets
+    host: donatov.net
+  udp: true
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 84.38.187.134
+  port: 443
+  type: vless
+  uuid: 82282910-54a0-0032-b2df-86bfbce8ed36
+  tls: true
+  reality-opts:
+    public-key: QSAIpsE696lDqkumfo7dyBt92XzrVDPTF6KogbeKhGc
+    short-id: 2c9431dc7a306018
+  servername: git.xpkg.ru
+  client-fingerprint: edge
+  network: xhttp
+  xhttp-opts:
+    path: /repository
+    host: git.xpkg.ru
+  udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 199.232.78.160
+  port: 443
+  type: vless
+  uuid: XpnTeam-12
+  tls: true
+  alpn:
+  - http/1.1
+  servername: ssl.fastly.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+  udp: true
+- name: 🇹🇷 土耳其 | TUR
+  server: ninja.monak2.ir
+  port: 110
+  type: vmess
+  uuid: 7034f274-c53a-4d73-9f0c-b28bac0d9e7a
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: 🇵🇱PL波兰丨yoyapai.com
+  type: vless
+  server: 178.95.170.83
+  port: 2087
+  uuid: bf443e4a-aa9e-4509-abf0-d0f6828d57be
+  network: ws
+  tls: false
+  ws-opts:
+    path: /4bc027a44532
+  skip-cert-verify: false
+  udp: true
+- name: 🇦🇺 澳大利亚 | AUS
+  server: 103.75.119.11
+  port: 443
+  type: vless
+  uuid: 682300d9-74d0-4dae-923c-09cb5d5e9951
+  tls: true
+  reality-opts:
+    public-key: OvlkCDO6YdWR0ec3kVHW-Ul7I9TuEmJVfxXdaZiy5Ug
+    short-id: 2cbe511ff1f9200b
+  servername: sberbank.ru
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /api/v1/c8dd02d6
+    host: sberbank.ru
+    mode: stream-one
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 185.223.57.16
+  port: 33743
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: TunService
+  udp: true
+- name: 🇦🇺AU澳大利亚丨yoyapai.com
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  tls: false
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
+  skip-cert-verify: false
+  udp: true
+- name: ❓未知丨yoyapai.com_7
+  type: vless
+  server: 50.62.194.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime37.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: 🇨🇦CA加拿大丨yoyapai.com_9
+  type: vless
+  server: 104.21.23.72
+  port: 8880
+  uuid: f4e6476f-40d0-40cb-841f-cc2f6909ff20
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: calm-haze-d105.21-7cd.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: ❓未知丨yoyapai.com_9
+  type: vless
+  server: 104.26.13.40
+  port: 8880
+  uuid: 875d3876-ab9a-4dd6-8a8d-bf57f03403aa
+  network: ws
+  tls: false
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: square-sea-01d1.339-be3.workers.dev
+  skip-cert-verify: false
+  udp: true
+- name: 🇩🇪DE德国丨yoyapai.com_11
+  type: vless
+  server: 169.40.42.229
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  servername: yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  skip-cert-verify: false
+  udp: true
+proxy-groups:
+- name: AUTO-FAST
+  type: url-test
+  proxies:
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇭🇰 香港 | HKG
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 23
+  - 🇩🇪 德国 | DEU 2
+  - 🇷🇺 俄罗斯 | RUS 4
+  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇷🇺 俄罗斯 | RUS
+  - 🇩🇪 德国 | DEU 3
+  - 🇹🇷 土耳其 | TUR
+  - 🇵🇱PL波兰丨yoyapai.com
+  - 🇦🇺 澳大利亚 | AUS
+  - 🇵🇱 波兰 | POL
+  - 🇦🇺AU澳大利亚丨yoyapai.com
+  - ❓未知丨yoyapai.com_7
+  - 🇨🇦CA加拿大丨yoyapai.com_9
+  - ❓未知丨yoyapai.com_9
+  - 🇩🇪DE德国丨yoyapai.com_11
+  url: http://www.gstatic.com/generate_204
+  interval: 120
+- name: HK-POOL
+  type: url-test
+  proxies:
+  - 🇭🇰 香港 | HKG
+  url: http://www.gstatic.com/generate_204
+  interval: 120
+- name: JP-POOL
+  type: url-test
+  proxies:
+  - 🇸🇬 新加坡 | SGP
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇭🇰 香港 | HKG
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
+  url: http://www.gstatic.com/generate_204
+  interval: 120
+- name: US-POOL
+  type: url-test
+  proxies:
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 12
+  - 🇺🇸 美国 | USA 23
+  url: http://www.gstatic.com/generate_204
+  interval: 120
+- name: AI-POOL
+  type: url-test
+  proxies:
+  - 🇺🇸US美国丨yoyapai.com
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 11
+  - 🇸🇬 新加坡 | SGP
+  url: http://www.gstatic.com/generate_204
+  interval: 120
+- name: FALLBACK
+  type: fallback
+  proxies:
+  - AUTO-FAST
+  - HK-POOL
+  - JP-POOL
+  - US-POOL
+  url: http://www.gstatic.com/generate_204
+  interval: 120
+- name: PROXY
+  type: select
+  proxies:
+  - AUTO-FAST
+  - FALLBACK
+rules:
+- DOMAIN-SUFFIX,openai.com,AI-POOL
+- DOMAIN-SUFFIX,chatgpt.com,AI-POOL
+- DOMAIN-SUFFIX,claude.ai,AI-POOL
+- DOMAIN-SUFFIX,anthropic.com,AI-POOL
+- GEOIP,CN,DIRECT
+- MATCH,PROXY
