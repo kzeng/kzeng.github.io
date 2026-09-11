@@ -65,4 +65,4 @@ summaryLength = 120
 
   [params.homeInfoParams]
     Title = 'Hi here 👋'
-    Content = 'Welcome to my blog.'
+    Content = 'Welcome to my notebook.'
