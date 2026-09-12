@@ -20,12 +20,22 @@ fi
 
 FILE="$DIR/p${TODAY}-$(printf '%03d' "$N").md"
 
+# 提取所有文章中已有的 tags（去重排序）
+TAGS="$(grep -hoE 'tags: *\[.*\]' "$DIR"/*.md 2>/dev/null \
+  | sed -E 's/tags: *\[//; s/\]//' \
+  | tr ',' '\n' \
+  | tr -d '" ' \
+  | grep -v '^$' \
+  | sort -u \
+  | paste -sd '、' - || true)"
+
 cat > "$FILE" <<EOF
 ---
 title: "${TITLE}"
 date: ${TODAY}
 draft: false
 tags: []
+# 已有 tags：${TAGS}
 ---
 
 EOF

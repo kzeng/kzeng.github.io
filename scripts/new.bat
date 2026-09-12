@@ -32,6 +32,41 @@ set "NUM3=!NUM3:~-3!"
 
 set "FILE=%DIR%\p%TODAY%-%NUM3%.md"
 
+REM Collect existing tags from all posts (first-seen order)
+set "TAGFILE=%TEMP%\kzeng_tags_%RANDOM%.txt"
+type nul > "%TAGFILE%"
+for %%F in ("%DIR%\*.md") do (
+    for /f "usebackq delims=" %%L in ("%%F") do (
+        set "LINE=%%L"
+        if "!LINE:~0,5!"=="tags:" (
+            set "BODY=!LINE:*[=!"
+            for /f "delims=]" %%B in ("!BODY!") do set "BODY=%%B"
+            for %%X in (!BODY!) do (
+                set "T=%%~X"
+                if not "!T!"=="" echo !T!>> "%TAGFILE%"
+            )
+        )
+    )
+)
+
+REM Dedupe using sort, then join with 、
+set "TAGS="
+set "PREV="
+if exist "%TAGFILE%" (
+    sort "%TAGFILE%" > "%TAGFILE%.srt" 2>nul
+    for /f "usebackq delims=" %%G in ("%TAGFILE%.srt") do (
+        if not "%%G"=="!PREV!" (
+            if defined TAGS (
+                set "TAGS=!TAGS!、%%G"
+            ) else (
+                set "TAGS=%%G"
+            )
+        )
+        set "PREV=%%G"
+    )
+    del "%TAGFILE%" "%TAGFILE%.srt" >nul 2>&1
+)
+
 REM Write front matter
 (
 echo ---
@@ -39,6 +74,7 @@ echo title: "%TITLE%"
 echo date: %TODAY%
 echo draft: false
 echo tags: []
+echo # Existing tags: !TAGS!
 echo ---
 echo.
 ) > "%FILE%"
