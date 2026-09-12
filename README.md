@@ -22,6 +22,13 @@ git remote add origin https://github.com/kzeng/kzeng.github.io.git
 git push -u origin clash
 ```
 
+或者
+
+```bash
+git pull --rebase origin clash && git push
+```
+
+
 ## 二、开启 GitHub Pages（只需做一次）
 
 仓库 → **Settings → Pages → Source** → 选 **GitHub Actions**，保存。
