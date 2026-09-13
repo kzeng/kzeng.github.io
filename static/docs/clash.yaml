@@ -7,16 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-13T21:31:32.432090+00:00'
+generated-at: '2026-09-13T23:47:38.045280+00:00'
 proxies:
-- name: 🇭🇰 香港 | HKG 2
-  server: hk01.kfc-520.com
-  port: 60001
-  type: hysteria2
-  password: 49f7ff21-a176-30cc-ab60-a5988fd85ce0
-  auth: 49f7ff21-a176-30cc-ab60-a5988fd85ce0
-  sni: hk01.kfc-520.com
-  skip-cert-verify: true
 - name: 🇭🇰 香港 | HKG 3
   server: 47.238.126.123
   port: 443
@@ -97,12 +89,6 @@ proxies:
   obfs: salamander
   obfs-password: 5c8f1a3e7b2d9046c1f8a5e3b7d04f2a
   udp: true
-- name: 🇺🇸 美国 | USA 25
-  server: 129.146.118.11
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: jyWBH8PWys7muYTwrV1sXByMIbElJrWCu+Jcx2v4C3Q=
 - name: 🇺🇸 美国 | USA 21
   server: 107.174.255.14
   port: 4356
@@ -110,6 +96,12 @@ proxies:
   password: c2356e22-b026-4f12-8508-cf61f0b0c867
   auth: c2356e22-b026-4f12-8508-cf61f0b0c867
   skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 25
+  server: 129.146.118.11
+  port: 50356
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: jyWBH8PWys7muYTwrV1sXByMIbElJrWCu+Jcx2v4C3Q=
 - name: 🇺🇸 美国 | USA 24
   server: 47.251.108.158
   port: 443
@@ -191,6 +183,18 @@ proxies:
   request-timeout: 0
   udp-relay-mode: native
   congestion-controller: bbr
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 45.149.172.80
   port: 443
@@ -210,18 +214,6 @@ proxies:
   auth: https://xship.best
   sni: xship.top
   skip-cert-verify: true
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
   udp: true
 - name: 🇰🇷 韩国 | KOR 2
   server: kr3-r.link-t7.com
@@ -276,20 +268,6 @@ proxies:
   auth: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU 3
-  server: app-ms-35.ecom-ai-solutions.com
-  port: 443
-  type: vless
-  uuid: a71ad164-3b29-4dbe-aa66-24d095ca7b6d
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: NA5eMfdHkl_L80S75uxQwUirS9nvZ80V2u1s71KeXkc
-    short-id: 2de63d3fd7261b7e
-  servername: assets-ms-35.ecom-ai-solutions.com
-  client-fingerprint: randomized
-  network: tcp
-  udp: true
 - name: 🇦🇺AU澳大利亚丨yoyapai.com
   type: vless
   server: 163.8.195.241
@@ -316,23 +294,6 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   skip-cert-verify: false
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 45.8.228.167
-  port: 443
-  type: vless
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
-  tls: true
-  reality-opts:
-    public-key: n7Eivi9aG8PMxvaP5flLiukPADZIDVuzyOsOWDG43kQ
-    short-id: 5eca
-  servername: dailycanvas.sysopnova.art
-  client-fingerprint: ios
-  network: xhttp
-  xhttp-opts:
-    path: /xhttp_client_upload
-    host: dailycanvas.sysopnova.art
-    mode: packet-up
   udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 129.151.87.146
@@ -408,56 +369,44 @@ proxies:
   ws-opts:
     path: /api/v1/gpu-stream/socket
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.80.3
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: K0TpYu/15IWNGjVIozBua1uU5B9QB+LZRvFkP6fSAfY=
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 3
   - 🇯🇵 日本 | JPN 6
   - 🇸🇬 新加坡 | SGP 3
   - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 27
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸US美国丨yoyapai.com
   - 🇰🇷 韩国 | KOR 2
   - 🇳🇱 荷兰 | NLD
   - 🇺🇦 乌克兰 | UKR
   - 🇷🇺 俄罗斯 | RUS
-  - 🇩🇪 德国 | DEU 3
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇩🇪DE德国丨yoyapai.com_13
-  - 🇸🇪 瑞典 | SWE
   - 🇬🇧 英国 | GBR 2
   - 🇰🇷 韩国 | KOR
   - 🇳🇱NL荷兰丨yoyapai.com_5
   - 🇩🇪 德国 | DEU
   - 🇳🇴 挪威 | NOR
   - 🇷🇺RU俄罗斯
-  - 🇬🇧 英国 | GBR
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
@@ -473,28 +422,27 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 26
-  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 21
+  - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 24
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 27
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 23
-  - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 11
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 25
   - 🇺🇸 美国 | USA 24
-  - 🇺🇸 美国 | USA 10
-  - 🇺🇸 美国 | USA 14
-  - 🇺🇸 美国 | USA 23
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
