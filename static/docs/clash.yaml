@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-17T21:33:36.061810+00:00'
+generated-at: '2026-09-17T23:48:39.722880+00:00'
 proxies:
 - name: 🇯🇵 日本 | JPN 3
   server: 8.211.175.129
@@ -178,6 +178,14 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   auth: 19f72087-4591-4d72-930b-2697078ec2be
   skip-cert-verify: true
+- name: 🇮🇱 以色列 | ISR
+  server: 129.159.156.109
+  port: 50160
+  type: hysteria2
+  password: f25f19f29ce3fb53a35bf1b35b452a43
+  auth: f25f19f29ce3fb53a35bf1b35b452a43
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇩🇪 德国 | DEU 3
   server: 188.114.98.0
   port: 443
@@ -203,19 +211,6 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   auth: 19f72087-4591-4d72-930b-2697078ec2be
   skip-cert-verify: true
-- name: 🇦🇺AU澳大利亚丨yoyapai.com
-  type: vless
-  server: 163.8.195.241
-  port: 2087
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  tls: false
-  ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
-  skip-cert-verify: false
-  udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
   server: 169.40.42.229
@@ -228,6 +223,19 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
+  skip-cert-verify: false
+  udp: true
+- name: 🇦🇺AU澳大利亚丨yoyapai.com
+  type: vless
+  server: 163.8.195.241
+  port: 2087
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  network: ws
+  tls: false
+  ws-opts:
+    path: /29c8fed7ca22
+    headers:
+      Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: false
   udp: true
 - name: 🇬🇧 英国 | GBR 2
@@ -294,10 +302,11 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 7
   - 🇹🇼 🇨🇳 台湾 | TWN 3
   - 🇷🇺 俄罗斯 | RUS
+  - 🇮🇱 以色列 | ISR
   - 🇩🇪 德国 | DEU 3
   - 🇩🇰 丹麦 | DNK
-  - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇬🇧 英国 | GBR 2
   - 🇫🇷 法国 | FRA 4
   - 🇫🇷 法国 | FRA 2
@@ -337,8 +346,8 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇸🇬 新加坡 | SGP
-  - 🇺🇸 美国 | USA 12
-  - 🇺🇸 美国 | USA 8
+  - 🇸🇬 新加坡 | SGP 2
+  - 🇸🇬 新加坡 | SGP 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
