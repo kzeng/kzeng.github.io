@@ -7,15 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-18T21:46:06.620388+00:00'
+generated-at: '2026-09-18T23:45:27.425282+00:00'
 proxies:
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 161.118.242.116
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: O8NAGBdB4ptCXObiSU8J/Gf38K8gnGNG6Bj6QU6/1WI=
-  udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 162.159.48.32
   port: 2095
@@ -96,6 +89,13 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 130.61.147.64
+  port: 59924
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JgVnjf+IujBeHuKJ9dhXtdyGYRYY8x9LPeqbgYYQE0Q=
+  udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: 130.61.40.61
   port: 59924
@@ -175,13 +175,13 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com
+  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 4
@@ -195,21 +195,21 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 14
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 14
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
