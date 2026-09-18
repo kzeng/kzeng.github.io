@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-18T19:19:04.867595+00:00'
+generated-at: '2026-09-18T21:46:06.620388+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 4
   server: 161.118.242.116
@@ -42,12 +42,19 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: 129.146.78.85
-  port: 50356
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: sbJ5llt+YoGtqLI7RpEhaXIgLTN+tnwzrB3vSOAvs04=
+- name: 🇺🇸 美国 | USA 10
+  server: 104.16.3.214
+  port: 443
+  type: vless
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  tls: true
+  servername: cfvvv-ev1.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cfvvv-ev1.pages.dev
   udp: true
 - name: 🇺🇸 美国 | USA 19
   server: 104.16.10.189
@@ -57,20 +64,6 @@ proxies:
   tls: true
   servername: cfvvv-ev1.pages.dev
   client-fingerprint: unsafe
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfvvv-ev1.pages.dev
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 104.16.3.214
-  port: 443
-  type: vless
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
-  tls: true
-  servername: cfvvv-ev1.pages.dev
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
@@ -103,13 +96,6 @@ proxies:
   ws-opts:
     path: /assignment
   udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 130.61.147.64
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: JgVnjf+IujBeHuKJ9dhXtdyGYRYY8x9LPeqbgYYQE0Q=
-  udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: 130.61.40.61
   port: 59924
@@ -124,6 +110,13 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: L5v+6LtHT3Rm1mnmyP77xUs2XovkScMadD4XU5o0mVY=
   udp: true
+- name: 🇳🇱 荷兰 | NLD 4
+  server: 143.47.187.148
+  port: 45819
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: jV5AUHtwwIqzjlwmuewCRCeGlfjXHO5+EQyzgwuzlIQ=
+  udp: true
 - name: 🇦🇺AU澳大利亚丨yoyapai.com
   type: vless
   server: 163.8.195.241
@@ -136,13 +129,6 @@ proxies:
     headers:
       Host: /?--v2rayNplus--v2rayNplus--v2rayNplus--
   skip-cert-verify: false
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 130.61.46.224
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: QzoZDLFsugBaayOFoit59+peLgfv3Vk+5MGnHhdhPAo=
   udp: true
 - name: 🇩🇪DE德国丨yoyapai.com_13
   type: vless
@@ -172,12 +158,18 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: QOfM1O7xNsWPaSuxXycKxp6aJ6kqDU7+6tnjQcV1PDE=
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: 130.61.112.123
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: HrYSd9R7z1TYyeNpwA/w+0lfEIT6cS06z94kxzipL0k=
+- name: 🇷🇺RU俄罗斯
+  type: vmess
+  server: renderer-stream-2-62.mirra.now
+  port: 443
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
   udp: true
 proxy-groups:
 - name: AUTO-FAST
@@ -186,20 +178,18 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com
-  - 🇩🇪 德国 | DEU 2
   - 🇩🇪 德国 | DEU 7
   - 🇳🇱 荷兰 | NLD
+  - 🇳🇱 荷兰 | NLD 4
   - 🇦🇺AU澳大利亚丨yoyapai.com
-  - 🇩🇪 德国 | DEU 6
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇩🇪 德国 | DEU 4
   - 🇳🇱 荷兰 | NLD 3
-  - 🇩🇪 德国 | DEU 10
+  - 🇷🇺RU俄罗斯
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -208,7 +198,7 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 19
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -218,7 +208,7 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 19
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -227,9 +217,8 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 19
   - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com
   url: http://www.gstatic.com/generate_204
@@ -238,8 +227,8 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 19
-  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
