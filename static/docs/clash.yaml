@@ -7,15 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-19T15:30:58.131371+00:00'
+generated-at: '2026-09-19T18:11:22.870020+00:00'
 proxies:
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 138.2.71.128
-  port: 56927
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: mYD6SNVk6rYfSsNcRE54unnYKlp5hRZk+XTtDnjEzjY=
-  udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 161.118.253.238
   port: 443
@@ -24,23 +17,6 @@ proxies:
   auth: 1027576c-c4df-4277-b3ef-38d3213b6574
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇺🇸 美国 | USA 9
-  server: adheres-scruple.quick-cdn.net
-  port: 443
-  type: vless
-  uuid: 5db320bf-0092-4871-9062-83f5cd00cbe4
-  tls: true
-  alpn:
-  - http/1.1
-  packet-encoding: xudp
-  servername: adheres-scruple.quick-cdn.net
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: adheres-scruple.quick-cdn.net
-  udp: true
 - name: 🇺🇸 美国 | USA 20
   server: 176.109.104.195
   port: 9873
@@ -57,52 +33,17 @@ proxies:
     grpc-mode: gun
     grpc-service-name: grpc-tunnel
   udp: true
-- name: 🇺🇸 美国 | USA 3
-  server: piracy-android.video-streams.org
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
   port: 443
-  type: vless
-  uuid: 5db320bf-0092-4871-9062-83f5cd00cbe4
-  tls: true
+  password: humanity
+  sni: www.ignitelimit.com
   alpn:
   - http/1.1
-  packet-encoding: xudp
-  servername: piracy-android.video-streams.org
-  client-fingerprint: chrome
-  network: ws
+  skip-cert-verify: false
   ws-opts:
-    path: /ws
-    headers:
-      Host: piracy-android.video-streams.org
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: bounded-crammed.video-streams.org
-  port: 443
-  type: vless
-  uuid: 5db320bf-0092-4871-9062-83f5cd00cbe4
-  tls: true
-  alpn:
-  - http/1.1
-  packet-encoding: xudp
-  servername: bounded-crammed.video-streams.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: bounded-crammed.video-streams.org
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 138.124.60.146
-  port: 443
-  type: vless
-  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
-  servername: usa.oblaco.bet
-  client-fingerprint: chrome
-  network: tcp
+    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 10
   server: 172.64.154.8
@@ -130,24 +71,19 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
+- name: 🇺🇸 美国 | USA
+  server: 138.124.60.146
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: false
-  ws-opts:
-    path: /assignment
+  type: vless
+  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
+  servername: usa.oblaco.bet
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 19
-  server: 3.148.195.154
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 - name: 🇺🇸 美国 | USA 15
   server: grimness-backlogs.cdn-content.com
   port: 443
@@ -229,34 +165,6 @@ proxies:
     path: /
     headers:
       Host: nb.lovecf.ggff.net
-  udp: true
-- name: 🇱🇹 立陶宛 | LTU
-  server: mail.figmafound.org
-  port: 443
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: mail.figmafound.org
-  client-fingerprint: random
-  network: tcp
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: 103.139.51.31
-  port: 443
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: api.figmafound.org
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: finkafsb.finiki.lol
@@ -353,20 +261,6 @@ proxies:
     short-id: c39cc7310a
   skip-cert-verify: false
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 103.139.51.41
-  port: 443
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: mail.figmafound.org
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: 109.107.155.76
   port: 2053
@@ -380,25 +274,6 @@ proxies:
     path: /tv/member/auth?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-  udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: comte.farxmode.ir
-  port: 8080
-  type: vless
-  uuid: 23ddda0f-6333-493a-839d-f9c8e561f7e4
-  tls: true
-  reality-opts:
-    public-key: 3WnHdv9A0tNParChTLxPnDteRD841h8thOGR7MBgAhY
-  servername: play-apps-features.googleusercontent.com
-  client-fingerprint: ios
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 144.21.40.104
-  port: 45819
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: qp01vmOLvi4mN/iTG0oPcWhgK0C3ZvrkFQ2ZaT2t0H4=
   udp: true
 - name: 🇨🇿 捷克 | CZE 2
   server: 195.85.23.45
@@ -414,12 +289,6 @@ proxies:
     headers:
       Host: nb.lovecf.ggff.net
   udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 144.24.228.5
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: WmdVBr7gOr7QnP9JHkRbcAGh1MYOv3JCpr9/TnYTHt0=
 - name: 🇬🇧 英国 | GBR
   server: 129.151.87.133
   port: 61312
@@ -427,29 +296,28 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: b55gTfbbzI7GfDrbynYm2QwMB0lCtQXQsFl8qIevieg=
   udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 144.24.228.5
+  port: 61312
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: WmdVBr7gOr7QnP9JHkRbcAGh1MYOv3JCpr9/TnYTHt0=
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
   - 🇩🇪 德国 | DEU 2
   - 🇨🇿 捷克 | CZE
-  - 🇱🇹 立陶宛 | LTU
-  - 🇸🇪 瑞典 | SWE 2
   - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
   - 🇦🇺 澳大利亚 | AUS
@@ -457,47 +325,40 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 6
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇩🇪DE德国丨yoyapai.com_13
-  - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
-  - 🇬🇧 英国 | GBR 2
-  - 🇳🇱 荷兰 | NLD 2
   - 🇨🇿 捷克 | CZE 2
-  - 🇬🇧 英国 | GBR 3
   - 🇬🇧 英国 | GBR
+  - 🇬🇧 英国 | GBR 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 3
+  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 13
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 3
+  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 13
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 20
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 15
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
@@ -508,11 +369,9 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
-  - 🇺🇸 美国 | USA 19
+  - 🇺🇸 美国 | USA 10
   - 🇨🇿 捷克 | CZE 2
-  - 🇨🇿 捷克 | CZE
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
