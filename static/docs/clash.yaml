@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-19T18:11:22.870020+00:00'
+generated-at: '2026-09-19T20:53:40.028734+00:00'
 proxies:
 - name: 🇸🇬 新加坡 | SGP 3
   server: 161.118.253.238
@@ -84,23 +84,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 15
-  server: grimness-backlogs.cdn-content.com
-  port: 443
-  type: vless
-  uuid: a3108d14-1f45-4f82-bb36-e2c41bdab527
-  tls: true
-  alpn:
-  - http/1.1
-  packet-encoding: xudp
-  servername: grimness-backlogs.cdn-content.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: grimness-backlogs.cdn-content.com
-  udp: true
+- name: 🇺🇸 美国 | USA 17
+  server: 121.46.230.139
+  port: 65443
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
 - name: 🇺🇸 美国 | USA 14
   server: lyra.yokkastars.com
   port: 40443
@@ -135,22 +124,6 @@ proxies:
   uuid: f657645c-406a-48d6-bb62-f6da673f6a7c
   tls: false
   network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 65.109.178.205
-  port: 5434
-  type: vless
-  uuid: 2396ddad-6f28-48de-9fbe-aec937d69ab0
-  tls: false
-  encryption: mlkem768x25519plus.native.0rtt.QaeIWxL64WjyklnHl9e4y-Jz2P8iEBkzwvSnjtR1QQ4
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /@Nap_v2ray---@Nap_v2ray@Nap_v2ray---@Nap_v2ray@Nap_v2ray---@Nap_v2ray@Nap_v2ray---@Nap_v2ray@Nap_v2ray---@Nap_v2ray@Nap_v2ray---@Nap_v2ray@Nap_v2ray---@Nap_v2ray@Nap_v2ray---@Nap_v2ray
-    headers:
-      Host:
-      - play-apps-features.googleusercontent.com
   udp: true
 - name: 🇨🇿 捷克 | CZE
   server: 195.85.23.111
@@ -289,19 +262,6 @@ proxies:
     headers:
       Host: nb.lovecf.ggff.net
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 129.151.87.133
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: b55gTfbbzI7GfDrbynYm2QwMB0lCtQXQsFl8qIevieg=
-  udp: true
-- name: 🇬🇧 英国 | GBR 3
-  server: 144.24.228.5
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: WmdVBr7gOr7QnP9JHkRbcAGh1MYOv3JCpr9/TnYTHt0=
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -312,11 +272,10 @@ proxy-groups:
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
-  - 🇩🇪 德国 | DEU 2
   - 🇨🇿 捷克 | CZE
   - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
@@ -327,8 +286,6 @@ proxy-groups:
   - 🇩🇪DE德国丨yoyapai.com_13
   - 🇩🇪 德国 | DEU 4
   - 🇨🇿 捷克 | CZE 2
-  - 🇬🇧 英国 | GBR
-  - 🇬🇧 英国 | GBR 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
@@ -359,7 +316,7 @@ proxy-groups:
   - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 15
+  - 🇺🇸 美国 | USA 17
   - 🇺🇸 美国 | USA 14
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
@@ -369,8 +326,8 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 10
+  - 🇺🇸 美国 | USA 13
   - 🇨🇿 捷克 | CZE 2
   url: http://www.gstatic.com/generate_204
   interval: 120
