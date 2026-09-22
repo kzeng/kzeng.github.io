@@ -7,20 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-22T20:22:36.559090+00:00'
+generated-at: '2026-09-22T23:05:37.992099+00:00'
 proxies:
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 162.159.43.187
-  port: 8880
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
 - name: 🇭🇰 香港 | HKG 2
   server: 34.96.146.210
   port: 443
@@ -33,6 +21,18 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 5
+  server: 162.159.43.187
+  port: 8880
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: 162.159.43.187
@@ -87,6 +87,29 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
+- name: 🇺🇸 美国 | USA 9
+  server: starlink-ft.251313.xyz
+  port: 443
+  type: hysteria2
+  password: https://xship.top
+  auth: https://xship.top
+  sni: xship.top
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 美国 | USA 5
+  server: 45.131.5.241
+  port: 443
+  type: vless
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xi.tbv.ccwu.cc
+  udp: true
 - name: 🇺🇸 美国 | USA
   server: 162.159.43.187
   port: 2082
@@ -123,20 +146,6 @@ proxies:
   skip-cert-verify: false
   ws-opts:
     path: /assignment
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 45.131.5.241
-  port: 443
-  type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
-  tls: true
-  servername: xi.tbv.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xi.tbv.ccwu.cc
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: 34.81.223.1
@@ -234,37 +243,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 14
-  server: 104.24.219.225
-  port: 2087
-  type: vless
-  uuid: fd6fb48f-b324-4a82-9dcd-f8bdb1bd5301
-  tls: true
-  alpn:
-  - h2
-  servername: allsmart1.17e1feeuzi.online
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /meti
-    host: allsmart1.17e1feeuzi.online
-    mode: stream-one
-  udp: true
 - name: 🇩🇪 德国 | DEU 13
   server: 130.61.145.33
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 2IhI4JDsLapp7N4PfL+duHVI+taMbdDLJkhaQfTBUZQ=
-- name: 🇸🇪 瑞典 | SWE
-  server: 51.170.187.136
-  port: 62145
-  type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-  tls: false
-  servername: 51.170.187.136
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 4
   server: 34.185.172.52
   port: 443
@@ -276,6 +260,20 @@ proxies:
     short-id: 690ec9207866c84e
   servername: www.cloudflare.com
   client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 9
+  server: 31.76.245.63
+  port: 443
+  type: vless
+  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
+    short-id: a1b2c3d4e5f67890
+  servername: dzen.ru
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇹🇭 泰国 | THA
@@ -291,15 +289,15 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇬🇧 英国 | GBR
-  server: 35.234.143.34
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 34.147.59.126
   port: 443
   type: vless
-  uuid: 9743b4f9-24c3-4e53-8b03-c3b5cd9b71b2
+  uuid: f76627ae-2626-4c53-ab57-da0e4d377a53
   tls: true
   reality-opts:
-    public-key: bx1ylgNlSmg4i-abKzPcSHGMlIE6gdf66Ysjv25ZrE4
-    short-id: 1b580f160d965b01
+    public-key: ODBW9YQs2TYvh_KBUQvbvAh61EULeZvqvwjc2RysKTs
+    short-id: 973452cd8674dbaf
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
@@ -350,17 +348,18 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 5
   - 🇭🇰 香港 | HKG 2
+  - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 3
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 4
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 5
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇩🇪 德国 | DEU 15
   - 🇩🇪 德国 | DEU 5
@@ -368,12 +367,11 @@ proxy-groups:
   - 🇵🇱 波兰 | POL
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇨🇭 瑞士 | CHE
-  - 🇩🇪 德国 | DEU 14
   - 🇩🇪 德国 | DEU 13
-  - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
+  - 🇩🇪 德国 | DEU 9
   - 🇹🇭 泰国 | THA
-  - 🇬🇧 英国 | GBR
+  - 🇳🇱 荷兰 | NLD 3
   - 🇩🇪DE德国丨yoyapai.com_12
   - 🇳🇱 荷兰 | NLD 5
   - 🇩🇪 德国 | DEU 10
@@ -389,8 +387,8 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 5
   - 🇭🇰 香港 | HKG 2
+  - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP
   - 🇸🇬 新加坡 | SGP 3
   - 🇭🇰 香港 | HKG
@@ -400,20 +398,21 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 4
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA
-  - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP
-  - 🇩🇪 德国 | DEU 15
+  - 🇺🇸 美国 | USA 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
