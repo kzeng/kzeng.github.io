@@ -7,8 +7,22 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-09-29T20:05:32.954299+00:00'
+generated-at: '2026-09-29T23:50:19.292490+00:00'
 proxies:
+- name: 🇭🇰 香港 | HKG 7
+  server: 103.143.81.178
+  port: 443
+  type: vless
+  uuid: 37665857-8b6e-4daa-8231-3e2927221558
+  tls: true
+  servername: spjd.cbc.qzz.io
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: spjd.cbc.qzz.io
+  udp: true
 - name: 🇭🇰 香港 | HKG 3
   server: 139.28.168.201
   port: 443
@@ -76,6 +90,18 @@ proxies:
   auth: 531d9e93-53be-4f05-a9c1-33490d4da2f3
   sni: www.bing.com
   skip-cert-verify: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇺🇸 美国 | USA 14
   server: 172.66.1.96
   port: 443
@@ -89,18 +115,6 @@ proxies:
     path: /
     headers:
       Host: edgetunnel-4uw.pages.dev
-  udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  alpn:
-  - http/1.1
-  skip-cert-verify: true
-  ws-opts:
-    path: /assignment
   udp: true
 - name: 🇺🇸US美國丨yoyapai.com
   type: vless
@@ -119,19 +133,19 @@ proxies:
     mode: stream-one
   skip-cert-verify: true
   udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 13.143.186.29
-  port: 443
+- name: 🇺🇸 美国 | USA 2
+  server: 207.57.135.199
+  port: 8443
   type: vless
-  uuid: 3e2591b2-4739-4c59-b540-344f0b6505ac
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: YTO2eLUPj_pLJijheLCvxg3d53o5BTNSjRSpJKCAa3k
-    short-id: f54ec8b46381247f
-  servername: st2.megabitvpn.org
-  client-fingerprint: chrome
-  network: tcp
+  servername: hk.152568.xyz
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
   udp: true
 - name: 🇩🇪 德国 | DEU 7
   server: 130.61.38.201
@@ -188,6 +202,29 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇵🇱PL波兰丨yoyapai.com_4
+  type: vless
+  server: 176.123.161.222
+  port: 9892
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  network: grpc
+  servername: dl.google.com
+  tls: true
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+  skip-cert-verify: true
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: 45.192.12.93
+  port: 443
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  auth: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
 - name: 🇦🇺AU澳大利亚丨yoyapai.com
   type: vless
   server: 163.8.195.241
@@ -216,13 +253,6 @@ proxies:
     path: /baran
     headers:
       Host: bkkkl.maxsparkbox-bekhabdg.site
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 130.61.151.181
-  port: 59924
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 57c1Cki1OOfgfkTTKVU+y2V8zGvYuq42Z9AslJe4bZg=
   udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: 91.132.160.209
@@ -253,13 +283,6 @@ proxies:
   cipher: 2022-blake3-chacha20-poly1305
   password: w2UgXaZ3iOrLmANBQsipIyFHbIlhynnJ6s6TIquX/Ys=
   udp: true
-- name: 🇬🇧 英国 | GBR 2
-  server: 129.151.74.201
-  port: 61312
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: GKgXiQpcAqeN3oLeZcMRXvu1zSLopUrV/JNylzVi2DE=
-  udp: true
 - name: 🇪🇪爱沙尼亚丨yoyapai.com
   type: trojan
   server: 109.206.241.10
@@ -286,20 +309,6 @@ proxies:
     short-id: dcabbf24adf88abc
   servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 185.244.48.183
-  port: 8443
-  type: vless
-  uuid: 228ecfd3-9bf0-42fd-a50e-581f84022513
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: XgdHElYEGdc0A5NTZP4uTya2Y4WTKnfFV4ormD7rLx4
-    short-id: debb
-  servername: www.ozone.nl
-  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇬🇧 英国 | GBR
@@ -351,32 +360,32 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美國丨yoyapai.com
-  - 🇩🇪 德国 | DEU 2
+  - 🇺🇸 美国 | USA 2
   - 🇩🇪 德国 | DEU 7
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD
   - 🇱🇹 立陶宛 | LTU
   - 🇨🇦 加拿大 | CAN
+  - 🇵🇱PL波兰丨yoyapai.com_4
+  - 🇵🇱 波兰 | POL
   - 🇦🇺AU澳大利亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 8
   - 🇫🇷 法国 | FRA 3
   - 🇩🇪 德国 | DEU 4
-  - 🇬🇧 英国 | GBR 2
   - 🇪🇪爱沙尼亚丨yoyapai.com
   - 🇳🇱 荷兰 | NLD 2
   - 🇲🇽 墨西哥 | MEX
-  - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR
   - 🇩🇪DE德国丨yoyapai.com_12
   - 🇩🇪 德国 | DEU 12
@@ -386,6 +395,7 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG
@@ -394,11 +404,11 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 7
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG 5
   - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 6
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -407,9 +417,10 @@ proxy-groups:
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸 美国 | USA 14
   - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
@@ -417,10 +428,10 @@ proxy-groups:
   proxies:
   - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 14
-  - 🇩🇪DE德国丨yoyapai.com_12
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇩🇪 德国 | DEU 11
-  - 🇬🇧 英国 | GBR
+  - 🇨🇦 加拿大 | CAN
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 11
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
