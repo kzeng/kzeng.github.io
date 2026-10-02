@@ -7,8 +7,20 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-02T20:01:49.273323+00:00'
+generated-at: '2026-10-02T23:54:19.238609+00:00'
 proxies:
+- name: 🇸🇬 新加坡 | SGP 3
+  server: 162.159.43.187
+  port: 2082
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  udp: true
 - name: 🇯🇵 日本 | JPN 8
   server: 152.69.200.216
   port: 443
@@ -31,32 +43,6 @@ proxies:
   auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   sni: 127.0.0.1
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 162.159.43.187
-  port: 2082
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: tyo-a-02.auuas.com
-  port: 1891
-  type: vless
-  uuid: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: O7lEfntqflgUugTLJmJNv8qw9Qe0tagUlyDwS3yY4Uo
-    short-id: 8378f267
-  servername: www.npmjs.com
-  client-fingerprint: edge
-  network: tcp
-  udp: true
 - name: 🇭🇰 香港 | HKG
   server: 222.167.245.240
   port: 28015
@@ -78,6 +64,18 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇺🇸US美国丨yoyapai.com
+  type: trojan
+  server: 216.24.57.7
+  port: 443
+  password: humanity
+  sni: www.ignitelimit.com
+  alpn:
+  - http/1.1
+  skip-cert-verify: true
+  ws-opts:
+    path: /assignment
+  udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 156.229.162.171
   port: 9443
@@ -91,6 +89,18 @@ proxies:
   servername: www.amazon.com
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 11
+  server: undef.network
+  port: 2052
+  type: vless
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  tls: false
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
   udp: true
 - name: 🇺🇸 美国 | USA 16
   server: me17.msjia8844.site
@@ -141,17 +151,22 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com
-  type: trojan
-  server: 216.24.57.7
+- name: 🇺🇸US美國丨yoyapai.com
+  type: vless
+  server: dey.lnmarketplace.net
   port: 443
-  password: humanity
-  sni: www.ignitelimit.com
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  servername: dey.lnmarketplace.net
+  tls: true
+  client-fingerprint: firefox
   alpn:
-  - http/1.1
+  - h2
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
   skip-cert-verify: true
-  ws-opts:
-    path: /assignment
   udp: true
 - name: 🇺🇸 美国 | USA 14
   server: us02.uzifan.monster
@@ -277,18 +292,31 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇮🇱 以色列 | ISR
-  server: 34.165.56.30
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: ttww11.bpca2026.top
   port: 443
+  type: trojan
+  password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
+  sni: ttww11.bpca2026.top
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /images
+    headers:
+      Host: ttww11.bpca2026.top
+- name: 🇱🇻LV拉脱维亚丨yoyapai.com
   type: vless
-  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
+  server: 193.163.203.170
+  port: 443
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  servername: yandex.ru
   tls: true
-  reality-opts:
-    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
-    short-id: fffff8acddadcac3
-  servername: www.cloudflare.com
+  flow: xtls-rprx-vision
   client-fingerprint: chrome
-  network: tcp
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  skip-cert-verify: true
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: 45.128.78.84
@@ -301,6 +329,19 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: sellflow.org
   client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇮🇱 以色列 | ISR
+  server: 34.165.56.30
+  port: 443
+  type: vless
+  uuid: 0c40bce9-8710-4820-8f22-0742b61df999
+  tls: true
+  reality-opts:
+    public-key: AeQDUAVCESyA1hFkw6lENmgWAY3sBH9CFPpPAddPwVc
+    short-id: fffff8acddadcac3
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
   network: tcp
   udp: true
 - name: 🇪🇪 爱沙尼亚 | EST
@@ -452,18 +493,19 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇸🇬 新加坡 | SGP 3
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 3
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇯🇵 日本 | JPN 4
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA
-  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸US美國丨yoyapai.com
   - 🇺🇸 美国 | USA 14
   - 🇩🇪 德国 | DEU 2
   - 🇮🇳 印度 | IND
@@ -474,8 +516,10 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇸🇪 瑞典 | SWE 2
-  - 🇮🇱 以色列 | ISR
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS
+  - 🇮🇱 以色列 | ISR
   - 🇪🇪 爱沙尼亚 | EST
   - 🇮🇳 印度 | IND 2
   - 🇩🇪 德国 | DEU 5
@@ -501,18 +545,19 @@ proxy-groups:
   proxies:
   - 🇯🇵 日本 | JPN 8
   - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
+  - 🇺🇸US美国丨yoyapai.com
   - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 16
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA
-  - 🇺🇸US美国丨yoyapai.com
+  - 🇺🇸US美國丨yoyapai.com
   - 🇺🇸 美国 | USA 14
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -520,12 +565,12 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 13
   - 🇸🇬 新加坡 | SGP 3
+  - 🇺🇸 美国 | USA 13
   - 🇺🇸 美国 | USA 9
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇺🇸 美国 | USA 6
   - 🇪🇪 爱沙尼亚 | EST 2
+  - 🇺🇸 美国 | USA
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
