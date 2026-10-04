@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-04T20:17:24.964577+00:00'
+generated-at: '2026-10-04T23:22:00.291136+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 47.240.80.220
@@ -91,14 +91,6 @@ proxies:
       Host:
       - sjskendn.dingtalk.com
   udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 54.169.17.236
-  port: 443
-  type: hysteria2
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 | SGP
   server: cf.090227.xyz
   port: 443
@@ -112,22 +104,6 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: i2psm3knof5qjjix.v.3dns.vip
-  port: 443
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
   udp: true
 - name: 🇸🇬 新加坡 | SGP 2
   server: cf.877774.xyz
@@ -167,12 +143,18 @@ proxies:
     mode: stream-one
   skip-cert-verify: false
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 54.208.227.172
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+- name: 🇺🇸 美国 | USA 8
+  server: 104.18.0.181
+  port: 2082
+  type: vless
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  servername: hhlfy.twiladaphne.ndjp.net
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: 103.11.76.248
@@ -197,18 +179,12 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 104.18.0.181
-  port: 2082
-  type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+- name: 🇺🇸 美国 | USA 5
+  server: 54.208.227.172
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇺🇸US美國丨yoyapai.com
   type: vless
@@ -250,19 +226,6 @@ proxies:
     headers:
       Host: ccc.010304.xyz
   udp: true
-- name: 🇿🇦 南非 | ZAF
-  server: 34.35.174.85
-  port: 443
-  type: vless
-  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
-  tls: true
-  reality-opts:
-    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
-    short-id: 5ced03e42cc31aab
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 31.77.109.35
   port: 443
@@ -277,17 +240,16 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇰🇷 韩国 | KOR 2
-  server: 43.201.103.218
+- name: 🇿🇦 南非 | ZAF
+  server: 34.35.174.85
   port: 443
   type: vless
-  uuid: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  uuid: 4758aee6-6d1a-4306-b460-2398b5af4e35
   tls: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: 9y70yaeBADfbMlb5_6t6fJqmSozYmv5lhKFVl32bX3E
-    short-id: efce3016b5a0e616
-  servername: biblo-ontology-prod.shop
+    public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
+    short-id: 5ced03e42cc31aab
+  servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -308,19 +270,6 @@ proxies:
     host: summerculture.net
     mode: auto
   udp: true
-- name: ❓未知丨yoyapai.com_28
-  type: vless
-  server: 108.162.198.178
-  port: 80
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  skip-cert-verify: false
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 3
   server: tw1.dexlos.com
   port: 8080
@@ -336,6 +285,20 @@ proxies:
   request-timeout: 0
   udp-relay-mode: native
   congestion-controller: bbr
+- name: 🇱🇻LV拉脱维亚丨yoyapai.com
+  type: vless
+  server: 193.163.203.170
+  port: 443
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  servername: yandex.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  skip-cert-verify: false
+  udp: true
 - name: 🇮🇱 以色列 | ISR
   server: 185.253.75.119
   port: 443
@@ -363,6 +326,19 @@ proxies:
     path: /api/v1/upload
     host: randomquaint.net
     mode: auto
+  udp: true
+- name: ❓未知丨yoyapai.com_28
+  type: vless
+  server: 108.162.198.178
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  skip-cert-verify: false
   udp: true
 - name: 🇩🇪 德国 | DEU 3
   server: 144.31.212.253
@@ -400,6 +376,17 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇦🇺 澳大利亚 | AUS
+  server: 137.23.3.238
+  port: 20000
+  type: hysteria2
+  password: b42d90fa667942aebc734d60
+  auth: b42d90fa667942aebc734d60
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: b42d90fa667942aebc734d60
+  ports: 20000,20000-30000
 - name: 🇮🇪 爱尔兰 | IRL
   server: 23.95.225.10
   port: 8443
@@ -414,17 +401,6 @@ proxies:
     headers:
       Host: ccc.010304.xyz
   udp: true
-- name: 🇦🇺 澳大利亚 | AUS
-  server: 137.23.3.238
-  port: 20000
-  type: hysteria2
-  password: b42d90fa667942aebc734d60
-  auth: b42d90fa667942aebc734d60
-  sni: rmgyvpn.rest
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: b42d90fa667942aebc734d60
-  ports: 20000,20000-30000
 - name: 🇩🇪 德国 | DEU 6
   server: 31.77.168.35
   port: 443
@@ -437,6 +413,20 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ajv
+  udp: true
+- name: 🇩🇪DE德国丨yoyapai.com_13
+  type: vless
+  server: 169.40.42.229
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  servername: yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  skip-cert-verify: false
   udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: 2.28.142.170
@@ -460,20 +450,6 @@ proxies:
     host: germanytest.tulnaro.ir
     mode: auto
   udp: true
-- name: 🇩🇪DE德国丨yoyapai.com_13
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  servername: yahoo.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  skip-cert-verify: false
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
   server: 35.201.197.4
   port: 443
@@ -486,20 +462,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
   network: tcp
-- name: 🇩🇪 德国 | DEU 13
-  server: 2.27.211.129
-  port: 443
-  type: vless
-  uuid: 0afdcc75-e449-418d-8eac-c5b657363443
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: -YpJ_Xav7sUkd77sEZjg58Pn6dnNpj5himuUS-OFDh4
-    short-id: fd44fcf1c3afa0af
-  servername: www.icloud.com
-  client-fingerprint: safari
-  network: tcp
-  udp: true
 - name: 🇰🇷 韩国 | KOR
   server: amazing-peacock.rooster465.autos
   port: 443
@@ -507,6 +469,20 @@ proxies:
   password: UX82473651
   sni: amazing-peacock.rooster465.autos
   skip-cert-verify: true
+  udp: true
+- name: 🇩🇪 德国 | DEU
+  server: 172.67.76.40
+  port: 443
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  servername: ccc.010304.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
   udp: true
 - name: 🇫🇷 法国 | FRA
   server: 122.8.45.4
@@ -538,20 +514,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: TunService
   udp: true
-- name: 🇩🇪 德国 | DEU
-  server: 172.67.76.40
-  port: 443
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  servername: ccc.010304.xyz
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 87.58.201.170
   port: 443
@@ -567,19 +529,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: vlgrpc
   udp: true
-- name: ❓未知丨yoyapai.com
-  type: vless
-  server: 108.162.198.178
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  skip-cert-verify: false
-  udp: true
 - name: 🇩🇪 德国 | DEU 9
   server: 5.83.129.90
   port: 54177
@@ -593,12 +542,18 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇫🇷 法国 | FRA 2
-  server: 15.237.255.137
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+- name: ❓未知丨yoyapai.com
+  type: vless
+  server: 108.162.198.178
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  skip-cert-verify: false
   udp: true
 - name: 🇳🇱 荷兰 | NLD 3
   server: us3.xiaoliyu.cyou
@@ -620,6 +575,20 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+  udp: true
+- name: 🇩🇪 德国 | DEU 12
+  server: de-2.srv.dvzh.net
+  port: 443
+  type: vless
+  uuid: 91344c03-b37f-42c5-90f1-cbb95c5cf256
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0
+    short-id: e4e77e76e6e49da7
+  servername: de-2.srv.dvzh.net
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 10
   server: 2.27.26.128
@@ -645,47 +614,44 @@ proxy-groups:
   - 🇯🇵 日本 | JPN 2
   - 🇯🇵 日本 | JPN 3
   - 🇭🇰 香港 | HKG 5
-  - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP
-  - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
   - 🇺🇸美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸US美國丨yoyapai.com
   - 🇺🇸US美国丨yoyapai.com_3
   - 🇺🇸 美国 | USA 2
-  - 🇿🇦 南非 | ZAF
   - 🇩🇪 德国 | DEU 2
-  - 🇰🇷 韩国 | KOR 2
+  - 🇿🇦 南非 | ZAF
   - 🇷🇺 俄罗斯 | RUS 2
-  - ❓未知丨yoyapai.com_28
   - 🇹🇼 🇨🇳 台湾 | TWN 3
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇮🇱 以色列 | ISR
   - 🇷🇺 俄罗斯 | RUS
+  - ❓未知丨yoyapai.com_28
   - 🇩🇪 德国 | DEU 3
   - 🇪🇪 爱沙尼亚 | EST
   - 🇩🇪 德国 | DEU 5
-  - 🇮🇪 爱尔兰 | IRL
   - 🇦🇺 澳大利亚 | AUS
+  - 🇮🇪 爱尔兰 | IRL
   - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 8
   - 🇩🇪DE德国丨yoyapai.com_13
+  - 🇩🇪 德国 | DEU 8
   - 🇹🇼 🇨🇳 台湾 | TWN 2
-  - 🇩🇪 德国 | DEU 13
   - 🇰🇷 韩国 | KOR
+  - 🇩🇪 德国 | DEU
   - 🇫🇷 法国 | FRA
   - 🇦🇪 阿联酋 | ARE
-  - 🇩🇪 德国 | DEU
   - 🇳🇱 荷兰 | NLD 2
-  - ❓未知丨yoyapai.com
   - 🇩🇪 德国 | DEU 9
-  - 🇫🇷 法国 | FRA 2
+  - ❓未知丨yoyapai.com
   - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR
+  - 🇩🇪 德国 | DEU 12
   - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -696,7 +662,6 @@ proxy-groups:
   - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG 5
-  - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -711,10 +676,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸美国丨yoyapai.com
-  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 5
   - 🇺🇸US美國丨yoyapai.com
   - 🇺🇸US美国丨yoyapai.com_3
   - 🇺🇸 美国 | USA 2
@@ -723,14 +688,14 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 5
   - 🇺🇸US美国丨yoyapai.com_3
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸US美國丨yoyapai.com
-  - ❓未知丨yoyapai.com_28
-  - ❓未知丨yoyapai.com
-  - 🇩🇪 德国 | DEU
   - 🇺🇸 美国 | USA 8
+  - ❓未知丨yoyapai.com_28
+  - 🇩🇪 德国 | DEU
+  - ❓未知丨yoyapai.com
+  - 🇺🇸US美國丨yoyapai.com
+  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 9
   url: http://www.gstatic.com/generate_204
   interval: 120
