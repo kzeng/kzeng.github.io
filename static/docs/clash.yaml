@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-10-30T17:52:36.464466+00:00'
+generated-at: '2026-10-30T22:05:36.349183+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 47.242.81.94
@@ -28,32 +28,6 @@ proxies:
     headers:
       Host:
       - openai.com
-  udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: 31.76.91.31
-  port: 443
-  type: vless
-  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
-  tls: true
-  servername: b.jp-1.bnc-gt.co.uk
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇯🇵 日本 | JPN 7
-  server: jp-1.bnc-gt.co.uk
-  port: 443
-  type: vless
-  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
-  tls: true
-  servername: b.jp-1.bnc-gt.co.uk
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
   udp: true
 - name: 🇸🇬 新加坡 | SGP 3
   server: 104.18.41.86
@@ -116,19 +90,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸US美国丨yoyapai.com_20
-  type: vless
-  server: a0688bt.us4.h1clayd.click
-  port: 443
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  servername: a0688bt.us4.h1clayd.click
-  tls: true
-  client-fingerprint: ios
-  reality-opts:
-    public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
-    short-id: 257420d9d430152a
-  skip-cert-verify: false
-  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 162.159.91.211
   port: 443
@@ -154,16 +115,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: 3e99d50d5740985d
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 4
-  server: 171.22.119.74
-  port: 8446
-  type: trojan
-  password: Pass-Client-1
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-video-call
   udp: true
 - name: 🇳🇱 荷兰 | NLD 8
   server: 5.149.248.151
@@ -327,6 +278,23 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: ❓未知丨yoyapai.com_16
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  network: xhttp
+  servername: dey.lnmarketplace.net
+  tls: true
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+  skip-cert-verify: false
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: 5.149.248.151
   port: 443
@@ -343,6 +311,20 @@ proxies:
     grpc-mode: gun
     grpc-service-name: neurex
   udp: true
+- name: 🇩🇪DE德国丨yoyapai.com_11
+  type: vless
+  server: 169.40.42.229
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  servername: yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  skip-cert-verify: false
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 130.17.18.204
   port: 8443
@@ -357,18 +339,18 @@ proxies:
   client-fingerprint: qq
   network: tcp
   udp: true
-- name: 🇩🇪DE德国丨yoyapai.com_11
+- name: ❓未知丨yoyapai.com_51
   type: vless
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  servername: yahoo.com
+  server: sg2-8sb.6121999.dpdns.org
+  port: 19825
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  servername: sg2-8sb.6121999.dpdns.org
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: ios
+  client-fingerprint: chrome
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
   skip-cert-verify: false
   udp: true
 - name: ❓未知丨yoyapai.com_57
@@ -385,20 +367,6 @@ proxies:
       Host: ccc.010304.xyz
   skip-cert-verify: false
   udp: true
-- name: ❓未知丨yoyapai.com_51
-  type: vless
-  server: sg2-8sb.6121999.dpdns.org
-  port: 19825
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  servername: sg2-8sb.6121999.dpdns.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  skip-cert-verify: false
-  udp: true
 - name: 🇬🇧 英国 | GBR
   server: en001.zestapp778.com
   port: 29813
@@ -406,6 +374,13 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: en001.zestapp778.com
   skip-cert-verify: true
+  udp: true
+- name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.99
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: 5.149.248.151
@@ -422,13 +397,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: neurex
-  udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.99
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇪🇸 西班牙 | ESP
   server: 156.252.229.159
@@ -448,18 +416,14 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 2
-  - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 7
   - 🇸🇬 新加坡 | SGP 3
   - 🇸🇬 新加坡 | SGP
   - 🇺🇸US美国丨yoyapai.com_2
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸US美国丨yoyapai.com_20
   - 🇺🇸 美国 | USA 2
   - 🇳🇱 荷兰 | NLD 7
-  - 🇷🇺 俄罗斯 | RUS 4
   - 🇳🇱 荷兰 | NLD 8
   - 🇮🇹 意大利 | ITA 4
   - 🇸🇪 瑞典 | SWE 3
@@ -473,14 +437,15 @@ proxy-groups:
   - 🇷🇺 俄罗斯 | RUS 5
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
+  - ❓未知丨yoyapai.com_16
   - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪DE德国丨yoyapai.com_11
-  - ❓未知丨yoyapai.com_57
+  - 🇳🇱 荷兰 | NLD 2
   - ❓未知丨yoyapai.com_51
+  - ❓未知丨yoyapai.com_57
   - 🇬🇧 英国 | GBR
-  - 🇳🇱 荷兰 | NLD 5
   - 🇮🇹 意大利 | ITA 3
+  - 🇳🇱 荷兰 | NLD 5
   - 🇪🇸 西班牙 | ESP
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -493,8 +458,11 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 7
+  - 🇭🇰 香港 | HKG 2
+  - 🇸🇬 新加坡 | SGP 3
+  - 🇸🇬 新加坡 | SGP
+  - 🇺🇸US美国丨yoyapai.com_2
+  - 🇺🇸 美国 | USA 8
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -504,7 +472,6 @@ proxy-groups:
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸US美国丨yoyapai.com_20
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
@@ -512,12 +479,11 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸US美国丨yoyapai.com_2
-  - ❓未知丨yoyapai.com_57
   - 🇸🇬 新加坡 | SGP 3
-  - 🇺🇸 美国 | USA 8
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇳🇱 荷兰 | NLD 8
-  - 🇳🇱 荷兰 | NLD 5
+  - ❓未知丨yoyapai.com_57
+  - 🇩🇪DE德国丨yoyapai.com_11
+  - 🇸🇬 新加坡 | SGP
+  - 🇮🇹 意大利 | ITA 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
