@@ -7,42 +7,18 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-05T17:56:20.138385+00:00'
+generated-at: '2026-11-05T23:30:35.360927+00:00'
 proxies:
-- type: vless
-  name: 🇭🇰HK香港丨yoyapai.com (16)
-  server: 152.175.6.229
-  port: 31884
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  udp: true
-  tls: true
-  servername: hk010.zestapp778.com
-  sni: hk010.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇭🇰 香港 | HKG 4
+- name: 🇭🇰 香港 | HKG 3
   server: 47.244.120.197
-  port: 23026
+  port: 44867
   type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 47.244.120.197
-  port: 36703
-  type: vmess
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  alterId: 0
-  cipher: auto
-  tls: false
+  alpn:
+  - ''
   skip-cert-verify: true
   network: ws
   ws-opts:
@@ -55,19 +31,12 @@ proxies:
   cipher: aes-256-gcm
   password: BeaUf9c0AEWH40Pu
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 104.160.44.254
-  port: 443
-  type: vless
-  uuid: 0a3432cd-74b8-413a-896d-f51492b030bc
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-    short-id: 051f20c2344a2dfd
-  servername: portal.citygrainla.com
-  client-fingerprint: firefox
-  network: tcp
+- name: 🇺🇸 美国 | USA 5
+  server: 207.246.112.227
+  port: 1080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9AUVPZfOeSHmVCMyLvIvrl1wVLvZf7Jv
   udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 107.172.214.195
@@ -82,12 +51,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 207.246.112.227
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 9AUVPZfOeSHmVCMyLvIvrl1wVLvZf7Jv
+- name: 🇺🇸 美国 | USA
+  server: 104.160.44.254
+  port: 443
+  type: vless
+  uuid: 0a3432cd-74b8-413a-896d-f51492b030bc
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
+    short-id: 051f20c2344a2dfd
+  servername: portal.citygrainla.com
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 5.83.129.90
@@ -130,6 +106,28 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇮🇹 意大利 | ITA 4
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: vless
+  name: 🇳🇱荷兰丨yoyapai.com (3)
+  server: sw.golangwikito.cfd
+  port: 443
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: sw.golangwikito.cfd
+  sni: sw.golangwikito.cfd
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+    short-id: a1037b25dcef6aa7
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: cdn-ya.shamanapp.online
   port: 443
@@ -161,27 +159,6 @@ proxies:
     x-padding-method: tokenish
     x-padding-obfs-mode: true
     x-padding-placement: header
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: xsru2.freeddns.org
-  port: 443
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xsru2.freeddns.org
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /wsru
-    headers:
-      Host: xsru2.freeddns.org
-  udp: true
 - name: 🇮🇹 意大利 | ITA 6
   server: 202.50.253.81
   port: 19999
@@ -204,33 +181,6 @@ proxies:
   reality-opts:
     public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
     short-id: b28db60d77c50b4f
-- name: 🇷🇺 俄罗斯 | RUS
-  server: xsru1.ddnsfree.com
-  port: 443
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xsru1.ddnsfree.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-ru
-  udp: true
-- name: 🇩🇪 德国 | DEU 3
-  server: static.162.97.119.168.clients.your-server.de
-  port: 8443
-  type: vless
-  uuid: fb0876a9-bd89-4bb0-9539-8e7927b36d79
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision
-  servername: static.167.125.29.2.clients.your-server.de
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - type: ss
   name: 🇮🇹IT意大利丨yoyapai.com
   server: 202.50.253.99
@@ -240,26 +190,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇵🇱 波兰 | POL
-  server: pl-waw.dontblockmepls.com
-  port: 2063
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.63
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: 193.160.208.240
   port: 443
@@ -273,18 +203,12 @@ proxies:
     path: /assets/twru01/
     mode: auto
   udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: 85.155.246.13
-  port: 2063
-  type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: firefox
-  network: tcp
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.63
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 | ITA 5
   server: 202.50.253.72
@@ -343,20 +267,20 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: vless
-  name: 🇩🇪DE德国丨yoyapai.com (12)
-  server: 169.40.42.229
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  name: 🇮🇳IN印度丨yoyapai.com (2)
+  server: dorado.yokkastars.com
+  port: 40443
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
   flow: xtls-rprx-vision
   udp: true
   tls: true
-  servername: yahoo.com
-  sni: yahoo.com
+  servername: deepl.com
+  sni: deepl.com
   skip-cert-verify: false
-  client-fingerprint: ios
+  client-fingerprint: chrome
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
 - name: 🇮🇹 意大利 | ITA 3
   server: 202.50.253.54
   port: 19999
@@ -371,64 +295,41 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: static.216.7.245.188.clients.your-server.de
-  port: 8443
-  type: vless
-  uuid: fb0876a9-bd89-4bb0-9539-8e7927b36d79
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  flow: xtls-rprx-vision
-  servername: static.216.7.245.188.clients.your-server.de
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇭🇰HK香港丨yoyapai.com (16)
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 3
   - 🇯🇵 日本 | JPN
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA
   - 🇩🇪 德国 | DEU 2
   - 🇮🇳 印度 | IND
   - 🇮🇹 意大利 | ITA 8
   - 🇮🇹 意大利 | ITA 2
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇮🇹 意大利 | ITA 4
-  - 🇷🇺 俄罗斯 | RUS 3
+  - 🇳🇱荷兰丨yoyapai.com (3)
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇮🇹 意大利 | ITA 6
   - 🇱🇻LV拉脱维亚丨yoyapai.com
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇩🇪 德国 | DEU 3
   - 🇮🇹IT意大利丨yoyapai.com
-  - 🇵🇱 波兰 | POL
-  - 🇮🇹 意大利 | ITA
   - 🇩🇪 德国 | DEU 8
-  - 🇵🇱 波兰 | POL 2
+  - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 5
   - 🇸🇪 瑞典 | SWE
   - 🇫🇷 法国 | FRA
   - 🇳🇱 荷兰 | NLD 2
   - ❓未知丨yoyapai.com (7)
-  - 🇩🇪DE德国丨yoyapai.com (12)
+  - 🇮🇳IN印度丨yoyapai.com (2)
   - 🇮🇹 意大利 | ITA 3
   - 🇮🇹 意大利 | ITA 7
-  - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰HK香港丨yoyapai.com (16)
-  - 🇭🇰 香港 | HKG 4
-  - 🇭🇰 香港 | HKG
+  - 🇭🇰 香港 | HKG 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -440,20 +341,19 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA
+  - ❓未知丨yoyapai.com (7)
+  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA 6
-  - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
