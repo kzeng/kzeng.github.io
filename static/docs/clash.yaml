@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-07T06:55:34.714194+00:00'
+generated-at: '2026-11-07T09:42:49.293925+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG
   server: 47.244.120.197
@@ -36,26 +36,6 @@ proxies:
     headers:
       Host: jp3.yohototo.top
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: 23.94.83.37
-  port: 52080
-  type: vmess
-  uuid: 355c1760-9bde-4b77-916b-5191e7f704a3
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /QQqun-737805443
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-  udp: true
 - name: 🇺🇸 美国 | USA 7
   server: us2.qik-fin.uk
   port: 443
@@ -69,13 +49,6 @@ proxies:
     path: /static/js/chunk
     host: us2.qik-fin.uk
     mode: stream-one
-  udp: true
-- name: 🇺🇸 美国 | USA
-  server: 88.216.254.18
-  port: 1080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: V7WLaYdujkwnj6xxXq-2BSxGWEcSJtTA
   udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 104.18.35.86
@@ -99,12 +72,25 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇷 伊朗 | IRN
+  server: tunell2027.crackerbinam.org
+  port: 48312
+  type: vless
+  uuid: f47057d5-120d-4b42-b6d6-30469aef6813
+  tls: true
+  reality-opts:
+    public-key: d9eM_jy8ztZrOf3DMq1m55VQSo7bnKcG1dRnO9ktJ2Y
+    short-id: 902c315efc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
+    headers:
+      Host:
+      - www.cloudflare.com
   udp: true
 - type: vless
   name: 🇳🇱荷兰丨yoyapai.com (3)
@@ -121,6 +107,20 @@ proxies:
   reality-opts:
     public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
     short-id: a1037b25dcef6aa7
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: 92.243.66.79
+  port: 443
+  type: vless
+  uuid: c5f59ef3-9540-49fa-bd1e-c6c2f79df49a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: siD4oj2gdtLLEphV6fUXb8ueIc2WHVn7msOUhNGPf2o
+    short-id: 8d03c10b6a874a9c
+  servername: ru-mow.probe.geomyip.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇮🇹 意大利 | ITA 4
   server: 202.50.253.45
   port: 19999
@@ -149,20 +149,6 @@ proxies:
     short-id: 3e129765d7ce5606
   servername: ads.x5.ru
   client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 188.130.209.204
-  port: 443
-  type: vless
-  uuid: 4a0812f0-f9d7-4afd-9ae3-6c38e1e59485
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc
-    short-id: d3f314d0b692f63d
-  servername: promo-digital.wb.ru
-  client-fingerprint: ios
   network: tcp
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 3
@@ -267,29 +253,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: swo2.nexfile.net
-  port: 4443
-  type: vless
-  uuid: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  tls: true
-  servername: swo2.nexfile.net
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /api/v1/sync/
-    host: swo2.nexfile.net
-    mode: auto
-  udp: true
-- type: ss
-  name: ❓未知丨yoyapai.com (15)
-  server: 202.50.253.72
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
 - name: 🇫🇷 法国 | FRA
   server: 62.210.28.175
   port: 24667
@@ -303,6 +266,15 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- type: ss
+  name: ❓未知丨yoyapai.com (15)
+  server: 202.50.253.72
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
 - type: ss
   name: ❓未知丨yoyapai.com (7)
   server: 202.50.253.36
@@ -377,17 +349,15 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
   - ❓未知丨yoyapai.com (5)
-  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇷 伊朗 | IRN
   - 🇳🇱荷兰丨yoyapai.com (3)
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇮🇹 意大利 | ITA 4
   - 🇮🇹IT意大利丨yoyapai.com (3)
   - 🇳🇱 荷兰 | NLD 4
-  - 🇷🇺 俄罗斯 | RUS 3
   - 🇹🇼 🇨🇳 台湾 | TWN 3
   - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS
@@ -397,9 +367,8 @@ proxy-groups:
   - 🇮🇹 意大利 | ITA
   - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇮🇹 意大利 | ITA 5
-  - 🇸🇪 瑞典 | SWE
-  - ❓未知丨yoyapai.com (15)
   - 🇫🇷 法国 | FRA
+  - ❓未知丨yoyapai.com (15)
   - ❓未知丨yoyapai.com (7)
   - 🇩🇪DE德国丨yoyapai.com (12)
   - ❓未知丨yoyapai.com (6)
@@ -419,28 +388,25 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 2
+  - ❓未知丨yoyapai.com (5)
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 7
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 11
+  - 🇩🇪DE德国丨yoyapai.com (12)
   - 🇺🇸 美国 | USA 2
-  - ❓未知丨yoyapai.com (7)
-  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA 5
+  - ❓未知丨yoyapai.com (6)
   - 🇺🇸 美国 | USA 7
   url: http://www.gstatic.com/generate_204
   interval: 120
