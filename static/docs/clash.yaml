@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-08T14:13:53.649287+00:00'
+generated-at: '2026-11-08T14:15:33.711295+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 47.244.120.197
@@ -82,6 +82,22 @@ proxies:
   cipher: aes-256-gcm
   password: dongtaiwang.com
   udp: true
+- type: vless
+  name: 🇺🇸US美国丨yoyapai.com (14)
+  server: 129.153.71.28
+  port: 28863
+  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
+  udp: true
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  sni: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
 - type: ss
   name: ❓未知丨yoyapai.com (5)
   server: 202.50.253.81
@@ -104,25 +120,12 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇮🇷 伊朗 | IRN
-  server: tunell2027.crackerbinam.org
-  port: 48312
-  type: vless
-  uuid: f47057d5-120d-4b42-b6d6-30469aef6813
-  tls: true
-  reality-opts:
-    public-key: d9eM_jy8ztZrOf3DMq1m55VQSo7bnKcG1dRnO9ktJ2Y
-    short-id: 902c315efc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - www.cloudflare.com
+- name: 🇮🇹 意大利 | ITA 8
+  server: 202.50.253.99
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇮🇹 意大利 | ITA 2
   server: 202.50.253.27
@@ -131,12 +134,18 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 8
-  server: 202.50.253.99
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: xsru1.ddnsfree.com
+  port: 443
+  type: vless
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  tls: true
+  servername: xsru1.ddnsfree.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-ru
   udp: true
 - type: vless
   name: 🇳🇱荷兰丨yoyapai.com (3)
@@ -153,19 +162,6 @@ proxies:
   reality-opts:
     public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
     short-id: a1037b25dcef6aa7
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: xsru1.ddnsfree.com
-  port: 443
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xsru1.ddnsfree.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-ru
-  udp: true
 - name: 🇮🇹 意大利 | ITA 4
   server: 202.50.253.45
   port: 19999
@@ -190,6 +186,13 @@ proxies:
   auth: 190edece-2750-454c-b766-0570fc32deca
   sni: mshvpn.online
   skip-cert-verify: true
+- name: 🇮🇹 意大利 | ITA 6
+  server: 202.50.253.72
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - type: vless
   name: 🇱🇻LV拉脱维亚丨yoyapai.com
   server: 193.163.203.170
@@ -205,13 +208,6 @@ proxies:
   reality-opts:
     public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
     short-id: b28db60d77c50b4f
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.72
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: xssite.webredirect.org
   port: 443
@@ -255,20 +251,6 @@ proxies:
     path: /d20896a4ce30
     host: e60833x.nl7.h1clayd.click
   udp: true
-- name: 🇨🇭 瑞士 | CHE 3
-  server: prvtch.titun.su
-  port: 443
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: perevodchiki.su
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇩🇰 丹麦 | DNK
   server: 193.233.253.180
   port: 8444
@@ -283,6 +265,20 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: GunService
+  udp: true
+- name: 🇨🇭 瑞士 | CHE 3
+  server: prvtch.titun.su
+  port: 443
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: perevodchiki.su
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇦🇺 澳大利亚 | AUS
   server: au.tronsg.com
@@ -305,40 +301,43 @@ proxies:
   servername: ge-s-1.pythonmakemigreat.wiki
   client-fingerprint: chrome
   network: tcp
-- name: 🇨🇭 瑞士 | CHE 2
-  server: 62.109.1.5
-  port: 2058
+- name: 🇵🇱 波兰 | POL
+  server: cdn-ya.shamanapp.online
+  port: 443
   type: vless
-  uuid: 4ad9f982-b56a-444a-9684-35ce51307a36
+  uuid: 40c8a202-4b7f-45a6-b0aa-37db0fac4df8
   tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: lJBsn9ndieTIUBzXkJUhf6O0OE8pm29_z1fUtARwL0s
-    short-id: 937255313d6ce673
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: cdn-ya.shamanapp.online
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /media/hls/720p/
+    host: cdn-ya.shamanapp.online
+    mode: packet-up
+    no-grpc-header: true
+    sc-max-each-post-bytes: 20000
+    sc-min-posts-interval-ms: 5
+    seq-key: page
+    seq-placement: query
+    uplink-chunk-size: 20000
+    uplink-data-key: X-Request-Id
+    uplink-data-placement: header
+    uplink-http-method: GET
+    x-padding-bytes: 100-1000
+    x-padding-header: X-Cache
+    x-padding-key: _dc
+    x-padding-method: tokenish
+    x-padding-obfs-mode: true
+    x-padding-placement: header
 - name: 🇮🇹 意大利 | ITA
   server: 202.50.253.18
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇨🇭 瑞士 | CHE
-  server: 46.19.138.214
-  port: 443
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: perevodchiki.su
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇵🇱 波兰 | POL 2
   server: cz.pythonmakemigreat.wiki
@@ -461,28 +460,27 @@ proxy-groups:
   - 🇸🇬 新加坡 | SGP 2
   - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸US美国丨yoyapai.com (14)
   - ❓未知丨yoyapai.com (5)
   - 🇩🇪 德国 | DEU 2
-  - 🇮🇷 伊朗 | IRN
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 8
-  - 🇳🇱荷兰丨yoyapai.com (3)
+  - 🇮🇹 意大利 | ITA 2
   - 🇷🇺 俄罗斯 | RUS 2
+  - 🇳🇱荷兰丨yoyapai.com (3)
   - 🇮🇹 意大利 | ITA 4
   - 🇮🇹IT意大利丨yoyapai.com (3)
   - 🇳🇱 荷兰 | NLD
-  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇮🇹 意大利 | ITA 6
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
   - 🇦🇱 AL_23
-  - 🇨🇭 瑞士 | CHE 3
   - 🇩🇰 丹麦 | DNK
+  - 🇨🇭 瑞士 | CHE 3
   - 🇦🇺 澳大利亚 | AUS
   - 🇩🇪 德国 | DEU 6
-  - 🇨🇭 瑞士 | CHE 2
+  - 🇵🇱 波兰 | POL
   - 🇮🇹 意大利 | ITA
-  - 🇨🇭 瑞士 | CHE
   - 🇵🇱 波兰 | POL 2
   - 🇮🇹 意大利 | ITA 5
   - 🇩🇪 德国 | DEU 4
@@ -512,18 +510,19 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 4
+  - 🇺🇸US美国丨yoyapai.com (14)
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
+  - 🇩🇪DE德国丨yoyapai.com (12)
   - 🇺🇸 美国 | USA 4
   - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹IT意大利丨yoyapai.com (3)
-  - 🇮🇹 意大利 | ITA 5
-  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA 6
+  - ❓未知丨yoyapai.com (5)
   - 🇩🇪 德国 | DEU 6
-  - 🇪🇸 西班牙 | ESP
+  - 🇫🇷 法国 | FRA
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
