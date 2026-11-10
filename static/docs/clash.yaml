@@ -7,8 +7,18 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-10T17:35:30.870427+00:00'
+generated-at: '2026-11-10T23:00:45.725932+00:00'
 proxies:
+- type: vmess
+  name: 🇭🇰HK香港 (6)
+  server: dog-us.kunlun01dns.com
+  port: 21011
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
 - name: 🇸🇬 新加坡 | SGP 3
   server: sgp.beijingshi.asia
   port: 8443
@@ -47,22 +57,6 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 11
-  server: uuss2.qik-server.uk
-  port: 443
-  type: vless
-  uuid: 38de3363-7945-402e-9a9b-6f2f9015a44e
-  tls: true
-  alpn:
-  - h2
-  servername: uuss2.qik-server.uk
-  client-fingerprint: qq
-  network: xhttp
-  xhttp-opts:
-    path: /static/js/chunk
-    host: uuss2.qik-server.uk
-    mode: stream-one
-  udp: true
 - name: 🇺🇸 美国 | USA 9
   server: panel.apexkey.store
   port: 2053
@@ -89,19 +83,19 @@ proxies:
     headers:
       Host: fs.qicai99.com
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 45.32.230.60
-  port: 443
+- name: 🇺🇸 美国 | USA 7
+  server: 188.114.99.157
+  port: 8443
   type: vless
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
   tls: true
-  servername: fs.qicai99.com
-  client-fingerprint: chrome
+  servername: moz.ar-marz.fun
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /
+    path: /man
     headers:
-      Host: fs.qicai99.com
+      Host: moz.ar-marz.fun
   udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 104.168.6.236
@@ -156,6 +150,13 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
+- name: 🇮🇹 意大利 | ITA 6
+  server: 202.50.253.81
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - type: vless
   name: 🇱🇻LV拉脱维亚丨yoyapai.com
   server: 193.163.203.170
@@ -171,27 +172,6 @@ proxies:
   reality-opts:
     public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
     short-id: b28db60d77c50b4f
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.81
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇱 以色列 | ISR
-  server: 192.71.27.237
-  port: 443
-  type: vless
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  tls: true
-  servername: fs.qicai99.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-  udp: true
 - name: 🇷🇺 俄罗斯 | RUS
   server: vps3.nemnogogo.com
   port: 443
@@ -206,6 +186,20 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
+  udp: true
+- name: 🇮🇱 以色列 | ISR
+  server: 192.71.27.237
+  port: 443
+  type: vless
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  tls: true
+  servername: fs.qicai99.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fs.qicai99.com
   udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: 193.160.208.240
@@ -233,6 +227,38 @@ proxies:
   type: ss
   cipher: 2022-blake3-aes-256-gcm
   password: L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U=
+  udp: true
+- name: 🇵🇱 波兰 | POL
+  server: cdn-ya.shamanapp.online
+  port: 443
+  type: vless
+  uuid: 40c8a202-4b7f-45a6-b0aa-37db0fac4df8
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: cdn-ya.shamanapp.online
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /media/hls/720p/
+    host: cdn-ya.shamanapp.online
+    mode: packet-up
+    no-grpc-header: true
+    sc-max-each-post-bytes: 20000
+    sc-min-posts-interval-ms: 5
+    seq-key: page
+    seq-placement: query
+    uplink-chunk-size: 20000
+    uplink-data-key: X-Request-Id
+    uplink-data-placement: header
+    uplink-http-method: GET
+    x-padding-bytes: 100-1000
+    x-padding-header: X-Cache
+    x-padding-key: _dc
+    x-padding-method: tokenish
+    x-padding-obfs-mode: true
+    x-padding-placement: header
   udp: true
 - name: 🇷🇴 罗马尼亚 | ROU
   server: 82.152.132.74
@@ -348,17 +374,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇩🇪 德国 | DEU 9
-  server: 104.143.223.236
-  port: 2085
-  type: vless
-  uuid: 6538f5c3-5b01-4956-a8e6-47688c01c42e
-  tls: false
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 151.101.36.61
   port: 443
@@ -416,8 +431,8 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
 - type: ss
-  name: ❓未知丨yoyapai.com (2)
-  server: 202.50.253.27
+  name: ❓未知丨yoyapai.com (6)
+  server: 202.50.253.63
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -425,8 +440,8 @@ proxies:
   tls: false
   skip-cert-verify: false
 - type: ss
-  name: ❓未知丨yoyapai.com (6)
-  server: 202.50.253.63
+  name: ❓未知丨yoyapai.com (2)
+  server: 202.50.253.27
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -444,26 +459,27 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇭🇰HK香港 (6)
   - 🇸🇬 新加坡 | SGP 3
   - 🇯🇵 日本 | JPN 4
   - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 2
   - 🇩🇪DE德国丨yoyapai.com (37)
   - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 4
   - 🇮🇹IT意大利丨yoyapai.com (3)
   - 🇨🇦 加拿大 | CAN
-  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇮🇹 意大利 | ITA 6
-  - 🇮🇱 以色列 | ISR
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇷🇺 俄罗斯 | RUS
+  - 🇮🇱 以色列 | ISR
   - 🇩🇪 德国 | DEU 5
   - 🇮🇪 爱尔兰 | IRL
   - 🇩🇪 德国 | DEU 6
+  - 🇵🇱 波兰 | POL
   - 🇷🇴 罗马尼亚 | ROU
   - 🇮🇹 意大利 | ITA
   - 🇩🇪 德国 | DEU 11
@@ -472,24 +488,19 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 14
   - 🇫🇷 法国 | FRA 4
   - ❓未知丨yoyapai.com (13)
-  - 🇩🇪 德国 | DEU 9
   - 🇳🇱 荷兰 | NLD 2
   - ❓未知丨yoyapai.com (21)
   - 🇫🇷 法国 | FRA 2
   - 🇩🇪DE德国丨yoyapai.com (12)
-  - ❓未知丨yoyapai.com (2)
   - ❓未知丨yoyapai.com (6)
+  - ❓未知丨yoyapai.com (2)
   - 🇮🇹 意大利 | ITA 3
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇯🇵 日本 | JPN 4
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA 9
+  - 🇭🇰HK香港 (6)
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
@@ -501,23 +512,22 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 11
-  - 🇺🇸 美国 | USA
   - 🇨🇦 加拿大 | CAN
-  - 🇺🇸 美国 | USA 6
-  - 🇮🇪 爱尔兰 | IRL
   - 🇺🇸 美国 | USA 2
+  - 🇮🇪 爱尔兰 | IRL
   - 🇫🇷 法国 | FRA 2
+  - 🇮🇹 意大利 | ITA 3
+  - 🇮🇹IT意大利丨yoyapai.com (3)
+  - ❓未知丨yoyapai.com (13)
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
