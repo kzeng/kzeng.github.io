@@ -7,22 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-16T09:08:12.580621+00:00'
+generated-at: '2026-11-16T09:14:41.296514+00:00'
 proxies:
-- name: 🇭🇰 香港 | HKG 2
-  server: 8.217.1.203
-  port: 8443
-  type: vless
-  uuid: 8b17beac-b143-447d-aa68-14cbb121a602
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38
-    short-id: 0bf55f64
-  servername: www.apple.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇭🇰 香港 | HKG
   server: 47.242.81.94
   port: 52080
@@ -110,19 +96,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: grpc
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 8
-  server: 104.171.135.229
-  port: 443
-  type: vless
-  uuid: Fluffy_VPN-Oth8rOq3
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: mpo4BIcoWiMXAQGt5a8IJ4MFkPJQyLC50dO_bXzC7z0
-  servername: absolute-disaster.org
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇪🇪 爱沙尼亚 | EST 2
   server: ee45.own-homelab.cloud
@@ -221,6 +194,15 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
+- type: ss
+  name: 🇮🇹IT意大利丨yoyapai.com (4)
+  server: 202.50.253.54
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 | RUS
   server: 201.51.12.98
   port: 443
@@ -235,30 +217,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
-  udp: true
-- type: ss
-  name: 🇮🇹IT意大利丨yoyapai.com (4)
-  server: 202.50.253.54
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- name: 🇮🇱 以色列 | ISR
-  server: 178.20.28.4
-  port: 8443
-  type: vless
-  uuid: 97ab2e86-83c5-0a32-4914-5dbe1af97839
-  tls: true
-  reality-opts:
-    public-key: 4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo
-  servername: res.cdn.office.net
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: TunService
   udp: true
 - type: ss
   name: 🇮🇹IT意大利丨yoyapai.com
@@ -323,20 +281,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: grpc
-  udp: true
-- name: 🇹🇷 土耳其 | TUR
-  server: 37.221.76.117
-  port: 2092
-  type: vless
-  uuid: ca21222b-caf1-4418-b404-345ea713daa4
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
-    short-id: 716b7eba38125f3a
-  servername: www.apple.com
-  client-fingerprint: chrome
-  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: vpn.asdfghjuyt.ru
@@ -516,6 +460,15 @@ proxies:
     path: /
     host: 3b3377x.es5.h1clayd.click
   udp: true
+- type: ss
+  name: ❓未知丨yoyapai.com (7)
+  server: 202.50.253.81
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
 - name: 🇳🇱 荷兰 | NLD 9
   server: 81.171.14.72
   port: 443
@@ -564,18 +517,33 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇪🇸 西班牙 | ESP
+  server: 38917fx.es9.h1clayd.click
+  port: 443
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  tls: true
+  reality-opts:
+    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
+    short-id: d5501b156391e01d
+  servername: 38917fx.es9.h1clayd.click
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /
+    host: 38917fx.es9.h1clayd.click
+    mode: auto
+  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 5
   - 🇩🇪 德国 | DEU 2
   - 🇪🇪 爱沙尼亚 | EST 7
-  - 🇳🇱 荷兰 | NLD 8
   - 🇪🇪 爱沙尼亚 | EST 2
   - 🇩🇪 德国 | DEU 7
   - 🇮🇹 意大利 | ITA 2
@@ -584,15 +552,13 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 4
   - 🇮🇹IT意大利丨yoyapai.com (12)
-  - 🇷🇺 俄罗斯 | RUS
   - 🇮🇹IT意大利丨yoyapai.com (4)
-  - 🇮🇱 以色列 | ISR
+  - 🇷🇺 俄罗斯 | RUS
   - 🇮🇹IT意大利丨yoyapai.com
   - 🇨🇦 加拿大 | CAN
   - ❓未知丨yoyapai.com (9)
   - 🇪🇪 爱沙尼亚 | EST 5
   - 🇪🇪 爱沙尼亚 | EST
-  - 🇹🇷 土耳其 | TUR
   - 🇩🇪 德国 | DEU 5
   - 🇪🇬 埃及 | EGY
   - 🇩🇪 德国 | DEU 6
@@ -606,27 +572,28 @@ proxy-groups:
   - 🇫🇷 法国 | FRA
   - 🇪🇪 爱沙尼亚 | EST 6
   - 🇪🇸 西班牙 | ESP 2
+  - ❓未知丨yoyapai.com (7)
   - 🇳🇱 荷兰 | NLD 9
   - ❓未知丨yoyapai.com (8)
   - ❓未知丨yoyapai.com (35)
   - 🇮🇹 意大利 | ITA 3
+  - 🇪🇸 西班牙 | ESP
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 5
+  - 🇩🇪 德国 | DEU 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -640,14 +607,14 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇮🇹 意大利 | ITA
-  - ❓未知丨yoyapai.com (9)
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹IT意大利丨yoyapai.com (12)
-  - 🇮🇹IT意大利丨yoyapai.com (4)
+  - ❓未知丨yoyapai.com (7)
   - 🇮🇹 意大利 | ITA 2
-  - 🇭🇰 香港 | HKG
+  - 🇮🇹IT意大利丨yoyapai.com (4)
+  - 🇮🇹IT意大利丨yoyapai.com
+  - ❓未知丨yoyapai.com (9)
   - ❓未知丨yoyapai.com (8)
+  - 🇮🇹IT意大利丨yoyapai.com (12)
+  - 🇮🇹 意大利 | ITA 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
