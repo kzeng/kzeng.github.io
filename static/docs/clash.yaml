@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-17T08:18:43.903326+00:00'
+generated-at: '2026-11-17T09:01:26.112776+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 6
   server: 8.217.1.203
@@ -22,21 +22,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: 47.244.120.197
-  port: 44867
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
   udp: true
 - name: 🇭🇰 香港 | HKG 5
   server: 47.244.120.197
@@ -132,6 +117,14 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: 🇳🇬 尼日利亚 | NGA
+  server: sclass-01.catcat321.com
+  port: 20103
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+  udp: true
 - name: 🇨🇾 塞浦路斯 | CYP
   server: 194.55.167.133
   port: 443
@@ -172,6 +165,24 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇨🇿 捷克 | CZE
+  server: 103.118.211.38
+  port: 443
+  type: vless
+  uuid: 3dbd9377-43cc-46c3-b32c-2605908024eb
+  tls: true
+  reality-opts:
+    public-key: PA1xWXjxZLn68I-6cjWVdqc0dYhWbu9W5c1GpjEOZgE
+    short-id: 8a9442353eebbe0f
+  servername: czechia.richforever.ru
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /49b9f446
+    host: czechia.richforever.ru
+    mode: auto
+    x-padding-bytes: 100-300
   udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 143.246.41.217
@@ -291,22 +302,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 185.253.7.22
-  port: 443
-  type: vless
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  tls: true
-  alpn:
-  - http/1.1
-  servername: clover.filnex.baby
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
-    headers:
-      Host: clover.filnex.baby
-  udp: true
 - name: 🇮🇹 意大利 | ITA
   server: 48.103.120.21
   port: 443
@@ -319,38 +314,6 @@ proxies:
   servername: net-svc-io.galioncc.com
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: clover.filnex.baby
-  port: 443
-  type: vless
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  tls: true
-  alpn:
-  - http/1.1
-  servername: clover.filnex.baby
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
-    headers:
-      Host: clover.filnex.baby
-  udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: reedbed.filnex.baby
-  port: 443
-  type: vless
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  tls: true
-  alpn:
-  - http/1.1
-  servername: reedbed.filnex.baby
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
-    headers:
-      Host: reedbed.filnex.baby
   udp: true
 - name: 🇮🇹 意大利 | ITA 5
   server: 202.50.253.27
@@ -501,24 +464,6 @@ proxies:
     host: www.hyby.ir
     mode: auto
   udp: true
-- type: vless
-  name: ❓未知丨yoyapai.com (35)
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  udp: true
-  tls: true
-  servername: dey.lnmarketplace.net
-  sni: dey.lnmarketplace.net
-  skip-cert-verify: false
-  alpn:
-  - h2
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /kavir
-    host: dey.lnmarketplace.net
-    mode: stream-one
 - name: 🇮🇹 意大利 | ITA 3
   server: 202.50.253.36
   port: 19999
@@ -566,33 +511,23 @@ proxies:
     path: /
     host: 3b3377x.es5.h1clayd.click
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: 31.58.213.31
-  port: 443
-  type: vless
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
-  tls: true
-  flow: xtls-rprx-vision
-  servername: app.streamru2.net
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 6
-  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
   - 🇩🇪 德国 | DEU 2
   - 🇧🇪 比利时 | BEL
   - 🇳🇱 荷兰 | NLD 8
+  - 🇳🇬 尼日利亚 | NGA
   - 🇨🇾 塞浦路斯 | CYP
   - 🇮🇹 意大利 | ITA 8
   - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 4
+  - 🇨🇿 捷克 | CZE
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 4
   - 🇷🇺 俄罗斯 | RUS 3
@@ -602,10 +537,7 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 3
   - 🇩🇪 德国 | DEU 5
   - 🇪🇬 埃及 | EGY
-  - 🇵🇱 波兰 | POL
   - 🇮🇹 意大利 | ITA
-  - 🇩🇪 德国 | DEU 11
-  - 🇩🇪 德国 | DEU 13
   - 🇮🇹 意大利 | ITA 5
   - 🇮🇹 意大利 | ITA 9
   - 🇸🇪 瑞典 | SWE
@@ -618,12 +550,10 @@ proxy-groups:
   - 🇩🇪 德国 | DEU
   - ❓未知丨yoyapai.com (2)
   - 🇩🇪 德国 | DEU 12
-  - ❓未知丨yoyapai.com (35)
   - 🇮🇹 意大利 | ITA 3
   - 🇮🇹 意大利 | ITA 7
   - 🇳🇱 荷兰 | NLD 5
   - 🇪🇸 西班牙 | ESP
-  - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -632,7 +562,6 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 6
-  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -642,10 +571,10 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 香港 | HKG 6
-  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
+  - 🇩🇪 德国 | DEU 2
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -662,14 +591,13 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 9
-  - 🇮🇹 意大利 | ITA 3
-  - ❓未知丨yoyapai.com (2)
-  - ❓未知丨yoyapai.com (3)
-  - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹 意大利 | ITA 8
   - 🇮🇹 意大利 | ITA 6
+  - 🇮🇹 意大利 | ITA 9
+  - 🇮🇹 意大利 | ITA 4
+  - 🇮🇹IT意大利丨yoyapai.com
+  - ❓未知丨yoyapai.com (3)
+  - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 3
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
