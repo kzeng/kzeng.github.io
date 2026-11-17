@@ -7,80 +7,8 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-17T15:01:27.321991+00:00'
+generated-at: '2026-11-17T16:06:17.986870+00:00'
 proxies:
-- name: 🇯🇵 日本 | JPN 5
-  server: 141.164.44.60
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-  udp: true
-- name: 🇭🇰 香港 | HKG 2
-  server: prozac-celebrities-inclusion-parallel.trycloudflare.com
-  port: 443
-  type: vmess
-  uuid: 2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: prozac-celebrities-inclusion-parallel.trycloudflare.com
-  network: ws
-  ws-opts:
-    path: /2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea-vm
-    headers:
-      Host: prozac-celebrities-inclusion-parallel.trycloudflare.com
-  udp: true
-- name: 🇯🇵 日本 | JPN 12
-  server: 141.98.41.104
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-  udp: true
-- name: 🇯🇵 日本 | JPN 10
-  server: 172.104.120.30
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-  udp: true
-- name: 🇯🇵 日本 | JPN 11
-  server: 104.18.33.121
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-  udp: true
 - name: 🇭🇰 香港 | HKG 3
   server: 47.242.81.94
   port: 52080
@@ -101,160 +29,6 @@ proxies:
       Host:
       - openai.com
   udp: true
-- name: 🇸🇬 新加坡 | SGP 5
-  server: 13.231.172.130
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: ap-south.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: ap-south.862400.xyz
-  udp: true
-- name: 🇯🇵 日本 | JPN 8
-  server: 138.2.41.8
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-  udp: true
-- name: 🇯🇵 日本 | JPN 9
-  server: 43.170.8.95
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-  udp: true
-- name: 🇯🇵 日本 | JPN 7
-  server: 202.27.229.7
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-  udp: true
-- name: 🇯🇵 日本 | JPN 2
-  server: 188.164.248.18
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-  udp: true
-- name: 🇯🇵 日本 | JPN 6
-  server: 178.208.64.211
-  port: 2053
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-  udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: 31.77.133.224
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  server: 168.144.132.93
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: us-lax.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: us-lax.862400.xyz
-  udp: true
-- name: 🇯🇵 日本 | JPN 4
-  server: 152.53.156.23
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 8
-  server: 82.153.135.54
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: us-lax.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: us-lax.862400.xyz
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 6
-  server: 101.108.49.121
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: ap-south.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: ap-south.862400.xyz
-  udp: true
 - name: 🇭🇰 香港 | HKG
   server: 8.217.1.203
   port: 8443
@@ -268,34 +42,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
   network: tcp
-  udp: true
-- name: 🇯🇵 日本 | JPN
-  server: 89.106.78.217
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 4
-  server: 185.130.224.105
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: ap-south.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: ap-south.862400.xyz
   udp: true
 - name: 🇺🇸 美国 | USA 9
   server: homestead-walloping.sports-streams.org
@@ -313,55 +59,6 @@ proxies:
     host: supersklep.pl
     mode: auto
   udp: true
-- name: 🇺🇸 美国 | USA 8
-  server: 109.248.18.169
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: us-lax.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: us-lax.862400.xyz
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 3.22.241.58
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 172.67.67.89
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: us-lax.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: us-lax.862400.xyz
-  udp: true
-- name: 🇺🇸 美国 | USA 7
-  server: 193.163.19.232
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: us-lax.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: us-lax.862400.xyz
-  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 202.50.253.36
   port: 19999
@@ -369,33 +66,12 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: 5.157.30.26
-  port: 8443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: us-lax.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: us-lax.862400.xyz
-  udp: true
-- name: 🇺🇸 美国 | USA 2
-  server: 217.217.227.132
+- name: 🇺🇸 美国 | USA 5
+  server: 3.22.241.58
   port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
   udp: true
 - name: 🇨🇾 塞浦路斯 | CYP
   server: 194.55.167.133
@@ -411,104 +87,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇸🇪 瑞典 | SWE 7
-  server: saas.sin.fan
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: se-sto.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: se-sto.862400.xyz
-  udp: true
-- name: 🇮🇹 意大利 | ITA 2
-  server: 200.180.163.38
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: it-mil.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: it-mil.862400.xyz
-  udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: 83.228.199.3
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: it-mil.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: it-mil.862400.xyz
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 3
-  server: 205.186.76.237
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: se-sto.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: se-sto.862400.xyz
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 37.252.189.207
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: nl-ams.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: nl-ams.862400.xyz
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: 85.90.197.157
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: nl-ams.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: nl-ams.862400.xyz
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 2
-  server: 95.141.241.216
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: jp-osa.862400.xyz
-  udp: true
 - type: ss
   name: 🇮🇹IT意大利丨yoyapai.com (6)
   server: 202.50.253.90
@@ -518,20 +96,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇮🇹 意大利 | ITA 6
-  server: 5.157.30.2
-  port: 8443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: it-mil.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: it-mil.862400.xyz
-  udp: true
 - type: ss
   name: 🇮🇹IT意大利丨yoyapai.com (12)
   server: 202.50.253.99
@@ -571,34 +135,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 | SWE 4
-  server: 45.139.25.72
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: se-sto.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: se-sto.862400.xyz
-  udp: true
-- name: 🇦🇺 澳大利亚 | AUS
-  server: 117.55.235.56
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: us-lax.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: us-lax.862400.xyz
-  udp: true
 - name: 🇵🇱 波兰 | POL
   server: 80.47.10.106
   port: 443
@@ -632,20 +168,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 5
-  server: 161.118.219.55
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: it-mil.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: it-mil.862400.xyz
-  udp: true
 - type: ss
   name: ❓未知丨yoyapai.com (3)
   server: 202.50.253.72
@@ -655,48 +177,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 | SWE 6
-  server: 5.157.30.28
-  port: 8443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: se-sto.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: se-sto.862400.xyz
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 198.13.59.163
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: nl-ams.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: nl-ams.862400.xyz
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 9
-  server: 5.22.222.157
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: se-sto.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: se-sto.862400.xyz
-  udp: true
 - name: 🇩🇪 德国 | DEU
   server: 130.78.31.25
   port: 443
@@ -714,57 +194,6 @@ proxies:
     host: pl2.obxodvpn.us
     mode: packet-up
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 193.162.143.198
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: nl-ams.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: nl-ams.862400.xyz
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 8
-  server: 193.124.58.5
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: se-sto.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: se-sto.862400.xyz
-  udp: true
-- name: 🇦🇲 AM_08
-  server: 91.195.254.34
-  port: 443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: us-lax.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: us-lax.862400.xyz
-  udp: true
-- type: ss
-  name: ❓未知丨yoyapai.com (6)
-  server: 202.50.253.63
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
 - name: 🇻🇳 越南 | VNM
   server: kir4.crackerbinam.org
   port: 25272
@@ -785,6 +214,15 @@ proxies:
       Host:
       - www.cloudflare.com
   udp: true
+- type: ss
+  name: ❓未知丨yoyapai.com (6)
+  server: 202.50.253.63
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
 - type: ss
   name: ❓未知丨yoyapai.com (2)
   server: 202.50.253.18
@@ -821,20 +259,6 @@ proxies:
     path: /kavir
     host: dey.lnmarketplace.net
     mode: stream-one
-- name: 🇮🇹 意大利 | ITA 3
-  server: 144.31.228.110
-  port: 8443
-  type: vless
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  tls: true
-  servername: it-mil.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement?ed=2048
-    headers:
-      Host: it-mil.862400.xyz
-  udp: true
 - name: 🇪🇸 西班牙 | ESP
   server: api.ferrin.uk
   port: 443
@@ -855,68 +279,27 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 5
-  - 🇭🇰 香港 | HKG 2
-  - 🇯🇵 日本 | JPN 12
-  - 🇯🇵 日本 | JPN 10
-  - 🇯🇵 日本 | JPN 11
   - 🇭🇰 香港 | HKG 3
-  - 🇸🇬 新加坡 | SGP 5
-  - 🇯🇵 日本 | JPN 8
-  - 🇯🇵 日本 | JPN 9
-  - 🇯🇵 日本 | JPN 7
-  - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 6
-  - 🇯🇵 日本 | JPN 3
-  - 🇸🇬 新加坡 | SGP 3
-  - 🇯🇵 日本 | JPN 4
-  - 🇸🇬 新加坡 | SGP 8
-  - 🇸🇬 新加坡 | SGP 6
   - 🇭🇰 香港 | HKG
-  - 🇯🇵 日本 | JPN
-  - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 5
   - 🇨🇾 塞浦路斯 | CYP
-  - 🇸🇪 瑞典 | SWE 7
-  - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹 意大利 | ITA 4
-  - 🇸🇪 瑞典 | SWE 3
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD
-  - 🇸🇪 瑞典 | SWE 2
   - 🇮🇹IT意大利丨yoyapai.com (6)
-  - 🇮🇹 意大利 | ITA 6
   - 🇮🇹IT意大利丨yoyapai.com (12)
   - 🇷🇺 俄罗斯 | RUS
   - 🇮🇹IT意大利丨yoyapai.com (4)
   - 🇮🇹IT意大利丨yoyapai.com
-  - 🇸🇪 瑞典 | SWE 4
-  - 🇦🇺 澳大利亚 | AUS
   - 🇵🇱 波兰 | POL
   - 🇸🇪 瑞典 | SWE 5
   - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 5
   - ❓未知丨yoyapai.com (3)
-  - 🇸🇪 瑞典 | SWE 6
-  - 🇳🇱 荷兰 | NLD 2
-  - 🇸🇪 瑞典 | SWE 9
   - 🇩🇪 德国 | DEU
-  - 🇳🇱 荷兰 | NLD 3
-  - 🇸🇪 瑞典 | SWE 8
-  - 🇦🇲 AM_08
-  - ❓未知丨yoyapai.com (6)
   - 🇻🇳 越南 | VNM
+  - ❓未知丨yoyapai.com (6)
   - ❓未知丨yoyapai.com (2)
   - ❓未知丨yoyapai.com (8)
   - ❓未知丨yoyapai.com (35)
-  - 🇮🇹 意大利 | ITA 3
   - 🇪🇸 西班牙 | ESP
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -925,7 +308,6 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
@@ -935,18 +317,11 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 5
-  - 🇯🇵 日本 | JPN 12
-  - 🇯🇵 日本 | JPN 10
-  - 🇯🇵 日本 | JPN 11
-  - 🇯🇵 日本 | JPN 8
-  - 🇯🇵 日本 | JPN 9
-  - 🇯🇵 日本 | JPN 7
-  - 🇯🇵 日本 | JPN 2
-  - 🇯🇵 日本 | JPN 6
-  - 🇯🇵 日本 | JPN 3
-  - 🇯🇵 日本 | JPN 4
-  - 🇯🇵 日本 | JPN
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG
+  - 🇺🇸 美国 | USA 9
+  - 🇺🇸 美国 | USA 4
+  - 🇺🇸 美国 | USA 5
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -955,13 +330,8 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 2
+  - 🇺🇸 美国 | USA 5
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -969,18 +339,10 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 5
+  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG
   - ❓未知丨yoyapai.com (3)
-  - 🇺🇸 美国 | USA 7
-  - 🇮🇹 意大利 | ITA
-  - 🇺🇸 美国 | USA 6
-  - 🇦🇺 澳大利亚 | AUS
   - 🇸🇪 瑞典 | SWE 5
-  - 🇮🇹 意大利 | ITA 4
-  - 🇵🇱 波兰 | POL
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 6
-  - 🇸🇪 瑞典 | SWE 6
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
