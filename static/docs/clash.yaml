@@ -7,8 +7,22 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-17T08:01:25.859740+00:00'
+generated-at: '2026-11-17T08:18:43.903326+00:00'
 proxies:
+- name: 🇭🇰 香港 | HKG 6
+  server: 8.217.1.203
+  port: 8443
+  type: vless
+  uuid: 8b17beac-b143-447d-aa68-14cbb121a602
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38
+    short-id: 0bf55f64
+  servername: www.apple.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇭🇰 香港 | HKG 2
   server: 47.244.120.197
   port: 44867
@@ -159,19 +173,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 94.139.250.226
-  port: 443
-  type: vless
-  uuid: a30903dc-1bf0-0001-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 6d2f8a41c9e705b3
-  servername: net-api-ctl.galioncc.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD
   server: 143.246.41.217
   port: 443
@@ -198,24 +199,6 @@ proxies:
   servername: 146.19.254.171
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇨🇿 捷克 | CZE
-  server: 103.118.211.38
-  port: 443
-  type: vless
-  uuid: 3dbd9377-43cc-46c3-b32c-2605908024eb
-  tls: true
-  reality-opts:
-    public-key: PA1xWXjxZLn68I-6cjWVdqc0dYhWbu9W5c1GpjEOZgE
-    short-id: 8a9442353eebbe0f
-  servername: czechia.richforever.ru
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /49b9f446
-    host: czechia.richforever.ru
-    mode: auto
-    x-padding-bytes: 100-300
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 3
   server: 201.24.116.192
@@ -324,20 +307,6 @@ proxies:
     headers:
       Host: clover.filnex.baby
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 77.95.203.145
-  port: 443
-  type: vless
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  tls: true
-  servername: rivulet.filnex.baby
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
-    headers:
-      Host: rivulet.filnex.baby
-  udp: true
 - name: 🇮🇹 意大利 | ITA
   server: 48.103.120.21
   port: 443
@@ -350,26 +319,6 @@ proxies:
   servername: net-svc-io.galioncc.com
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇨🇭 瑞士 | CHE
-  server: 179.43.140.24
-  port: 42831
-  type: vmess
-  uuid: a925a98c-ad7a-40c6-9fdf-130a1de69416
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /3x
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
   udp: true
 - name: 🇩🇪 德国 | DEU 11
   server: clover.filnex.baby
@@ -456,20 +405,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇬🇧 英国 | GBR 2
-  server: 94.183.179.212
-  port: 443
-  type: vless
-  uuid: 372931d3-91c5-4564-b79c-041302de9a17
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 9UG9zvrDpiPgY_J0dvB-n10ygEw3FzJ2qT8PFtITUBE
-    short-id: e06e30590f288e0f
-  servername: gb1.soshelper.space
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 6
   server: 196.196.148.63
   port: 443
@@ -538,22 +473,6 @@ proxies:
     mode: packet-up
     x-padding-bytes: 100-500
   udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 92.255.58.59
-  port: 443
-  type: vless
-  uuid: a30903dc-1bf0-0001-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 344f83372596eea2
-  servername: api-gw-cfg.galioncc.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
 - type: ss
   name: ❓未知丨yoyapai.com (2)
   server: 202.50.253.18
@@ -563,20 +482,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇬🇧 英国 | GBR
-  server: 94.183.179.64
-  port: 443
-  type: vless
-  uuid: 372931d3-91c5-4564-b79c-041302de9a17
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 9UG9zvrDpiPgY_J0dvB-n10ygEw3FzJ2qT8PFtITUBE
-    short-id: e06e30590f288e0f
-  servername: gb2.soshelper.space
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 12
   server: www.hyby.ir
   port: 2087
@@ -645,17 +550,6 @@ proxies:
     host: nl.krabvpn.pro
     mode: auto
   udp: true
-- name: 🇩🇪 德国 | DEU 10
-  server: 31.58.213.31
-  port: 443
-  type: vless
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
-  tls: true
-  flow: xtls-rprx-vision
-  servername: app.streamru2.net
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: 🇪🇸 西班牙 | ESP
   server: 196.196.149.22
   port: 443
@@ -672,10 +566,22 @@ proxies:
     path: /
     host: 3b3377x.es5.h1clayd.click
   udp: true
+- name: 🇩🇪 德国 | DEU 10
+  server: 31.58.213.31
+  port: 443
+  type: vless
+  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
+  tls: true
+  flow: xtls-rprx-vision
+  servername: app.streamru2.net
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
   - 🇺🇸 美国 | USA
@@ -687,10 +593,8 @@ proxy-groups:
   - 🇮🇹 意大利 | ITA 8
   - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 4
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD
   - 🇳🇱 荷兰 | NLD 4
-  - 🇨🇿 捷克 | CZE
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇸🇪 瑞典 | SWE 2
   - 🇮🇹 意大利 | ITA 6
@@ -699,9 +603,7 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 5
   - 🇪🇬 埃及 | EGY
   - 🇵🇱 波兰 | POL
-  - 🇩🇪 德国 | DEU 6
   - 🇮🇹 意大利 | ITA
-  - 🇨🇭 瑞士 | CHE
   - 🇩🇪 德国 | DEU 11
   - 🇩🇪 德国 | DEU 13
   - 🇮🇹 意大利 | ITA 5
@@ -709,62 +611,69 @@ proxy-groups:
   - 🇸🇪 瑞典 | SWE
   - 🇩🇪 德国 | DEU 4
   - ❓未知丨yoyapai.com (3)
-  - 🇬🇧 英国 | GBR 2
   - 🇳🇱 荷兰 | NLD 6
   - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU 9
   - 🇳🇬 尼日利亚 | NGA 2
   - 🇩🇪 德国 | DEU
-  - 🇳🇱 荷兰 | NLD 3
   - ❓未知丨yoyapai.com (2)
-  - 🇬🇧 英国 | GBR
   - 🇩🇪 德国 | DEU 12
   - ❓未知丨yoyapai.com (35)
   - 🇮🇹 意大利 | ITA 3
   - 🇮🇹 意大利 | ITA 7
   - 🇳🇱 荷兰 | NLD 5
-  - 🇩🇪 德国 | DEU 10
   - 🇪🇸 西班牙 | ESP
+  - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
-  interval: 120
+  interval: 300
+  tolerance: 50
+  lazy: true
 - name: HK-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
   url: http://www.gstatic.com/generate_204
-  interval: 120
+  interval: 300
+  tolerance: 50
+  lazy: true
 - name: JP-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 6
   - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
-  - 🇩🇪 德国 | DEU 2
   url: http://www.gstatic.com/generate_204
-  interval: 120
+  interval: 300
+  tolerance: 50
+  lazy: true
 - name: US-POOL
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
-  interval: 120
+  interval: 300
+  tolerance: 50
+  lazy: true
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇮🇹IT意大利丨yoyapai.com
+  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA 9
-  - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹 意大利 | ITA 6
   - 🇮🇹 意大利 | ITA 3
   - ❓未知丨yoyapai.com (2)
-  - 🇮🇹 意大利 | ITA 4
+  - ❓未知丨yoyapai.com (3)
+  - 🇮🇹 意大利 | ITA 7
   - 🇮🇹 意大利 | ITA 8
-  - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 6
   url: http://www.gstatic.com/generate_204
-  interval: 120
+  interval: 300
+  tolerance: 50
+  lazy: true
 - name: FALLBACK
   type: fallback
   proxies:
@@ -773,7 +682,8 @@ proxy-groups:
   - JP-POOL
   - US-POOL
   url: http://www.gstatic.com/generate_204
-  interval: 120
+  interval: 300
+  lazy: true
 - name: PROXY
   type: select
   proxies:
