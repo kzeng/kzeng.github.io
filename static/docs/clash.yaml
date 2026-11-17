@@ -7,8 +7,24 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-17T22:01:28.385623+00:00'
+generated-at: '2026-11-17T23:01:15.076640+00:00'
 proxies:
+- name: 🇭🇰 香港 | HKG 2
+  server: prozac-celebrities-inclusion-parallel.trycloudflare.com
+  port: 443
+  type: vmess
+  uuid: 2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: prozac-celebrities-inclusion-parallel.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea-vm
+    headers:
+      Host: prozac-celebrities-inclusion-parallel.trycloudflare.com
+  udp: true
 - name: 🇭🇰 香港 | HKG 3
   server: 47.242.81.94
   port: 52080
@@ -29,33 +45,12 @@ proxies:
       Host:
       - openai.com
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 8.217.1.203
-  port: 8443
-  type: vless
-  uuid: 8b17beac-b143-447d-aa68-14cbb121a602
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38
-    short-id: 0bf55f64
-  servername: www.apple.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 202.50.253.36
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 3.22.241.58
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
   udp: true
 - name: 🇨🇾 塞浦路斯 | CYP
   server: 194.55.167.133
@@ -74,6 +69,15 @@ proxies:
 - type: ss
   name: 🇮🇹IT意大利丨yoyapai.com (6)
   server: 202.50.253.90
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
+- type: ss
+  name: 🇮🇹IT意大利丨yoyapai.com (12)
+  server: 202.50.253.99
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -101,15 +105,6 @@ proxies:
     path: /assets/nlrelay01/
     mode: auto
   udp: true
-- type: ss
-  name: 🇮🇹IT意大利丨yoyapai.com (12)
-  server: 202.50.253.99
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
 - type: ss
   name: 🇮🇹IT意大利丨yoyapai.com
   server: 202.50.253.45
@@ -263,15 +258,14 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
   - 🇨🇾 塞浦路斯 | CYP
   - 🇮🇹IT意大利丨yoyapai.com (6)
+  - 🇮🇹IT意大利丨yoyapai.com (12)
   - 🇮🇹IT意大利丨yoyapai.com (4)
   - 🇷🇺 俄罗斯 | RUS
-  - 🇮🇹IT意大利丨yoyapai.com (12)
   - 🇮🇹IT意大利丨yoyapai.com
   - 🇵🇱 波兰 | POL
   - 🇸🇪 瑞典 | SWE 5
@@ -291,8 +285,8 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -300,11 +294,11 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
   - 🇨🇾 塞浦路斯 | CYP
+  - 🇮🇹IT意大利丨yoyapai.com (6)
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -313,7 +307,6 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -321,10 +314,10 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 5
-  - 🇮🇹IT意大利丨yoyapai.com (4)
   - 🇮🇹IT意大利丨yoyapai.com
+  - 🇮🇹IT意大利丨yoyapai.com (12)
   - ❓未知丨yoyapai.com (2)
+  - 🇺🇸 美国 | USA 4
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
