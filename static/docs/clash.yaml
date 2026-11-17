@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-17T16:06:17.986870+00:00'
+generated-at: '2026-11-17T17:01:16.184145+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 3
   server: 47.242.81.94
@@ -43,35 +43,12 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 9
-  server: homestead-walloping.sports-streams.org
-  port: 443
-  type: vless
-  uuid: 2f6a56d5-2ee9-43ab-bd57-8b35a0b8d275
-  tls: true
-  reality-opts:
-    public-key: iQCvXMQZR-eT2MVmXP7c99cvcle22mVWuKem_345BWM
-  servername: supersklep.pl
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /
-    host: supersklep.pl
-    mode: auto
-  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 202.50.253.36
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇺🇸 美国 | USA 5
-  server: 3.22.241.58
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
   udp: true
 - name: 🇨🇾 塞浦路斯 | CYP
   server: 194.55.167.133
@@ -105,30 +82,9 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 | RUS
-  server: 201.34.142.108
-  port: 443
-  type: vless
-  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
-  tls: true
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /assets/nlrelay01/
-    mode: auto
-  udp: true
 - type: ss
   name: 🇮🇹IT意大利丨yoyapai.com (4)
   server: 202.50.253.54
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
-- type: ss
-  name: 🇮🇹IT意大利丨yoyapai.com
-  server: 202.50.253.45
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
@@ -194,6 +150,15 @@ proxies:
     host: pl2.obxodvpn.us
     mode: packet-up
   udp: true
+- type: ss
+  name: ❓未知丨yoyapai.com (6)
+  server: 202.50.253.63
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
 - name: 🇻🇳 越南 | VNM
   server: kir4.crackerbinam.org
   port: 25272
@@ -214,15 +179,6 @@ proxies:
       Host:
       - www.cloudflare.com
   udp: true
-- type: ss
-  name: ❓未知丨yoyapai.com (6)
-  server: 202.50.253.63
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
 - type: ss
   name: ❓未知丨yoyapai.com (2)
   server: 202.50.253.18
@@ -281,22 +237,18 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
   - 🇨🇾 塞浦路斯 | CYP
   - 🇮🇹IT意大利丨yoyapai.com (6)
   - 🇮🇹IT意大利丨yoyapai.com (12)
-  - 🇷🇺 俄罗斯 | RUS
   - 🇮🇹IT意大利丨yoyapai.com (4)
-  - 🇮🇹IT意大利丨yoyapai.com
   - 🇵🇱 波兰 | POL
   - 🇸🇪 瑞典 | SWE 5
   - 🇮🇹 意大利 | ITA
   - ❓未知丨yoyapai.com (3)
   - 🇩🇪 德国 | DEU
-  - 🇻🇳 越南 | VNM
   - ❓未知丨yoyapai.com (6)
+  - 🇻🇳 越南 | VNM
   - ❓未知丨yoyapai.com (2)
   - ❓未知丨yoyapai.com (8)
   - ❓未知丨yoyapai.com (35)
@@ -319,9 +271,9 @@ proxy-groups:
   proxies:
   - 🇭🇰 香港 | HKG 3
   - 🇭🇰 香港 | HKG
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
+  - 🇨🇾 塞浦路斯 | CYP
+  - 🇮🇹IT意大利丨yoyapai.com (6)
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -329,9 +281,7 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -339,10 +289,9 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 3
-  - 🇭🇰 香港 | HKG
-  - ❓未知丨yoyapai.com (3)
-  - 🇸🇪 瑞典 | SWE 5
+  - 🇮🇹IT意大利丨yoyapai.com (12)
+  - 🇮🇹IT意大利丨yoyapai.com (6)
+  - 🇵🇱 波兰 | POL
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
