@@ -7,8 +7,36 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-17T12:44:11.312908+00:00'
+generated-at: '2026-11-17T13:01:23.660761+00:00'
 proxies:
+- name: 🇯🇵 日本 | JPN 2
+  server: zfapi.zalolink.com
+  port: 43149
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+    short-id: 15aa0ad4
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡 | SGP 3
+  server: zfapi.zalolink.com
+  port: 30322
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
+    short-id: 6a60e7e382d6
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: ios
+  network: tcp
+  udp: true
 - name: 🇭🇰 香港 | HKG
   server: 47.242.81.94
   port: 52080
@@ -43,6 +71,20 @@ proxies:
   client-fingerprint: ios
   network: tcp
   udp: true
+- name: 🇺🇸 美国 | USA 3
+  server: zfapi.zalolink.com
+  port: 47691
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6PbC7GxOg_YdXya-53llPReUzoU_yknQbkDvI4uorBg
+    short-id: 2905326a
+  servername: m.media-amazon.com
+  client-fingerprint: safari
+  network: tcp
+  udp: true
 - name: 🇺🇸 美国 | USA 5
   server: 192.74.236.148
   port: 30004
@@ -58,23 +100,6 @@ proxies:
     headers:
       Host: www.91334565.xyz
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: stream.study.golangwikito.cfd
-  port: 8443
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  tls: true
-  reality-opts:
-    public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI
-  servername: stream.study.golangwikito.cfd
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /
-    host: stream.study.golangwikito.cfd
-    mode: packet-up
-    x-padding-bytes: 100-500
-  udp: true
 - name: 🇺🇸 美国 | USA 2
   server: 23.129.180.171
   port: 443
@@ -88,19 +113,6 @@ proxies:
   servername: us5.gofizzin.com
   client-fingerprint: edge
   network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 2
-  server: 193.160.208.240
-  port: 443
-  type: vless
-  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
-  tls: true
-  servername: 193.160.208.240
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /assets/twru01/
-    mode: auto
   udp: true
 - name: 🇷🇺 俄罗斯 | RUS 4
   server: vps3.nemnogogo.com
@@ -117,8 +129,8 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇮🇹 意大利 | ITA 8
-  server: 202.50.253.99
+- name: 🇮🇹 意大利 | ITA 10
+  server: 202.50.253.54
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -131,27 +143,12 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 10
-  server: 202.50.253.54
+- name: 🇮🇹 意大利 | ITA 8
+  server: 202.50.253.99
   port: 19999
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: 201.51.12.98
-  port: 443
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  alpn:
-  - h2
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
   udp: true
 - name: 🇮🇹 意大利 | ITA 4
   server: 202.50.253.72
@@ -172,53 +169,6 @@ proxies:
   servername: api-svc-mgr.galioncc.com
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇨🇿 捷克 | CZE
-  server: 103.118.211.38
-  port: 443
-  type: vless
-  uuid: 3dbd9377-43cc-46c3-b32c-2605908024eb
-  tls: true
-  reality-opts:
-    public-key: PA1xWXjxZLn68I-6cjWVdqc0dYhWbu9W5c1GpjEOZgE
-    short-id: 8a9442353eebbe0f
-  servername: czechia.richforever.ru
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /49b9f446
-    host: czechia.richforever.ru
-    mode: auto
-    x-padding-bytes: 100-300
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 4
-  server: 92.255.58.59
-  port: 443
-  type: vless
-  uuid: a30903dc-1bf0-0001-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 344f83372596eea2
-  servername: api-gw-cfg.galioncc.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc
-  udp: true
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 201.24.116.192
-  port: 443
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
   udp: true
 - name: 🇸🇪 瑞典 | SWE 2
   server: 195.72.62.7
@@ -241,55 +191,21 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇪🇪 爱沙尼亚 | EST
-  server: 196.196.148.63
+- name: 🇷🇺 俄罗斯 | RUS
+  server: 171.22.133.5
   port: 443
-  type: vless
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  tls: true
-  reality-opts:
-    public-key: dtO7khFLUkpFDQOtNzo4Th4hJKLoPSY2VtD_9k4Hgiw
-    short-id: 7b2b1a14a6e0630d
-  servername: fc82dfx.nl8.h1clayd.click
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /0616f2d729aa
-    host: fc82dfx.nl8.h1clayd.click
-    mode: auto
-  udp: true
-- name: 🇸🇪 瑞典 | SWE 4
-  server: video.study.golangwikito.cfd
-  port: 8443
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  tls: true
-  reality-opts:
-    public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI
-  servername: video.study.golangwikito.cfd
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /
-    host: video.study.golangwikito.cfd
-    mode: packet-up
-    x-padding-bytes: 100-500
-  udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: 191.217.205.175
-  port: 8443
   type: vless
   uuid: 0b22812b-4a79-42b1-93ec-5b157b0f2f7f
   tls: true
   reality-opts:
-    public-key: 1SldfhWqqF_Rg9QlPKQqufcHi5GhkxwcEV5HGyOy4Qg
-    short-id: 64ad711102f56ca2
-  servername: de.krabvpn.pro
+    public-key: YWaSbf7NwwCZNuB3cQ_VCF20mUwWJBcfMysIZN4j6mI
+    short-id: 7a8c9b0e1d2f3456
+  servername: sw.krabvpn.pro
   client-fingerprint: firefox
   network: xhttp
   xhttp-opts:
-    path: /assets/6c0f3ad762cb7ff51b454076
-    host: de.krabvpn.pro
+    path: /assets/f9c8d7e6a5b4c3d2e1f02468
+    host: sw.krabvpn.pro
     mode: auto
   udp: true
 - name: 🇵🇱 波兰 | POL
@@ -308,6 +224,23 @@ proxies:
     grpc-mode: gun
     grpc-service-name: d5d6142b8b66
   udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 191.217.205.175
+  port: 8443
+  type: vless
+  uuid: 0b22812b-4a79-42b1-93ec-5b157b0f2f7f
+  tls: true
+  reality-opts:
+    public-key: 1SldfhWqqF_Rg9QlPKQqufcHi5GhkxwcEV5HGyOy4Qg
+    short-id: 64ad711102f56ca2
+  servername: de.krabvpn.pro
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /assets/6c0f3ad762cb7ff51b454076
+    host: de.krabvpn.pro
+    mode: auto
+  udp: true
 - name: 🇮🇹 意大利 | ITA 11
   server: 202.50.253.81
   port: 19999
@@ -315,6 +248,24 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇩🇪 德国 | DEU 11
+  server: 5.83.129.90
+  port: 54177
+  type: hysteria
+  auth_str: dongtaiwang.com
+  auth-str: dongtaiwang.com
+  up: 10
+  down: 50
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: 🇨🇭 瑞士 | CHE
   server: 179.43.140.24
   port: 42831
@@ -334,42 +285,6 @@ proxies:
     headers:
       Host:
       - down-cdn.dingtalk.com
-  udp: true
-- name: 🇩🇪 德国 | DEU 11
-  server: 5.83.129.90
-  port: 54177
-  type: hysteria
-  auth_str: dongtaiwang.com
-  auth-str: dongtaiwang.com
-  up: 10
-  down: 50
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇵🇱 波兰 | POL 2
-  server: files.study.golangwikito.cfd
-  port: 8443
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  tls: true
-  reality-opts:
-    public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI
-    short-id: 40a4b9403abe554c
-  servername: files.study.golangwikito.cfd
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /
-    host: files.study.golangwikito.cfd
-    mode: packet-up
-    x-padding-bytes: 100-500
   udp: true
 - name: 🇩🇪 德国 | DEU 13
   server: www.hyby.ir
@@ -421,24 +336,6 @@ proxies:
     host: pl-origin.krabvpn.pro
     mode: auto
   udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: media.study.golangwikito.cfd
-  port: 8443
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  tls: true
-  reality-opts:
-    public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI
-    short-id: 40a4b9403abe554c
-  servername: media.study.golangwikito.cfd
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /
-    host: media.study.golangwikito.cfd
-    mode: packet-up
-    x-padding-bytes: 100-500
-  udp: true
 - name: 🇫🇷 法国 | FRA
   server: 62.210.70.191
   port: 24667
@@ -450,24 +347,38 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: 🇩🇪 德国 | DEU 12
-  server: player.study.golangwikito.cfd
-  port: 8443
+- name: 🇻🇳 越南 | VNM
+  server: zfapi.zalolink.com
+  port: 55688
   type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   tls: true
+  flow: xtls-rprx-vision
   reality-opts:
-    public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI
-    short-id: 40a4b9403abe554c
-  servername: player.study.golangwikito.cfd
-  client-fingerprint: firefox
+    public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
+    short-id: 865c1b2c
+  servername: bilibili-vn.biliimg.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- type: vless
+  name: ❓未知丨yoyapai.com (35)
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  sni: dey.lnmarketplace.net
+  skip-cert-verify: false
+  alpn:
+  - h2
+  client-fingerprint: chrome
   network: xhttp
   xhttp-opts:
-    path: /
-    host: player.study.golangwikito.cfd
-    mode: packet-up
-    x-padding-bytes: 100-500
-  udp: true
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
 - name: 🇮🇹 意大利 | ITA 3
   server: 202.50.253.63
   port: 19999
@@ -479,40 +390,35 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇯🇵 日本 | JPN 2
+  - 🇸🇬 新加坡 | SGP 3
   - 🇭🇰 香港 | HKG
   - 🇸🇬 新加坡 | SGP 2
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
-  - 🇩🇪 德国 | DEU 2
   - 🇷🇺 俄罗斯 | RUS 4
-  - 🇮🇹 意大利 | ITA 8
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 10
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇮🇹 意大利 | ITA 2
+  - 🇮🇹 意大利 | ITA 8
   - 🇮🇹 意大利 | ITA 4
   - 🇸🇪 瑞典 | SWE 3
-  - 🇨🇿 捷克 | CZE
-  - 🇳🇱 荷兰 | NLD 4
-  - 🇷🇺 俄罗斯 | RUS 3
   - 🇸🇪 瑞典 | SWE 2
   - 🇮🇹 意大利 | ITA 6
-  - 🇪🇪 爱沙尼亚 | EST
-  - 🇸🇪 瑞典 | SWE 4
-  - 🇩🇪 德国 | DEU 6
+  - 🇷🇺 俄罗斯 | RUS
   - 🇵🇱 波兰 | POL
+  - 🇩🇪 德国 | DEU 6
   - 🇮🇹 意大利 | ITA 11
-  - 🇨🇭 瑞士 | CHE
-  - 🇩🇪 德国 | DEU 11
   - 🇮🇹 意大利 | ITA
-  - 🇵🇱 波兰 | POL 2
+  - 🇩🇪 德国 | DEU 11
+  - 🇨🇭 瑞士 | CHE
   - 🇩🇪 德国 | DEU 13
   - 🇮🇹 意大利 | ITA 5
   - 🇮🇹 意大利 | ITA 9
   - 🇸🇪 瑞典 | SWE
-  - 🇩🇪 德国 | DEU 4
   - 🇫🇷 法国 | FRA
-  - 🇩🇪 德国 | DEU 12
+  - 🇻🇳 越南 | VNM
+  - ❓未知丨yoyapai.com (35)
   - 🇮🇹 意大利 | ITA 3
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -529,11 +435,7 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG
-  - 🇸🇬 新加坡 | SGP 2
-  - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 2
+  - 🇯🇵 日本 | JPN 2
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -541,8 +443,8 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
+  - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -552,12 +454,11 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇺🇸 美国 | USA 2
-  - 🇺🇸 美国 | USA 5
-  - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 11
-  - 🇮🇹 意大利 | ITA 6
-  - 🇮🇹 意大利 | ITA 2
+  - 🇸🇪 瑞典 | SWE 3
   - 🇮🇹 意大利 | ITA 9
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇮🇹 意大利 | ITA 4
+  - 🇺🇸 美国 | USA 5
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
