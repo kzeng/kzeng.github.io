@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-18T08:02:53.192747+00:00'
+generated-at: '2026-11-18T09:01:20.280302+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG
   server: 47.242.81.94
@@ -56,21 +56,6 @@ proxies:
     headers:
       Host: vipfree.dr-ping.ir
   udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: US122201.ssgreen.org
-  port: 443
-  type: vmess
-  uuid: b8fbcbc5-fe2b-452c-8c94-e37b2a1baeb9
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US122201.ssgreen.org
-  udp: true
 - name: 🇺🇸 美国 | USA 3
   server: 217.69.174.175
   port: 443
@@ -112,20 +97,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 186.243.218.221
-  port: 8443
-  type: vless
-  uuid: fa937345-6d3e-4ff4-8127-1a836987a0db
-  tls: true
-  servername: cloudehouse24.ru
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /v1/assets/7c3f9a2e6b4d8f10/us.js
-    headers:
-      Host: cloudehouse24.ru
-  udp: true
 - name: 🇺🇸 美国 | USA 12
   server: 192.74.236.148
   port: 30004
@@ -140,6 +111,19 @@ proxies:
     path: /path/1733477783705
     headers:
       Host: www.91334565.xyz
+  udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 48.103.120.14
+  port: 443
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: svc-ns-cfg.galioncc.com
+  client-fingerprint: firefox
+  network: tcp
   udp: true
 - name: 🇮🇹 意大利 | ITA 2
   server: 202.50.253.63
@@ -183,23 +167,6 @@ proxies:
   servername: yandex.ru
   client-fingerprint: firefox
   network: tcp
-  udp: true
-- name: 🇳🇱 荷兰 | NLD
-  server: assets.study.golangwikito.cfd
-  port: 8443
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  tls: true
-  reality-opts:
-    public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI
-  servername: assets.study.golangwikito.cfd
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /
-    host: assets.study.golangwikito.cfd
-    mode: packet-up
-    x-padding-bytes: 100-500
   udp: true
 - name: 🇨🇿 捷克 | CZE
   server: czechia.richforever.ru
@@ -292,6 +259,19 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
+- name: 🇩🇪 德国 | DEU 3
+  server: 48.103.120.8
+  port: 443
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: api-gw-ctl.galioncc.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - type: ss
   name: ❓未知丨yoyapai.com (9)
   server: 202.50.253.36
@@ -347,6 +327,19 @@ proxies:
     mode: packet-up
     x-padding-bytes: 100-500
   udp: true
+- name: 🇪🇬 埃及 | EGY
+  server: 48.103.120.22
+  port: 443
+  type: vless
+  uuid: a30903dc-1bf0-0003-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: svc-net-ctl.galioncc.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 - name: 🇵🇱 波兰 | POL
   server: 93.88.206.70
   port: 443
@@ -390,22 +383,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇩🇪 德国 | DEU 8
-  server: 147.45.99.100
-  port: 443
-  type: vless
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: luminexorizon.ink
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: glush.de3.v1
-  udp: true
 - name: 🇩🇪 德国 | DEU 11
   server: 130.78.31.25
   port: 443
@@ -443,6 +420,22 @@ proxies:
       Host:
       - down-cdn.dingtalk.com
   udp: true
+- name: 🇩🇪 德国 | DEU 8
+  server: 147.45.99.100
+  port: 443
+  type: vless
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: luminexorizon.ink
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de3.v1
+  udp: true
 - name: 🇧🇷 巴西 | BRA
   server: platform106.golnamakcert.top
   port: 80
@@ -455,23 +448,6 @@ proxies:
     headers:
       Host: platform106.golnamakcert.top
   udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: 83.141.79.127
-  port: 8443
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  tls: true
-  reality-opts:
-    public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI
-  servername: video.study.golangwikito.cfd
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /
-    host: video.study.golangwikito.cfd
-    mode: packet-up
-    x-padding-bytes: 100-500
-  udp: true
 - type: ss
   name: ❓未知丨yoyapai.com (3)
   server: 202.50.253.72
@@ -481,18 +457,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 136.148.208.221
+- name: 🇩🇪 德国 | DEU 4
+  server: 48.103.120.7
   port: 443
   type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   tls: true
-  flow: xtls-rprx-vision
   reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  servername: 8a2e72t.nl20.h1clayd.shop
-  client-fingerprint: chrome
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: svc-net-ctl.galioncc.com
+  client-fingerprint: firefox
   network: tcp
   udp: true
 - name: 🇫🇷 法国 | FRA
@@ -512,23 +487,18 @@ proxies:
     path: /
     mode: auto
   udp: true
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 82.148.240.75
-  port: 8443
+- name: 🇩🇪 德国 | DEU 9
+  server: 48.103.120.10
+  port: 443
   type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
   tls: true
   reality-opts:
-    public-key: QrNs0ew7snHqLfpVXS9RAhlRzgAzzGZK9fXmDcx9xHI
-    short-id: 40a4b9403abe554c
-  servername: assets.study.golangwikito.cfd
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: net-rt-mgr.galioncc.com
   client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /
-    host: assets.study.golangwikito.cfd
-    mode: packet-up
-    x-padding-bytes: 100-500
+  network: tcp
   udp: true
 - name: 🇩🇪 德国 | DEU
   server: pebble.gerqix.online
@@ -554,6 +524,22 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
+- name: 🇳🇱 荷兰 | NLD 3
+  server: 31.177.111.134
+  port: 443
+  type: vless
+  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
+  tls: true
+  alpn:
+  - http/1.1
+  servername: k6t8wxun3s.schoolbag.top
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /static/metrics/86d07ea17ea1/
+    headers:
+      Host: ns4pmajwas.flowersgood.top
+  udp: true
 - name: 🇨🇿 捷克 | CZE 2
   server: 103.118.211.38
   port: 443
@@ -572,6 +558,26 @@ proxies:
     mode: auto
     x-padding-bytes: 100-300
   udp: true
+- name: 🇻🇳 越南 | VNM
+  server: kir4.crackerbinam.org
+  port: 25272
+  type: vless
+  uuid: f592a058-bfb6-447e-b849-fd169b65b301
+  tls: true
+  reality-opts:
+    public-key: G5fbtso9OktJfpHqg7demmUt8zfjnnEAL_QDRqvOzEU
+    short-id: f3a10622fe
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
+    headers:
+      Host:
+      - www.cloudflare.com
+  udp: true
 - type: ss
   name: ❓未知丨yoyapai.com (8)
   server: 202.50.253.27
@@ -581,24 +587,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
-- type: vless
-  name: ❓未知丨yoyapai.com (35)
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  udp: true
-  tls: true
-  servername: dey.lnmarketplace.net
-  sni: dey.lnmarketplace.net
-  skip-cert-verify: false
-  alpn:
-  - h2
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /kavir
-    host: dey.lnmarketplace.net
-    mode: stream-one
 - name: 🇮🇹 意大利 | ITA 3
   server: 57.131.27.21
   port: 8388
@@ -623,6 +611,19 @@ proxies:
     mode: packet-up
     x-padding-bytes: 100-500
   udp: true
+- name: 🇩🇪 德国 | DEU 10
+  server: 48.103.120.9
+  port: 443
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: net-rt-mgr.galioncc.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
@@ -630,17 +631,15 @@ proxy-groups:
   - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 12
+  - 🇩🇪 德国 | DEU 2
   - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 4
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD 4
-  - 🇳🇱 荷兰 | NLD
   - 🇨🇿 捷克 | CZE
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇸🇪 瑞典 | SWE 2
@@ -648,30 +647,33 @@ proxy-groups:
   - 🇮🇹IT意大利丨yoyapai.com (12)
   - 🇮🇹IT意大利丨yoyapai.com (4)
   - 🇷🇺 俄罗斯 | RUS
+  - 🇩🇪 德国 | DEU 3
   - ❓未知丨yoyapai.com (9)
   - 🇹🇷 土耳其 | TUR
   - 🇦🇱 AL_17
   - 🇩🇪 德国 | DEU 5
+  - 🇪🇬 埃及 | EGY
   - 🇵🇱 波兰 | POL
   - 🇩🇪 德国 | DEU 6
   - 🇧🇷 巴西 | BRA 2
   - 🇮🇹 意大利 | ITA
-  - 🇩🇪 德国 | DEU 8
   - 🇩🇪 德国 | DEU 11
   - 🇨🇭 瑞士 | CHE
+  - 🇩🇪 德国 | DEU 8
   - 🇧🇷 巴西 | BRA
-  - 🇸🇪 瑞典 | SWE
   - ❓未知丨yoyapai.com (3)
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇩🇪 德国 | DEU 4
   - 🇫🇷 法国 | FRA
-  - 🇳🇱 荷兰 | NLD 2
+  - 🇩🇪 德国 | DEU 9
   - 🇩🇪 德国 | DEU
   - ❓未知丨yoyapai.com (7)
+  - 🇳🇱 荷兰 | NLD 3
   - 🇨🇿 捷克 | CZE 2
+  - 🇻🇳 越南 | VNM
   - ❓未知丨yoyapai.com (8)
-  - ❓未知丨yoyapai.com (35)
   - 🇮🇹 意大利 | ITA 3
   - 🇳🇱 荷兰 | NLD 5
+  - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -690,8 +692,8 @@ proxy-groups:
   - 🇭🇰 香港 | HKG
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
+  - 🇺🇸 美国 | USA 4
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -701,11 +703,9 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
-  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 12
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -714,15 +714,15 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇺🇸 美国 | USA 11
-  - ❓未知丨yoyapai.com (9)
-  - ❓未知丨yoyapai.com (7)
-  - 🇮🇹 意大利 | ITA 4
-  - ❓未知丨yoyapai.com (3)
-  - 🇮🇹IT意大利丨yoyapai.com (6)
+  - 🇺🇸 美国 | USA
   - 🇮🇹IT意大利丨yoyapai.com (12)
-  - 🇺🇸 美国 | USA 12
-  - 🇮🇹 意大利 | ITA
+  - 🇮🇹IT意大利丨yoyapai.com (6)
+  - ❓未知丨yoyapai.com (9)
+  - 🇮🇹 意大利 | ITA 2
+  - ❓未知丨yoyapai.com (3)
+  - 🇮🇹IT意大利丨yoyapai.com (4)
+  - 🇮🇹 意大利 | ITA 4
+  - 🇮🇹 意大利 | ITA 3
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
