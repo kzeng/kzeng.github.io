@@ -7,8 +7,43 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-18T03:17:59.244379+00:00'
+generated-at: '2026-11-18T04:01:21.755092+00:00'
 proxies:
+- name: 🇭🇰 香港 | HKG 2
+  server: 47.244.120.197
+  port: 23026
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /arki
+  udp: true
+- name: 🇭🇰 香港 | HKG 4
+  server: 47.242.81.94
+  port: 52080
+  type: vmess
+  uuid: e47b9f77-60e4-4738-8d53-772b6002e146
+  alterId: 0
+  cipher: auto
+  tls: false
+  alpn:
+  - ''
+  skip-cert-verify: true
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /QQqun-737805443
+    headers:
+      Host:
+      - openai.com
+  udp: true
 - name: 🇸🇬 新加坡 | SGP
   server: free.fugui.lol
   port: 51283
@@ -36,6 +71,21 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇺🇸 美国 | USA 6
+  server: US122207.ssgreen.org
+  port: 443
+  type: vmess
+  uuid: 74d216a3-fdb8-4774-a9c3-35f9e5a46819
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: US122207.ssgreen.org
   udp: true
 - name: 🇺🇸 美国 | USA 3
   server: perplexity.com
@@ -161,14 +211,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: grpc
   udp: true
-- name: 🇳🇬 尼日利亚 | NGA
-  server: sclass-01.catcat321.com
-  port: 20103
-  type: trojan
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  skip-cert-verify: true
-  udp: true
 - name: 🇮🇹 意大利 | ITA 2
   server: 202.50.253.99
   port: 19999
@@ -237,13 +279,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.72
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN
   server: free.fugui.lol
   port: 47396
@@ -257,6 +292,13 @@ proxies:
   servername: swdist.apple.com
   client-fingerprint: chrome
   network: tcp
+  udp: true
+- name: 🇮🇹 意大利 | ITA 6
+  server: 202.50.253.72
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - type: ss
   name: 🇮🇹IT意大利丨yoyapai.com (4)
@@ -518,12 +560,37 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: 🇳🇱 荷兰 | NLD 2
+  server: 185.91.52.223
+  port: 444
+  type: vless
+  uuid: 4f692947-7439-4396-9234-d304618bfbcf
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: nl-38-qu60.wave-inside.online
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /xh
+    host: nl-38-qu60.wave-inside.online
+    mode: auto
+  udp: true
 - name: 🇩🇪 德国 | DEU 9
   server: 130.61.145.251
   port: 59924
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: uou5NTq+xna9PBIG+8jtSSyQ6idxiXZgeK+Uw52qopY=
+  udp: true
+- name: 🇳🇬 尼日利亚 | NGA 2
+  server: sclass-b1.catcat321.com
+  port: 20051
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: true
   udp: true
 - name: 🇩🇪 德国 | DEU
   server: 48.103.120.7
@@ -582,15 +649,6 @@ proxies:
     mode: auto
     x-padding-bytes: 100-300
   udp: true
-- type: ss
-  name: ❓未知丨yoyapai.com (2)
-  server: 202.50.253.18
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
 - name: 🇦🇱 AL_16
   server: 196.196.148.85
   port: 443
@@ -604,6 +662,15 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- type: ss
+  name: ❓未知丨yoyapai.com (2)
+  server: 202.50.253.18
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
 - name: 🇻🇳 越南 | VNM
   server: kir4.crackerbinam.org
   port: 25272
@@ -638,13 +705,6 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - type: vless
   name: ❓未知丨yoyapai.com (35)
   server: dey.lnmarketplace.net
@@ -663,6 +723,13 @@ proxies:
     path: /kavir
     host: dey.lnmarketplace.net
     mode: stream-one
+- name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇳🇱 荷兰 | NLD 5
   server: 136.148.208.221
   port: 443
@@ -694,8 +761,11 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 4
   - 🇸🇬 新加坡 | SGP
   - 🇭🇰 香港 | HKG
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
@@ -704,15 +774,14 @@ proxy-groups:
   - 🇳🇱 荷兰 | NLD 7
   - 🇩🇪 德国 | DEU 2
   - 🇳🇱 荷兰 | NLD 8
-  - 🇳🇬 尼日利亚 | NGA
   - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 4
   - 🇷🇺 俄罗斯 | RUS 2
   - 🇳🇱 荷兰 | NLD
   - 🇨🇿 捷克 | CZE
   - 🇷🇺 俄罗斯 | RUS 3
-  - 🇮🇹 意大利 | ITA 6
   - 🇹🇼 🇨🇳 台湾 | TWN
+  - 🇮🇹 意大利 | ITA 6
   - 🇮🇹IT意大利丨yoyapai.com (4)
   - 🇷🇺 俄罗斯 | RUS
   - 🇩🇪 德国 | DEU 3
@@ -734,17 +803,19 @@ proxy-groups:
   - 🇩🇪 德国 | DEU 4
   - 🇳🇱 荷兰 | NLD 6
   - 🇫🇷 法国 | FRA
+  - 🇳🇱 荷兰 | NLD 2
   - 🇩🇪 德国 | DEU 9
+  - 🇳🇬 尼日利亚 | NGA 2
   - 🇩🇪 德国 | DEU
   - ❓未知丨yoyapai.com (7)
   - 🇳🇱 荷兰 | NLD 3
   - 🇨🇿 捷克 | CZE 2
-  - ❓未知丨yoyapai.com (2)
   - 🇦🇱 AL_16
+  - ❓未知丨yoyapai.com (2)
   - 🇻🇳 越南 | VNM
   - 🇬🇧 英国 | GBR
-  - 🇮🇹 意大利 | ITA 3
   - ❓未知丨yoyapai.com (35)
+  - 🇮🇹 意大利 | ITA 3
   - 🇳🇱 荷兰 | NLD 5
   - 🇩🇪 德国 | DEU 10
   url: http://www.gstatic.com/generate_204
@@ -754,6 +825,8 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 4
   - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -762,11 +835,11 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 4
   - 🇸🇬 新加坡 | SGP
   - 🇭🇰 香港 | HKG
-  - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
-  - 🇺🇸 美国 | USA 5
+  - 🇺🇸 美国 | USA 6
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -774,6 +847,7 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
+  - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
@@ -786,15 +860,16 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
+  - 🇺🇸 美国 | USA
+  - 🇭🇰 香港 | HKG 4
   - 🇳🇱 荷兰 | NLD
-  - 🇩🇪 德国 | DEU 13
   - 🇮🇹 意大利 | ITA 2
-  - 🇮🇹IT意大利丨yoyapai.com (4)
+  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA
   - ❓未知丨yoyapai.com (2)
   - 🇮🇹 意大利 | ITA 3
-  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA 6
+  - 🇮🇹 意大利 | ITA 5
   - ❓未知丨yoyapai.com (9)
   url: http://www.gstatic.com/generate_204
   interval: 300
