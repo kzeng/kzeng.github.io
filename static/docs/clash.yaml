@@ -7,23 +7,23 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-21T09:01:12.240146+00:00'
+generated-at: '2026-11-21T10:02:49.185314+00:00'
 proxies:
-- name: FREE-US-au-e24125
-  type: ss
-  server: 15.204.247.206
-  port: 4444
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-- name: FREE-US-au-95cae0
-  type: ss
-  server: 37.19.198.236
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
 - name: FREE-US-au-4878e9
   type: ss
   server: 37.19.198.244
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: FREE-US-au-c5f0d6
+  type: ss
+  server: 37.19.198.160
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: FREE-US-au-95cae0
+  type: ss
+  server: 37.19.198.236
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
@@ -33,24 +33,21 @@ proxies:
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: FREE-US-au-c5f0d6
-  type: ss
-  server: 37.19.198.160
+- name: US - zhuhai.uk 03
+  type: http
+  server: 172.64.69.89
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 172.64.69.89
+  skip-cert-verify: true
 - name: FREE-US-au-787aac
   type: ss
   server: 37.19.198.243
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: FREE-US-au-507b75
-  type: ss
-  server: 198.98.53.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: eDfN7SODQceIOmIAbtJJtK
 - name: FREE-US-au-4b7e1a
   type: ss
   server: 45.86.51.18
@@ -63,13 +60,6 @@ proxies:
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: FREE-US-au-cb75bf
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  alterId: 0
-  cipher: none
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - name: FREE-US-au-590392
   type: vless
   server: 159.89.87.21
@@ -82,21 +72,33 @@ proxies:
     public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
     short-id: ''
   servername: aws.amazon.com
-- name: FREE-US-au-e92624
+- name: FREE-US-au-dfd41d
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  alterId: 0
+  cipher: aes-128-gcm
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: FREE-US-au-cb75bf
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  alterId: 0
+  cipher: none
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: FREE-US-au-714fc4
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  alterId: 0
+  cipher: auto
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: FREE-US-au-507b75
   type: ss
-  server: 138.199.42.68
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: US - zhuhai.uk 03
-  type: http
-  server: 172.64.69.89
+  server: 198.98.53.130
   port: 443
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: 172.64.69.89
-  skip-cert-verify: true
+  cipher: chacha20-ietf-poly1305
+  password: eDfN7SODQceIOmIAbtJJtK
 - name: 🇩🇪DE_2|2.9MB/s
   password: 'null'
   port: 443
@@ -105,6 +107,49 @@ proxies:
   tls: true
   type: http
   username: 'null'
+- name: FREE-US-au-50e82b
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  alterId: 0
+  cipher: auto
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: FREE-US-au-e92624
+  type: ss
+  server: 138.199.42.68
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: FREE-US-au-52b9b9
+  type: vless
+  server: 45.138.100.248
+  port: 10443
+  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
+- name: FREE-CA-au-ada29c
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  alterId: 0
+  cipher: auto
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: FREE-CA-au-549056
+  type: ss
+  server: 137.184.174.93
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: FREE-DE-au-1a45c8
+  type: vless
+  server: 169.40.42.74
+  port: 443
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: random
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
 - name: FREE-IL-au-3aa6b3
   type: vless
   server: 185.95.231.156
@@ -117,44 +162,73 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-- name: FREE-US-au-1a563e
-  type: vless
-  server: 167.17.69.171
-  port: 443
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  uuid: 00144519-7e0d-476b-8d28-435576af9262
-  reality-opts:
-    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
-    short-id: 0990d22f
-  servername: www.cloudflare.com
-- name: FREE-US-au-1b16a3
-  type: ss
-  server: 156.146.38.169
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
 - name: FREE-US-au-ea917d
   type: ss
   server: 156.146.38.168
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: FREE-CA-au-ada29c
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  alterId: 0
-  cipher: auto
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: FREE-DE-au-1a45c8
+- name: FREE-US-au-2c2981
+  type: ss
+  server: 156.146.38.170
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: FREE-CA-au-f04e0b
+  type: ss
+  server: 138.197.141.58
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: FREE-US-au-1b16a3
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: FREE-US-au-e24125
+  type: ss
+  server: 15.204.247.206
+  port: 4444
+  cipher: aes-256-gcm
+  password: pKEW8JPByTVTLtM
+- name: FREE-US-au-745f50
+  type: trojan
+  server: 216.152.155.23
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.nextjobopportunityandclaimyouridealrole.com
+- name: FREE-DE-au-b19cdb
   type: vless
-  server: 169.40.42.74
+  server: 169.40.42.89
   port: 443
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: random
+  client-fingerprint: chrome
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+- name: FREE-DE-au-359901
+  type: vless
+  server: 169.40.42.168
+  port: 443
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+- name: FREE-DE-au-09ce5a
+  type: vless
+  server: 169.40.42.229
+  port: 443
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
@@ -172,51 +246,15 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   servername: yahoo.com
-- name: FREE-DE-au-aa84c9
-  type: vless
-  server: 169.40.42.202
+- name: FREE-US-au-d30e2e
+  type: trojan
+  server: 170.101.101.67
   port: 443
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-- name: FREE-US-au-2c2981
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: FREE-CA-au-549056
-  type: ss
-  server: 137.184.174.93
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: FREE-CA-au-f04e0b
-  type: ss
-  server: 138.197.141.58
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.explorecreativejobsandenhanceyourcareerportfolio.com
 - name: FREE-US-au-b0f8ea
   type: ss
   server: 79.110.54.250
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: FREE-US-au-652b48
-  type: trojan
-  server: 170.101.101.19
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.explorecreativejobsandenhanceyourcareerportfolio.com
-- name: FREE-US-au-e86182
-  type: ss
-  server: 107.151.182.253
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
@@ -226,15 +264,9 @@ proxies:
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: FREE-US-au-d30e2e
-  type: trojan
-  server: 170.101.101.67
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.explorecreativejobsandenhanceyourcareerportfolio.com
-- name: FREE-US-au-0e9bde
+- name: FREE-US-au-e86182
   type: ss
-  server: 79.110.53.169
+  server: 107.151.182.253
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
@@ -244,44 +276,12 @@ proxies:
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: FREE-US-au-714fc4
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  alterId: 0
-  cipher: auto
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: FREE-US-au-838069
-  type: ss
-  server: 107.155.57.51
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: FREE-US-au-ac2fab
-  type: ss
-  server: 23.251.121.242
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: FREE-US-au-cb4694
-  type: ss
-  server: 107.155.57.11
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
 - name: FREE-US-au-8fc6be
   type: ss
   server: 193.151.160.9
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: FREE-US-au-15a441
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  alterId: 0
-  cipher: auto
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - name: FREE-US-au-2a2b1b
   type: ss
   server: 193.151.160.18
@@ -306,91 +306,6 @@ proxies:
       Host:
       - mmsc.vnet.mobi
   udp: true
-- name: FREE-US-au-a28299
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  alterId: 0
-  cipher: auto
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: FREE-US-au-10380c
-  type: ss
-  server: 138.199.43.159
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: FREE-DE-au-09ce5a
-  type: vless
-  server: 169.40.42.229
-  port: 443
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-- name: FREE-DE-au-973c49
-  type: vless
-  server: 169.40.42.35
-  port: 443
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-- name: FREE-US-au-745f50
-  type: trojan
-  server: 216.152.155.23
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.nextjobopportunityandclaimyouridealrole.com
-- name: FREE-US-au-4609bf
-  type: ss
-  server: 173.244.56.6
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: FREE-US-au-22065f
-  type: ss
-  server: 173.244.56.9
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: FREE-US-au-873300
-  type: trojan
-  server: 169.197.140.245
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-- name: FREE-US-au-404022
-  type: trojan
-  server: 169.197.140.218
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-- name: FREE-CA-au-1f83d7
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: FREE-DE-au-b19cdb
-  type: vless
-  server: 169.40.42.89
-  port: 443
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
 - name: FREE-DE-au-c9df1c
   type: vless
   server: 169.40.42.90
@@ -403,17 +318,137 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   servername: yahoo.com
+- name: FREE-DE-au-76ce3f
+  type: vless
+  server: 169.40.42.163
+  port: 443
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+- name: FREE-US-au-10380c
+  type: ss
+  server: 138.199.43.159
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: FREE-US-au-ac2fab
+  type: ss
+  server: 23.251.121.242
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: FREE-US-au-15a441
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  alterId: 0
+  cipher: auto
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: FREE-US-au-0e9bde
+  type: ss
+  server: 79.110.53.169
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: FREE-US-au-838069
+  type: ss
+  server: 107.155.57.51
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: FREE-US-au-cb4694
+  type: ss
+  server: 107.155.57.11
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: FREE-US-au-a28299
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  alterId: 0
+  cipher: auto
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: FREE-DE-au-973c49
+  type: vless
+  server: 169.40.42.35
+  port: 443
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+- name: FREE-US-au-804c8f
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  alterId: 0
+  cipher: none
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: US - zhuhai.uk 04
+  type: http
+  server: 38.247.141.135
+  port: 443
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 38.247.141.135
+  skip-cert-verify: true
+- name: FREE-US-au-404022
+  type: trojan
+  server: 169.197.140.218
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
 - name: FREE-US-au-66f093
   type: trojan
   server: 169.197.140.169
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: api.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+- name: FREE-US-au-873300
+  type: trojan
+  server: 169.197.140.245
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.discoverfreshgraduatejobsstartyourprofessionaljourney.com
 - name: 🇺🇸US_9|2.7MB/s
   port: 18080
   server: 52.128.238.98
   skip-cert-verify: true
   type: http
+- name: FREE-DE-au-aa84c9
+  type: vless
+  server: 169.40.42.202
+  port: 443
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+- name: FREE-US-au-4609bf
+  type: ss
+  server: 173.244.56.6
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: FREE-US-au-22065f
+  type: ss
+  server: 173.244.56.9
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇬🇧 英国 | GBR 2
   server: 161.35.37.106
   port: 443
@@ -429,54 +464,146 @@ proxies:
       Host:
       - fast.com
   udp: true
-- name: FREE-US-au-a27e6a
-  type: trojan
-  server: 167.88.61.198
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.browseseniorrolesandenhanceyourcareertoday.com
-- name: FREE-US-au-d82b83
-  type: trojan
-  server: 167.88.61.175
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
-- name: FREE-US-au-e73608
-  type: trojan
-  server: 167.88.61.193
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseseniorrolesandenhanceyourcareertoday.com
-- name: FREE-US-au-f6fd97
-  type: trojan
-  server: 167.88.61.85
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.browseseniorrolesandenhanceyourcareertoday.com
-- name: FREE-US-au-915d05
-  type: trojan
-  server: 167.88.61.20
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.browseseniorrolesandenhanceyourcareertoday.com
-- name: FREE-DE-au-680506
+- name: FREE-CA-au-1f83d7
   type: ss
-  server: 185.176.204.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: FREE-DE-au-32d75d
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: US - zhuhai.uk
+  type: http
+  server: 38.247.141.135
+  port: 443
+  tls: true
+  sni: 38.247.141.135
+  skip-cert-verify: true
+- name: FREE-US-au-d78f3b
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  alterId: 0
+  cipher: auto
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: FREE-GB-au-bbd5b1
   type: ss
-  server: 169.150.210.233
+  server: 82.38.31.179
   port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
 - name: FREE-GB-au-9f9bf2
   type: ss
   server: 185.176.206.9
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: FREE-US-au-2a2679
+  type: vless
+  server: 15.204.97.214
+  port: 23576
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+- name: FREE-GB-au-7b9a67
+  type: ss
+  server: 82.38.31.61
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: FREE-GB-au-5f926d
+  type: ss
+  server: 82.38.31.47
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: FREE-GB-au-01f182
+  type: ss
+  server: 82.38.31.66
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: FREE-GB-au-87abdc
+  type: ss
+  server: 82.38.31.39
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: FREE-US-au-d82b83
+  type: trojan
+  server: 167.88.61.175
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
+- name: FREE-GB-au-aa60a5
+  type: ss
+  server: 82.38.31.201
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: FREE-GB-au-521c7f
+  type: ss
+  server: 82.38.31.193
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: FREE-GB-au-b5a85e
+  type: ss
+  server: 82.38.31.48
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: FREE-GB-au-876523
+  type: ss
+  server: 98.98.207.163
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: FREE-GB-au-857d4a
+  type: ss
+  server: 82.38.31.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: FREE-GB-au-aa8661
+  type: ss
+  server: 82.38.31.62
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: FREE-GB-au-fcaa3c
+  type: ss
+  server: 146.70.61.37
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: FREE-US-au-f6fd97
+  type: trojan
+  server: 167.88.61.85
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.browseseniorrolesandenhanceyourcareertoday.com
+- name: FREE-GB-au-3139d8
+  type: ss
+  server: 82.38.31.162
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: FREE-US-au-1b2d76
+  type: vless
+  server: ww13.levikogjgfdd.ir
+  port: 23576
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
 - name: 🇳🇱 荷兰 | NLD
   server: 146.190.21.145
   port: 443
@@ -491,6 +618,99 @@ proxies:
     headers:
       Host:
       - fast.com
+  udp: true
+- name: FREE-DE-au-680506
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: FREE-US-au-a6d03f
+  type: vless
+  server: 15.204.97.219
+  port: 23576
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+- name: FREE-GB-au-cec1df
+  type: ss
+  server: 98.98.142.161
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: FREE-DE-au-32d75d
+  type: ss
+  server: 169.150.210.233
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: FREE-UA-au-0b8870
+  type: ss
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: FREE-NL-au-85b3ee
+  type: ss
+  server: 193.29.139.198
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇮🇹 意大利 | ITA 2
+  server: 202.50.253.72
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: FREE-GB-au-b796e7
+  type: ss
+  server: 141.98.101.181
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: FREE-IT-au-686ed0
+  type: ss
+  server: 202.50.253.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: FREE-CA-au-db073b
+  type: trojan
+  server: 216.152.147.93
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectingpeoplewithgreatjobs.com
+- name: FREE-GB-au-1e7505
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: FREE-GB-au-5dfa00
+  type: ss
+  server: 178.83.185.156
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.36
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇮🇹 意大利 | ITA 7
+  server: 202.50.253.54
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: US - zhuhai.uk 06
   type: http
@@ -508,226 +728,19 @@ proxies:
   tls: true
   sni: 138.199.35.216
   skip-cert-verify: true
-- name: FREE-GB-au-b796e7
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: FREE-US-au-d78f3b
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  alterId: 0
-  cipher: auto
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: FREE-US-au-2a2679
-  type: vless
-  server: 15.204.97.214
-  port: 23576
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-- name: FREE-US-au-a6d03f
-  type: vless
-  server: 15.204.97.219
-  port: 23576
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-- name: FREE-US-au-7e11b4
+- name: FREE-US-au-a27e6a
   type: trojan
-  server: www.findlocaljobnetworkandbuildcommunityconnections.com
+  server: 167.88.61.198
   port: 443
-  password: 242a3d8eee5e4ed1a6bfa4141d549a25
-- name: FREE-GB-au-857d4a
-  type: ss
-  server: 82.38.31.202
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: FREE-GB-au-5dfa00
-  type: ss
-  server: 178.83.185.156
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: FREE-GB-au-7b9a67
-  type: ss
-  server: 82.38.31.61
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: FREE-GB-au-87abdc
-  type: ss
-  server: 82.38.31.39
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: FREE-GB-au-bbd5b1
-  type: ss
-  server: 82.38.31.179
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: FREE-GB-au-01f182
-  type: ss
-  server: 82.38.31.66
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: FREE-GB-au-aa60a5
-  type: ss
-  server: 82.38.31.201
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: FREE-GB-au-521c7f
-  type: ss
-  server: 82.38.31.193
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: FREE-UA-au-0b8870
-  type: ss
-  server: 185.164.175.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.90
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: FREE-GB-au-3139d8
-  type: ss
-  server: 82.38.31.162
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.browseseniorrolesandenhanceyourcareertoday.com
+- name: IE_speednode_0013
   port: 443
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: FREE-GB-au-b5a85e
-  type: ss
-  server: 82.38.31.48
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: FREE-GB-au-cec1df
-  type: ss
-  server: 98.98.142.161
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: FREE-GB-au-5f926d
-  type: ss
-  server: 82.38.31.47
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: FREE-GB-au-aa8661
-  type: ss
-  server: 82.38.31.62
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: FREE-GB-au-876523
-  type: ss
-  server: 98.98.207.163
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: FREE-US-au-804c8f
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  alterId: 0
-  cipher: none
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: FREE-GB-au-1e7505
-  type: ss
-  server: 82.110.60.9
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: FREE-JP-au-6dc9ef
-  type: ss
-  server: 149.22.87.240
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: FREE-JP-au-bec380
-  type: ss
-  server: 149.22.87.204
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: FREE-JP-au-61c45e
-  type: ss
-  server: 149.22.87.241
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.36
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇮🇹 意大利 | ITA 3
-  server: 202.50.253.18
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: FREE-IT-au-686ed0
-  type: ss
-  server: 202.50.253.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: FREE-US-au-fa73dc
-  type: vless
-  server: edge.bookmai.com
-  port: 443
+  server: 34.249.214.108
+  skip-cert-verify: true
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  servername: mother-earth.fyi
-- name: 🇺🇸US_4|1.6MB/s
-  password: l1tlrdx52v
-  port: 62000
-  server: 66.253.2.69
-  type: socks5
-  username: u_rb1dba2
-- name: FREE-NL-au-5fa5a4
-  type: vless
-  server: 51.158.206.26
-  port: 23576
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
+  type: http
+  udp: true
 - name: 🇫🇷 法国|@ripaojiedian
   server: edge.bookmai.com
   port: 443
@@ -743,6 +756,18 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
+- name: FREE-US-au-fa73dc
+  type: vless
+  server: edge.bookmai.com
+  port: 443
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: ''
+  servername: mother-earth.fyi
 - name: FREE-DE-au-04004d
   type: vless
   server: 9.247.23.209
@@ -755,41 +780,27 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: ''
   servername: mother-earth.fyi
-- name: FREE-GB-au-fcaa3c
+- name: FREE-JP-au-bec380
   type: ss
-  server: 146.70.61.37
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: FREE-DE-au-359901
-  type: vless
-  server: 169.40.42.168
+  server: 149.22.87.204
   port: 443
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-- name: 🇩🇪 德国 | DEU 10
-  server: 109.106.15.99
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: FREE-JP-au-6dc9ef
+  type: ss
+  server: 149.22.87.240
   port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: FREE-JP-au-61c45e
+  type: ss
+  server: 149.22.87.241
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: FREE-NL-au-5fa5a4
   type: vless
-  uuid: bc93a03d-13b5-0004-8ee7-d50c11459dab
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: key-master-saver.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: FREE-US-au-1b2d76
-  type: vless
-  server: ww13.levikogjgfdd.ir
+  server: 51.158.206.26
   port: 23576
   tls: true
   flow: xtls-rprx-vision
@@ -805,63 +816,54 @@ proxies:
   port: 42000
   username: Tek2x6av
   password: DJy1T0dt
-- name: IE_speednode_0013
-  port: 443
-  server: 34.249.214.108
+- name: 🇷🇺 俄罗斯 | RUS 3
+  server: 103.88.243.142
+  port: 11592
+  type: hysteria2
+  password: 41edb44c8e
+  auth: 41edb44c8e
+  sni: srv-17e124.21freedom.net
   skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: FREE-IT-au-f48d3f
-  type: ss
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: FREE-NL-au-3cad21
+- name: FREE-NL-au-21c110
   type: vless
-  server: 130.12.242.106
-  port: 443
+  server: 51.158.206.80
+  port: 23576
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  servername: deepl.com
-- name: FREE-US-au-793a62
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  alterId: 0
-  cipher: auto
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.81
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  servername: fuck.rkn
+- name: 🇷🇺 俄罗斯 | RUS 5
+  server: srv-17e124.21freedom.net
+  port: 11592
+  type: hysteria2
+  password: 41edb44c8e
+  auth: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 | POL
+  server: 150.241.87.52
+  port: 443
+  type: vless
+  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
+  servername: pl.galacticworld.online
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-- name: FREE-BY-au-581e63
+- name: FREE-NL-au-168be0
   type: vless
-  server: 178.172.227.124
-  port: 10443
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-- name: FREE-NL-au-85b3ee
-  type: ss
-  server: 193.29.139.198
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: FREE-NL-au-9cacfe
-  type: vless
-  server: 86.54.28.75
+  server: free-amsterdam-node-1.cloudwidecdn.com
   port: 443
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: firefox
+  client-fingerprint: random
   uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
   reality-opts:
     public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
@@ -880,24 +882,19 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
-- name: MX - zhuhai.uk
-  type: socks5
-  server: 144.225.47.8
-  port: 42000
-  username: Tek2x6av
-  password: DJy1T0dt
-- name: FREE-US-au-b88cbb
-  type: vless
-  server: 195.123.240.65
+- name: 🇸🇪 瑞典 | SWE
+  server: pl.galacticworld.online
   port: 443
+  type: vless
+  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
   reality-opts:
-    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
-    short-id: 19296c9f1bf9c7b1
-  servername: www.cloudflare.com
+    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
+  servername: pl.galacticworld.online
+  client-fingerprint: qq
+  network: tcp
+  udp: true
 - name: RU - zhuhai.uk 01
   type: vless
   server: 201.51.12.98
@@ -910,52 +907,33 @@ proxies:
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 | RUS 3
-  server: 103.88.243.142
-  port: 11592
-  type: hysteria2
-  password: 41edb44c8e
-  auth: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
-- name: FR_speednode_0010
-  password: 'null'
-  port: 23856
-  server: 51.159.225.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: 🇷🇺 俄罗斯 | RUS 2
-  server: vps3.nemnogogo.com
-  port: 443
+- name: FREE-NL-au-3cad21
   type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  server: 130.12.242.106
+  port: 443
   tls: true
-  alpn:
-  - h2
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  servername: deepl.com
+- name: 🇺🇸 美国 | USA 6
+  server: 192.74.236.148
+  port: 30004
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /path/1733477783705
+    headers:
+      Host: www.91334565.xyz
   udp: true
-- name: 🇷🇺 俄罗斯 | RUS 5
-  server: srv-17e124.21freedom.net
-  port: 11592
-  type: hysteria2
-  password: 41edb44c8e
-  auth: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
-- name: NL - zhuhai.uk
-  type: http
-  server: 51.159.225.197
-  port: 19362
-  tls: true
-  skip-cert-verify: true
 - name: FREE-GB-au-bb7bb5
   type: ss
   server: 82.38.31.176
@@ -976,27 +954,43 @@ proxies:
     headers:
       Host: guanwang.awsno.com
     path: /hls/cctv5phd.m3u8
-- name: FREE-SG-au-06c433
-  type: ss
-  server: 68.183.227.236
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: FREE-US-au-48a795
-  type: trojan
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+- name: 🇷🇺 俄罗斯 | RUS 2
+  server: vps3.nemnogogo.com
   port: 443
-  password: f0eb8c92ce8946aaba856569cff1a16b
-- name: FREE-US-au-0a1d69
-  type: trojan
-  server: 216.152.156.49
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  alpn:
+  - h2
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
+  udp: true
+- name: 🇺🇸US_4|1.6MB/s
+  password: l1tlrdx52v
+  port: 62000
+  server: 66.253.2.69
+  type: socks5
+  username: u_rb1dba2
+- name: FREE-NL-au-9cacfe
+  type: vless
+  server: 86.54.28.75
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.healthcarejobshubenhancemedicalprofessionalskillstoday.com
-- name: 美国 365
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
+  reality-opts:
+    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
+    short-id: 1d86d17709852910
+  servername: www.apple.com
+- name: 美国 370
   type: vmess
   network: ws
-  server: 104.18.42.163
+  server: www.shopify.com
   port: 443
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   skip-cert-verify: true
@@ -1007,20 +1001,6 @@ proxies:
     headers:
       Host: guanwang.awsno.com
     path: /hls/cctv5phd.m3u8
-- cipher: 2022-blake3-aes-256-gcm
-  name: 🇸🇬SG_1|2.2MB/s
-  password: ClzJLvRzIxivCXbf5X5jnSU0pLg5ffCEUL2AZoeLg94=
-  port: 8388
-  server: 43.160.213.146
-  type: ss
-  udp: true
-  x-toolall-mihomo: true
-- name: FREE-SG-au-bd8bb2
-  type: ss
-  server: 68.183.227.4
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
 - type: vmess
   name: 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
   server: 188.114.99.137
@@ -1037,32 +1017,104 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
+- name: 美国 365
+  type: vmess
+  network: ws
+  server: 104.18.42.163
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: guanwang.awsno.com
+    path: /hls/cctv5phd.m3u8
+- name: NL_speednode_0026
+  port: 9002
+  server: 84.17.47.125
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: NL - zhuhai.uk 03
+  type: http
+  server: 84.17.47.124
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 84.17.47.124
+  skip-cert-verify: true
+- name: MX - zhuhai.uk
+  type: socks5
+  server: 144.225.47.8
+  port: 42000
+  username: Tek2x6av
+  password: DJy1T0dt
 - name: FREE-SG-au-906c41
   type: ss
   server: 128.1.186.73
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇧🇪BE_1|681KB/s
+- name: 🇳🇱NL_1|1.5MB/s
   password: ''
   port: 443
-  server: 146.70.176.242
+  server: 149.36.51.129
   skip-cert-verify: true
   tls: true
   type: http
+  udp: true
   username: ''
-- name: FREE-SG-au-3168f5
+  x-toolall-mihomo: true
+- name: NL - zhuhai.uk 02
+  type: http
+  server: 84.17.47.149
+  port: 9002
+  tls: true
+  sni: 84.17.47.149
+  skip-cert-verify: true
+- cipher: 2022-blake3-aes-256-gcm
+  name: 🇸🇬SG_1|2.2MB/s
+  password: ClzJLvRzIxivCXbf5X5jnSU0pLg5ffCEUL2AZoeLg94=
+  port: 8388
+  server: 43.160.213.146
   type: ss
-  server: 68.183.235.122
+  udp: true
+  x-toolall-mihomo: true
+- name: FREE-SG-au-06c433
+  type: ss
+  server: 68.183.227.236
   port: 8080
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: FREE-SG-au-9b918d
-  type: ss
-  server: 68.183.235.240
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+- name: FR_speednode_0010
+  password: 'null'
+  port: 23856
+  server: 51.159.225.196
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+- name: NL_speednode_0022
+  password: 'null'
+  port: 443
+  server: 103.97.88.154
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+- name: NL_speednode_0023
+  port: 9002
+  server: 84.17.47.124
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
 - name: 🇩🇪DE_1|1.1MB/s|P002-260618
   password: None
   port: 443
@@ -1073,6 +1125,39 @@ proxies:
   type: http
   udp: true
   x-toolall-mihomo: true
+- name: 🇧🇪BE_1|681KB/s
+  password: ''
+  port: 443
+  server: 146.70.176.242
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 🇳🇱NL_1|3.5MB/s
+  port: 9002
+  server: 84.17.47.148
+  skip-cert-verify: true
+  sni: 84.17.47.148
+  tls: true
+  type: http
+- name: CH - zhuhai.uk
+  type: http
+  server: 37.120.213.210
+  port: 9443
+  tls: true
+  skip-cert-verify: true
+- name: NL - zhuhai.uk
+  type: http
+  server: 51.159.225.197
+  port: 19362
+  tls: true
+  skip-cert-verify: true
+- name: FREE-SG-au-9b918d
+  type: ss
+  server: 68.183.235.240
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: FREE-SG-au-46941e
   type: vmess
   server: 149.88.23.202
@@ -1080,9 +1165,82 @@ proxies:
   alterId: 0
   cipher: auto
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: FREE-SG-au-bd8bb2
+  type: ss
+  server: 68.183.227.4
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇳🇱NL_3|2.0MB/s|R002-260618
+  password: 'null'
+  port: 9002
+  server: 84.17.47.149
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+  x-toolall-mihomo: true
+- name: NL_speednode_0027
+  password: None
+  port: 9002
+  server: 84.17.47.123
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: NL - zhuhai.uk 04
+  type: http
+  server: 84.17.47.126
+  port: 9002
+  tls: true
+  sni: 84.17.47.126
+  skip-cert-verify: true
+- name: FREE-SG-au-3168f5
+  type: ss
+  server: 68.183.235.122
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: DK_speednode_0005
   port: 9002
   server: 158.173.154.5
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: DK_speednode_0006
+  port: 9002
+  server: 158.173.154.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: FREE-ZA-au-57414b
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
+- name: FREE-ZA-au-a0afcc
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+- name: 🇨🇿CZ_1|1.0MB/s
+  password: ''
+  port: 443
+  server: 185.216.35.66
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: LV_speednode_0021
+  password: None
+  port: 443
+  server: 185.219.159.16
   skip-cert-verify: true
   tls: true
   type: http
@@ -1101,32 +1259,13 @@ proxies:
     headers:
       Host: guanwang.awsno.com
     path: /hls/cctv5phd.m3u8
-- name: NL - zhuhai.uk 02
-  type: http
-  server: 84.17.47.149
-  port: 9002
-  tls: true
-  sni: 84.17.47.149
-  skip-cert-verify: true
-- name: 🇳🇱NL_1|1.5MB/s
-  password: ''
+- name: LV_speednode_0020
   port: 443
-  server: 149.36.51.129
+  server: 185.219.159.15
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-  username: ''
-  x-toolall-mihomo: true
-- name: NL - zhuhai.uk 03
-  type: http
-  server: 84.17.47.124
-  port: 9002
-  username: 'null'
-  password: 'null'
-  tls: true
-  sni: 84.17.47.124
-  skip-cert-verify: true
 - name: 🇪🇸ES_1|819KB/s
   password: ''
   port: 443
@@ -1135,223 +1274,6 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 美国 370
-  type: vmess
-  network: ws
-  server: www.shopify.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: guanwang.awsno.com
-    path: /hls/cctv5phd.m3u8
-- name: CH - zhuhai.uk
-  type: http
-  server: 37.120.213.210
-  port: 9443
-  tls: true
-  skip-cert-verify: true
-- name: NL - zhuhai.uk 04
-  type: http
-  server: 84.17.47.126
-  port: 9002
-  tls: true
-  sni: 84.17.47.126
-  skip-cert-verify: true
-- name: NL_speednode_0023
-  port: 9002
-  server: 84.17.47.124
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇮🇹 意大利 | ITA 5
-  server: 202.50.253.45
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: 🇳🇱NL_1|3.5MB/s
-  port: 9002
-  server: 84.17.47.148
-  skip-cert-verify: true
-  sni: 84.17.47.148
-  tls: true
-  type: http
-- name: NL_speednode_0027
-  password: None
-  port: 9002
-  server: 84.17.47.123
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇳🇱NL_3|2.0MB/s|R002-260618
-  password: 'null'
-  port: 9002
-  server: 84.17.47.149
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 🇳🇱 荷兰 | NLD 3-2
-  server: 109.104.153.43
-  port: 33336
-  type: ssr
-  cipher: chacha20-ietf
-  password: dongtaiwang.com
-  protocol: auth_chain_a
-  obfs: tls1.2_ticket_auth
-  protocolparam: ''
-  obfsparam: ''
-  udp: true
-- name: NL_speednode_0026
-  port: 9002
-  server: 84.17.47.125
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: FREE-JP-au-f736a1
-  type: ss
-  server: 84.247.155.196
-  port: 80
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: DK_speednode_0006
-  port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: DE_speednode_0004
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: FREE-NL-au-168be0
-  type: vless
-  server: free-amsterdam-node-1.cloudwidecdn.com
-  port: 443
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: random
-  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
-  reality-opts:
-    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
-    short-id: 1d86d17709852910
-  servername: www.apple.com
-- name: 🇨🇿CZ_1|1.0MB/s
-  password: ''
-  port: 443
-  server: 185.216.35.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: FREE-ZA-au-a0afcc
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-- name: FREE-ZA-au-57414b
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-- name: 🇮🇹 意大利 | ITA 7
-  server: 202.50.253.54
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: FREE-NL-au-21c110
-  type: vless
-  server: 51.158.206.80
-  port: 23576
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  servername: fuck.rkn
-- name: DE - zhuhai.uk
-  type: socks5
-  server: 91.109.47.96
-  port: 42000
-  username: u7feiej0
-  password: iq1884wz
-- name: LV_speednode_0021
-  password: None
-  port: 443
-  server: 185.219.159.16
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: LV_speednode_0020
-  port: 443
-  server: 185.219.159.15
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: FREE-JP-au-78cb21
-  type: ss
-  server: 84.247.155.196
-  port: 443
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: FREE-US-au-52b9b9
-  type: vless
-  server: 45.138.100.248
-  port: 10443
-  uuid: ae908ff5-f749-402c-af25-e6e9aef4d6bb
-- name: 🇭🇰 香港 | HKG 2
-  server: 47.244.120.197
-  port: 23026
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-  udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 8.217.1.203
-  port: 8443
-  type: vless
-  uuid: 8b17beac-b143-447d-aa68-14cbb121a602
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38
-    short-id: 0bf55f64
-  servername: www.apple.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 193.160.208.240
   port: 443
@@ -1377,27 +1299,57 @@ proxies:
   xhttp-opts:
     mode: auto
     path: /assets/nlrelay01/
-- name: 🇭🇰 香港 | HKG 4
-  server: 47.244.120.197
-  port: 44867
-  type: vmess
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /arki
+- name: FREE-KR-au-88d4b1
+  type: ss
+  server: 211.178.105.134
+  port: 6123
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇭🇰 香港 | HKG
+  server: 8.217.1.203
+  port: 8443
+  type: vless
+  uuid: 8b17beac-b143-447d-aa68-14cbb121a602
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 74P0QFvaK6B13rHsxR_t0lqRlg4YLuORD4VaHr5Jd38
+    short-id: 0bf55f64
+  servername: www.apple.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-- name: FREE-AU-au-066212
-  type: trojan
-  server: 45.63.30.142
+- name: 🇮🇹 意大利 | ITA 6
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇬🇧 英国 | GBR 3
+  server: 136.148.83.69
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectwithemployerstohireyouridealteam.com
+  type: vless
+  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  tls: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 10
+  server: 109.106.15.99
+  port: 443
+  type: vless
+  uuid: bc93a03d-13b5-0004-8ee7-d50c11459dab
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  servername: key-master-saver.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
 - name: 🇩🇪 德国 | DEU 15
   server: 176.98.176.60
   port: 443
@@ -1412,6 +1364,291 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
+- name: 🇬🇧 英国 | GBR
+  server: 136.148.83.69
+  port: 443
+  type: vless
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  tls: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+  client-fingerprint: qq
+  network: tcp
+  udp: true
+- name: FREE-AU-au-066212
+  type: trojan
+  server: 45.63.30.142
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectwithemployerstohireyouridealteam.com
+- name: FREE-JP-au-78cb21
+  type: ss
+  server: 84.247.155.196
+  port: 443
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇮🇹 意大利 | ITA 3
+  server: 202.50.253.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇯🇵 日本 | JPN
+  server: 103.201.130.126
+  port: 443
+  type: vless
+  uuid: 39303679-4e68-4233-8def-8f4f9e48d611
+  tls: true
+  servername: tt-9nz.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /item/favourites
+    headers:
+      Host: tt-9nz.pages.dev
+  udp: true
+- name: FREE-JP-au-f736a1
+  type: ss
+  server: 84.247.155.196
+  port: 80
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: FREE-US-au-915d05
+  type: trojan
+  server: 167.88.61.20
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.browseseniorrolesandenhanceyourcareertoday.com
+- name: FREE-US-au-e73608
+  type: trojan
+  server: 167.88.61.193
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseseniorrolesandenhanceyourcareertoday.com
+- name: 🇳🇱 荷兰 | NLD 3-2
+  server: 109.104.153.43
+  port: 33336
+  type: ssr
+  cipher: chacha20-ietf
+  password: dongtaiwang.com
+  protocol: auth_chain_a
+  obfs: tls1.2_ticket_auth
+  protocolparam: ''
+  obfsparam: ''
+  udp: true
+- name: DE - zhuhai.uk
+  type: socks5
+  server: 91.109.47.96
+  port: 42000
+  username: u7feiej0
+  password: iq1884wz
+- name: FREE-BY-au-581e63
+  type: vless
+  server: 178.172.227.124
+  port: 10443
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+- name: JP - zhuhai.uk
+  type: socks5
+  server: 103.248.150.238
+  port: 42000
+  username: tB4vN7qP
+  password: J5rM2xL9
+- cipher: aes-256-gcm
+  name: 🇮🇹IT_6|1.8MB/s
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.99
+  type: ss
+  udp: true
+- name: 🇯🇵JP_1|3.3MB/s
+  password: EGJDy5Kg
+  port: 42000
+  server: 103.248.150.50
+  type: socks5
+  username: paZFN3JA
+- name: FREE-KR-au-64e3ce
+  type: vless
+  server: 152.69.226.63
+  port: 25555
+  network: ws
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  ws-opts:
+    path: /
+- name: JP - zhuhai.uk 02
+  type: socks5
+  server: 103.248.150.166
+  port: 42000
+  username: x0dM1dTw
+  password: ZWCdC3C1
+- name: FREE-GB-au-db753c
+  type: ss
+  server: 82.38.31.190
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: HK - zhuhai.uk
+  type: http
+  server: 202.85.53.25
+  port: 443
+  tls: true
+  sni: 202.85.53.25
+  skip-cert-verify: true
+- name: FREE-IT-au-f48d3f
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: FREE-SG-au-8c4448
+  type: vless
+  server: 511.150333.xyz
+  port: 21004
+  tls: true
+  client-fingerprint: chrome
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: 2df2bd9d8366cef1
+  servername: www.cloudflare.com
+- name: FREE-SG-au-6659be
+  type: vless
+  server: 510.150333.xyz
+  port: 21003
+  tls: true
+  client-fingerprint: random
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: f3602a3a1cf928b7
+  servername: www.cloudflare.com
+- name: FREE-SG-au-df3d13
+  type: vless
+  server: 510.150333.xyz
+  port: 21002
+  tls: true
+  client-fingerprint: chrome
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: d9a6b52e98121db2
+  servername: www.cloudflare.com
+- name: FREE-SG-au-45adc9
+  type: vless
+  server: 510.150333.xyz
+  port: 21001
+  tls: true
+  client-fingerprint: chrome
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: a51c3ccb2320024a
+  servername: www.cloudflare.com
+- name: FREE-SG-au-d1a9cf
+  type: vless
+  server: 103.106.229.37
+  port: 21004
+  tls: true
+  client-fingerprint: chrome
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: 2df2bd9d8366cef1
+  servername: www.cloudflare.com
+- name: FREE-SG-au-42a757
+  type: vless
+  server: 511.150333.xyz
+  port: 21001
+  tls: true
+  client-fingerprint: chrome
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: ab39fc68ab3dee81
+  servername: www.cloudflare.com
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  server: dp8yk.xiaoyan.io
+  port: 16616
+  type: vmess
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+  udp: true
+- name: FREE-SG-au-a9d553
+  type: vless
+  server: 511.150333.xyz
+  port: 21002
+  tls: true
+  client-fingerprint: chrome
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: 3ab8d93dd9b1a5be
+  servername: www.cloudflare.com
+- name: KR - zhuhai.uk
+  type: http
+  server: 152.69.230.221
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: FREE-SG-au-1eb418
+  type: vless
+  server: 511.150333.xyz
+  port: 21003
+  tls: true
+  client-fingerprint: chrome
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: bab49aa4c2a88d27
+  servername: www.cloudflare.com
+- name: FREE-SG-au-01e664
+  type: vless
+  server: 510.150333.xyz
+  port: 21004
+  tls: true
+  client-fingerprint: random
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: 4e0418d648f86141
+  servername: www.cloudflare.com
+- name: SG - zhuhai.uk 02
+  type: socks5
+  server: 47.236.168.243
+  port: 1080
+  username: '8888'
+  password: '8888'
+- name: 🇮🇹 意大利 | ITA 5
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: FREE-IN-au-3fda79
+  type: vless
+  server: 178.212.35.198
+  port: 443
+  tls: true
+  client-fingerprint: firefox
+  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  reality-opts:
+    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
+    short-id: 6bdc8320
+  servername: www.cloudflare.com
+- name: SG - zhuhai.uk
+  type: http
+  server: 154.26.139.24
+  port: 443
+  tls: true
+  skip-cert-verify: true
 - type: vless
   name: 🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4
   server: 196.196.148.63
@@ -1428,19 +1665,57 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 204adda7e3da
-- name: 🇯🇵 日本 | JPN
-  server: 103.201.130.126
-  port: 443
+- name: 🇮🇹 意大利 | ITA 4
+  server: 202.50.253.81
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: ES - zhuhai.uk
   type: vless
-  uuid: 39303679-4e68-4233-8def-8f4f9e48d611
+  server: 196.196.149.80
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  flow: xtls-rprx-vision
   tls: true
-  servername: tt-9nz.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /item/favourites
-    headers:
-      Host: tt-9nz.pages.dev
+  servername: 7aa271t.es1.h1clayd.click
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+- name: VN - zhuhai.uk
+  type: socks5
+  server: 103.184.113.84
+  port: 62000
+  username: qT46DZLv
+  password: jHsK2gqs
+- name: TH - zhuhai.uk
+  type: socks5
+  server: 103.14.164.202
+  port: 42000
+  username: route164JIa2CBPxfy
+  password: VAwyJQX0iKMJiyCw5UVK9wGH
+- name: TH - zhuhai.uk 02
+  type: socks5
+  server: 45.201.39.74
+  port: 62000
+  username: y2stTQnf
+  password: wj2sNvDu
+- name: FREE-SG-au-8dae64
+  type: vmess
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  alterId: 0
+  cipher: auto
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: DE_speednode_0004
+  port: 443
+  server: 213.109.163.119
+  skip-cert-verify: true
+  tls: true
+  type: http
   udp: true
 - name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 210ms
   type: vless
@@ -1458,21 +1733,47 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 7d5abcd7d8a1
-- name: 🇬🇧 英国 | GBR 3
-  server: 136.148.83.69
+- name: FREE-SG-au-a1c4d8
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  alterId: 0
+  cipher: auto
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- name: ID - zhuhai.uk
+  type: http
+  server: 178.248.73.58
+  port: 443
+  tls: true
+  skip-cert-verify: true
+- name: FREE-US-au-1a563e
+  type: vless
+  server: 167.17.69.171
+  port: 443
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  uuid: 00144519-7e0d-476b-8d28-435576af9262
+  reality-opts:
+    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
+    short-id: 0990d22f
+  servername: www.cloudflare.com
+- name: 🇺🇸 美国 | USA 5
+  server: 48.103.230.81
   port: 443
   type: vless
-  uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  client-fingerprint: chrome
-  network: tcp
+  reality-opts:
+    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
+    short-id: bd8f712209a9c283
+  servername: 0592efg.us8.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 99f2107b03f8
   udp: true
-- name: 🇸🇬SG_1|1.2MB/s
-  port: 9090
-  server: 128.199.116.219
-  skip-cert-verify: true
-  type: http
 - name: 🇳🇱 荷兰 | NLD 3
   server: 104.171.135.229
   port: 443
@@ -1486,395 +1787,24 @@ proxies:
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: JP - zhuhai.uk
-  type: socks5
-  server: 103.248.150.238
-  port: 42000
-  username: tB4vN7qP
-  password: J5rM2xL9
-- name: JP - zhuhai.uk 02
-  type: socks5
-  server: 103.248.150.166
-  port: 42000
-  username: x0dM1dTw
-  password: ZWCdC3C1
-- name: 🇯🇵JP_1|3.3MB/s
-  password: EGJDy5Kg
-  port: 42000
-  server: 103.248.150.50
-  type: socks5
-  username: paZFN3JA
-- name: 🇩🇪 德国 | DEU 6
-  server: pigment.merlano.monster
-  port: 443
+- name: FREE-US-au-b88cbb
   type: vless
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  tls: true
-  servername: pigment.merlano.monster
-  client-fingerprint: firefox
-  network: xhttp
-  xhttp-opts:
-    path: /api/de2/sync
-    host: pigment.merlano.monster
-    mode: auto
-  udp: true
-- name: HK - zhuhai.uk
-  type: http
-  server: 202.85.53.25
-  port: 443
-  tls: true
-  sni: 202.85.53.25
-  skip-cert-verify: true
-- name: FREE-GB-au-db753c
-  type: ss
-  server: 82.38.31.190
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: FREE-IN-au-3fda79
-  type: vless
-  server: 178.212.35.198
-  port: 443
-  tls: true
-  client-fingerprint: firefox
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
-  reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-    short-id: 6bdc8320
-  servername: www.cloudflare.com
-- name: FREE-CA-au-30e074
-  type: ss
-  server: 51.222.136.236
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: FREE-KR-au-64e3ce
-  type: vless
-  server: 152.69.226.63
-  port: 25555
-  network: ws
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    path: /
-- name: FREE-KR-au-88d4b1
-  type: ss
-  server: 211.178.105.134
-  port: 6123
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: FREE-SG-au-6659be
-  type: vless
-  server: 510.150333.xyz
-  port: 21003
-  tls: true
-  client-fingerprint: random
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: f3602a3a1cf928b7
-  servername: www.cloudflare.com
-- name: FREE-SG-au-45adc9
-  type: vless
-  server: 510.150333.xyz
-  port: 21001
-  tls: true
-  client-fingerprint: chrome
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: a51c3ccb2320024a
-  servername: www.cloudflare.com
-- name: 🇮🇹 意大利 | ITA 2
-  server: 202.50.253.72
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- name: FREE-SG-au-d1a9cf
-  type: vless
-  server: 103.106.229.37
-  port: 21004
-  tls: true
-  client-fingerprint: chrome
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: 2df2bd9d8366cef1
-  servername: www.cloudflare.com
-- name: FREE-SG-au-df3d13
-  type: vless
-  server: 510.150333.xyz
-  port: 21002
-  tls: true
-  client-fingerprint: chrome
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: d9a6b52e98121db2
-  servername: www.cloudflare.com
-- name: 🇬🇧 英国 | GBR
-  server: 136.148.83.69
-  port: 443
-  type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 13
-  server: hemlock.elvano.website
-  port: 443
-  type: vless
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  tls: true
-  servername: hemlock.elvano.website
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: cache.sync.v1
-  udp: true
-- name: 🇭🇰 香港 | HKG 3
-  server: 47.242.93.89
-  port: 12012
-  type: trojan
-  password: 12012
-  sni: ali-hk.b-gfw.cfd
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 美国 | USA 6
-  server: 192.74.236.148
-  port: 30004
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /path/1733477783705
-    headers:
-      Host: www.91334565.xyz
-  udp: true
-- name: FREE-SG-au-8c4448
-  type: vless
-  server: 511.150333.xyz
-  port: 21004
-  tls: true
-  client-fingerprint: chrome
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: 2df2bd9d8366cef1
-  servername: www.cloudflare.com
-- name: KR - zhuhai.uk
-  type: http
-  server: 152.69.230.221
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: FREE-SG-au-42a757
-  type: vless
-  server: 511.150333.xyz
-  port: 21001
-  tls: true
-  client-fingerprint: chrome
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: ab39fc68ab3dee81
-  servername: www.cloudflare.com
-- name: SG - zhuhai.uk 02
-  type: socks5
-  server: 47.236.168.243
-  port: 1080
-  username: '8888'
-  password: '8888'
-- name: FREE-SG-au-a9d553
-  type: vless
-  server: 511.150333.xyz
-  port: 21002
-  tls: true
-  client-fingerprint: chrome
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: 3ab8d93dd9b1a5be
-  servername: www.cloudflare.com
-- name: FREE-SG-au-01e664
-  type: vless
-  server: 510.150333.xyz
-  port: 21004
-  tls: true
-  client-fingerprint: random
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: 4e0418d648f86141
-  servername: www.cloudflare.com
-- name: FREE-SG-au-1eb418
-  type: vless
-  server: 511.150333.xyz
-  port: 21003
-  tls: true
-  client-fingerprint: chrome
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: bab49aa4c2a88d27
-  servername: www.cloudflare.com
-- name: ID - zhuhai.uk
-  type: http
-  server: 178.248.73.58
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- name: NL_speednode_0022
-  password: 'null'
-  port: 443
-  server: 103.97.88.154
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: SG - zhuhai.uk
-  type: http
-  server: 154.26.139.24
-  port: 443
-  tls: true
-  skip-cert-verify: true
-- cipher: aes-256-gcm
-  name: 🇮🇹IT_6|1.8MB/s
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 202.50.253.99
-  type: ss
-  udp: true
-- name: TH - zhuhai.uk 02
-  type: socks5
-  server: 45.201.39.74
-  port: 62000
-  username: y2stTQnf
-  password: wj2sNvDu
-- name: TH - zhuhai.uk
-  type: socks5
-  server: 103.14.164.202
-  port: 42000
-  username: route164JIa2CBPxfy
-  password: VAwyJQX0iKMJiyCw5UVK9wGH
-- name: FREE-DE-au-76ce3f
-  type: vless
-  server: 169.40.42.163
+  server: 195.123.240.65
   port: 443
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-- name: 🇩🇪 德国 | DEU 18
-  server: almanac.filnex.baby
+    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
+    short-id: 19296c9f1bf9c7b1
+  servername: www.cloudflare.com
+- name: 🇩🇪 德国 | DEU 5
+  server: 47.254.128.109
   port: 443
-  type: vless
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  tls: true
-  alpn:
-  - h2
-  servername: morningfen.merlano.monster
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: glush.de1.v1
-  udp: true
-- name: VN - zhuhai.uk
-  type: socks5
-  server: 103.184.113.84
-  port: 62000
-  username: qT46DZLv
-  password: jHsK2gqs
-- name: ES - zhuhai.uk
-  type: vless
-  server: 196.196.149.80
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 7aa271t.es1.h1clayd.click
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
-    short-id: 42426c882c5fcd41
-- name: FREE-SG-au-8dae64
-  type: vmess
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  alterId: 0
-  cipher: auto
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: FREE-SG-au-a1c4d8
-  type: vmess
-  server: 149.88.23.207
-  port: 18000
-  alterId: 0
-  cipher: auto
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: FREE-US-au-dfd41d
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  alterId: 0
-  cipher: aes-128-gcm
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: 🇩🇪 德国 | DEU 16
-  server: sandstone.gerqix.online
-  port: 443
-  type: vless
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  tls: true
-  servername: sandstone.gerqix.online
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: glush.de6.v1
-  udp: true
-- name: 🇩🇪 德国 | DEU 7
-  server: 5.42.102.162
-  port: 443
-  type: vless
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  tls: true
-  servername: morningfen.merlano.monster
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: glush.de1.v1
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  server: driftwood.elvano.website
-  port: 443
-  type: vless
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: sunstone.elvano.website
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /api/de2/sync
-    host: driftwood.elvano.website
-    mode: auto
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
 - name: FREE-KR-au-97644b
   type: vmess
@@ -1883,343 +1813,239 @@ proxies:
   alterId: 0
   cipher: auto
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
-- name: 🇩🇪 德国 | DEU 5
-  server: 47.254.128.109
-  port: 443
+- name: FREE-CA-au-30e074
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  udp: true
-- name: FREE-US-au-50e82b
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  alterId: 0
-  cipher: auto
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: 🇷🇺 俄罗斯 | RUS
-  server: linen.filnex.baby
-  port: 443
-  type: vless
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  tls: true
-  alpn:
-  - http/1.1
-  servername: cinderbrook.elvano.website
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/de2/stream
-    headers:
-      Host: linen.filnex.baby
-  udp: true
-- name: 🇩🇪 德国 | DEU 12
-  server: 188.225.78.178
-  port: 443
-  type: vless
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  tls: true
-  servername: hemlock.elvano.website
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: cache.sync.v1
-  udp: true
-- name: 🇵🇱 波兰 | POL
-  server: 150.241.87.52
-  port: 443
-  type: vless
-  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
-  servername: pl.galacticworld.online
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 9
-  server: sunfield.moltex.click
-  port: 443
-  type: vless
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  servername: sunfield.moltex.click
-  client-fingerprint: random
-  network: xhttp
-  xhttp-opts:
-    path: /api/de1/sync
-    host: sunfield.moltex.click
-    mode: auto
-  udp: true
-- name: 🇸🇪 瑞典 | SWE
-  server: pl.galacticworld.online
-  port: 443
-  type: vless
-  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
-  servername: pl.galacticworld.online
-  client-fingerprint: qq
-  network: tcp
-  udp: true
-- name: 🇩🇪 德国 | DEU 17
-  server: vellum.merlano.monster
-  port: 443
-  type: vless
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  tls: true
-  alpn:
-  - http/1.1
-  servername: sequoia.merlano.monster
-  client-fingerprint: android
-  network: ws
-  ws-opts:
-    path: /api/de1/stream
-    headers:
-      Host: vellum.merlano.monster
-  udp: true
+  server: 51.222.136.236
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: KR - zhuhai.uk 02
+  type: socks5
+  server: 121.169.46.116
+  port: 1090
+  username: VDJjbE0wUWxNMFE2VDJjbE0wUWxNMFE9Og==
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - FREE-US-au-e24125
-  - FREE-US-au-95cae0
   - FREE-US-au-4878e9
-  - FREE-US-au-030263
   - FREE-US-au-c5f0d6
+  - FREE-US-au-95cae0
+  - FREE-US-au-030263
+  - US - zhuhai.uk 03
   - FREE-US-au-787aac
-  - FREE-US-au-507b75
   - FREE-US-au-4b7e1a
   - FREE-US-au-735cc3
-  - FREE-US-au-cb75bf
   - FREE-US-au-590392
-  - FREE-US-au-e92624
-  - US - zhuhai.uk 03
-  - 🇩🇪DE_2|2.9MB/s
-  - FREE-IL-au-3aa6b3
-  - FREE-US-au-1a563e
-  - FREE-US-au-1b16a3
-  - FREE-US-au-ea917d
-  - FREE-CA-au-ada29c
-  - FREE-DE-au-1a45c8
-  - FREE-DE-au-38aa75
-  - FREE-DE-au-aa84c9
-  - FREE-US-au-2c2981
-  - FREE-CA-au-549056
-  - FREE-CA-au-f04e0b
-  - FREE-US-au-b0f8ea
-  - FREE-US-au-652b48
-  - FREE-US-au-e86182
-  - FREE-US-au-03c673
-  - FREE-US-au-d30e2e
-  - FREE-US-au-0e9bde
-  - FREE-US-au-e92a58
+  - FREE-US-au-dfd41d
+  - FREE-US-au-cb75bf
   - FREE-US-au-714fc4
-  - FREE-US-au-838069
-  - FREE-US-au-ac2fab
-  - FREE-US-au-cb4694
+  - FREE-US-au-507b75
+  - 🇩🇪DE_2|2.9MB/s
+  - FREE-US-au-50e82b
+  - FREE-US-au-e92624
+  - FREE-US-au-52b9b9
+  - FREE-CA-au-ada29c
+  - FREE-CA-au-549056
+  - FREE-DE-au-1a45c8
+  - FREE-IL-au-3aa6b3
+  - FREE-US-au-ea917d
+  - FREE-US-au-2c2981
+  - FREE-CA-au-f04e0b
+  - FREE-US-au-1b16a3
+  - FREE-US-au-e24125
+  - FREE-US-au-745f50
+  - FREE-DE-au-b19cdb
+  - FREE-DE-au-359901
+  - FREE-DE-au-09ce5a
+  - FREE-DE-au-38aa75
+  - FREE-US-au-d30e2e
+  - FREE-US-au-b0f8ea
+  - FREE-US-au-03c673
+  - FREE-US-au-e86182
+  - FREE-US-au-e92a58
   - FREE-US-au-8fc6be
-  - FREE-US-au-15a441
   - FREE-US-au-2a2b1b
   - 🇺🇸 美国 | USA
-  - FREE-US-au-a28299
+  - FREE-DE-au-c9df1c
+  - FREE-DE-au-76ce3f
   - FREE-US-au-10380c
-  - FREE-DE-au-09ce5a
+  - FREE-US-au-ac2fab
+  - FREE-US-au-15a441
+  - FREE-US-au-0e9bde
+  - FREE-US-au-838069
+  - FREE-US-au-cb4694
+  - FREE-US-au-a28299
   - FREE-DE-au-973c49
-  - FREE-US-au-745f50
+  - FREE-US-au-804c8f
+  - US - zhuhai.uk 04
+  - FREE-US-au-404022
+  - FREE-US-au-66f093
+  - FREE-US-au-873300
+  - 🇺🇸US_9|2.7MB/s
+  - FREE-DE-au-aa84c9
   - FREE-US-au-4609bf
   - FREE-US-au-22065f
-  - FREE-US-au-873300
-  - FREE-US-au-404022
-  - FREE-CA-au-1f83d7
-  - FREE-DE-au-b19cdb
-  - FREE-DE-au-c9df1c
-  - FREE-US-au-66f093
-  - 🇺🇸US_9|2.7MB/s
   - 🇬🇧 英国 | GBR 2
-  - FREE-US-au-a27e6a
-  - FREE-US-au-d82b83
-  - FREE-US-au-e73608
-  - FREE-US-au-f6fd97
-  - FREE-US-au-915d05
-  - FREE-DE-au-680506
-  - FREE-DE-au-32d75d
-  - FREE-GB-au-9f9bf2
-  - 🇳🇱 荷兰 | NLD
-  - US - zhuhai.uk 06
-  - US - zhuhai.uk 02
-  - FREE-GB-au-b796e7
+  - FREE-CA-au-1f83d7
+  - US - zhuhai.uk
   - FREE-US-au-d78f3b
-  - FREE-US-au-2a2679
-  - FREE-US-au-a6d03f
-  - FREE-US-au-7e11b4
-  - FREE-GB-au-857d4a
-  - FREE-GB-au-5dfa00
-  - FREE-GB-au-7b9a67
-  - FREE-GB-au-87abdc
   - FREE-GB-au-bbd5b1
+  - FREE-GB-au-9f9bf2
+  - FREE-US-au-2a2679
+  - FREE-GB-au-7b9a67
+  - FREE-GB-au-5f926d
   - FREE-GB-au-01f182
+  - FREE-GB-au-87abdc
+  - FREE-US-au-d82b83
   - FREE-GB-au-aa60a5
   - FREE-GB-au-521c7f
-  - FREE-UA-au-0b8870
-  - 🇮🇹 意大利 | ITA 6
-  - FREE-GB-au-3139d8
   - FREE-GB-au-b5a85e
-  - FREE-GB-au-cec1df
-  - FREE-GB-au-5f926d
-  - FREE-GB-au-aa8661
   - FREE-GB-au-876523
-  - FREE-US-au-804c8f
-  - FREE-GB-au-1e7505
-  - FREE-JP-au-6dc9ef
-  - FREE-JP-au-bec380
-  - FREE-JP-au-61c45e
-  - 🇮🇹 意大利 | ITA
-  - 🇮🇹 意大利 | ITA 3
-  - FREE-IT-au-686ed0
-  - FREE-US-au-fa73dc
-  - 🇺🇸US_4|1.6MB/s
-  - FREE-NL-au-5fa5a4
-  - 🇫🇷 法国|@ripaojiedian
-  - FREE-DE-au-04004d
+  - FREE-GB-au-857d4a
+  - FREE-GB-au-aa8661
   - FREE-GB-au-fcaa3c
-  - FREE-DE-au-359901
-  - 🇩🇪 德国 | DEU 10
+  - FREE-US-au-f6fd97
+  - FREE-GB-au-3139d8
   - FREE-US-au-1b2d76
-  - MX - zhuhai.uk 02
-  - IE_speednode_0013
-  - FREE-IT-au-f48d3f
-  - FREE-NL-au-3cad21
-  - FREE-US-au-793a62
-  - 🇮🇹 意大利 | ITA 4
-  - FREE-BY-au-581e63
+  - 🇳🇱 荷兰 | NLD
+  - FREE-DE-au-680506
+  - FREE-US-au-a6d03f
+  - FREE-GB-au-cec1df
+  - FREE-DE-au-32d75d
+  - FREE-UA-au-0b8870
   - FREE-NL-au-85b3ee
-  - FREE-NL-au-9cacfe
-  - 巴西 005
-  - MX - zhuhai.uk
-  - FREE-US-au-b88cbb
-  - RU - zhuhai.uk 01
+  - 🇮🇹 意大利 | ITA 2
+  - FREE-GB-au-b796e7
+  - FREE-IT-au-686ed0
+  - FREE-CA-au-db073b
+  - FREE-GB-au-1e7505
+  - FREE-GB-au-5dfa00
+  - 🇮🇹 意大利 | ITA
+  - 🇮🇹 意大利 | ITA 7
+  - US - zhuhai.uk 06
+  - US - zhuhai.uk 02
+  - FREE-US-au-a27e6a
+  - IE_speednode_0013
+  - 🇫🇷 法国|@ripaojiedian
+  - FREE-US-au-fa73dc
+  - FREE-DE-au-04004d
+  - FREE-JP-au-bec380
+  - FREE-JP-au-6dc9ef
+  - FREE-JP-au-61c45e
+  - FREE-NL-au-5fa5a4
+  - MX - zhuhai.uk 02
   - 🇷🇺 俄罗斯 | RUS 3
-  - FR_speednode_0010
-  - 🇷🇺 俄罗斯 | RUS 2
+  - FREE-NL-au-21c110
   - 🇷🇺 俄罗斯 | RUS 5
-  - NL - zhuhai.uk
+  - 🇵🇱 波兰 | POL
+  - FREE-NL-au-168be0
+  - 巴西 005
+  - 🇸🇪 瑞典 | SWE
+  - RU - zhuhai.uk 01
+  - FREE-NL-au-3cad21
+  - 🇺🇸 美国 | USA 6
   - FREE-GB-au-bb7bb5
   - 美国 364
-  - FREE-SG-au-06c433
-  - FREE-US-au-48a795
-  - FREE-US-au-0a1d69
-  - 美国 365
-  - 🇸🇬SG_1|2.2MB/s
-  - FREE-SG-au-bd8bb2
-  - 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
-  - FREE-SG-au-906c41
-  - 🇧🇪BE_1|681KB/s
-  - FREE-SG-au-3168f5
-  - FREE-SG-au-9b918d
-  - 🇩🇪DE_1|1.1MB/s|P002-260618
-  - FREE-SG-au-46941e
-  - DK_speednode_0005
-  - 美国 367
-  - NL - zhuhai.uk 02
-  - 🇳🇱NL_1|1.5MB/s
-  - NL - zhuhai.uk 03
-  - 🇪🇸ES_1|819KB/s
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇺🇸US_4|1.6MB/s
+  - FREE-NL-au-9cacfe
   - 美国 370
-  - CH - zhuhai.uk
-  - NL - zhuhai.uk 04
-  - NL_speednode_0023
-  - 🇮🇹 意大利 | ITA 5
-  - 🇳🇱NL_1|3.5MB/s
-  - NL_speednode_0027
-  - 🇳🇱NL_3|2.0MB/s|R002-260618
-  - 🇳🇱 荷兰 | NLD 3-2
+  - 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
+  - 美国 365
   - NL_speednode_0026
-  - FREE-JP-au-f736a1
+  - NL - zhuhai.uk 03
+  - MX - zhuhai.uk
+  - FREE-SG-au-906c41
+  - 🇳🇱NL_1|1.5MB/s
+  - NL - zhuhai.uk 02
+  - 🇸🇬SG_1|2.2MB/s
+  - FREE-SG-au-06c433
+  - FR_speednode_0010
+  - NL_speednode_0022
+  - NL_speednode_0023
+  - 🇩🇪DE_1|1.1MB/s|P002-260618
+  - 🇧🇪BE_1|681KB/s
+  - 🇳🇱NL_1|3.5MB/s
+  - CH - zhuhai.uk
+  - NL - zhuhai.uk
+  - FREE-SG-au-9b918d
+  - FREE-SG-au-46941e
+  - FREE-SG-au-bd8bb2
+  - 🇳🇱NL_3|2.0MB/s|R002-260618
+  - NL_speednode_0027
+  - NL - zhuhai.uk 04
+  - FREE-SG-au-3168f5
+  - DK_speednode_0005
   - DK_speednode_0006
-  - DE_speednode_0004
-  - FREE-NL-au-168be0
-  - 🇨🇿CZ_1|1.0MB/s
-  - FREE-ZA-au-a0afcc
   - FREE-ZA-au-57414b
-  - 🇮🇹 意大利 | ITA 7
-  - FREE-NL-au-21c110
-  - DE - zhuhai.uk
+  - FREE-ZA-au-a0afcc
+  - 🇨🇿CZ_1|1.0MB/s
   - LV_speednode_0021
+  - 美国 367
   - LV_speednode_0020
-  - FREE-JP-au-78cb21
-  - FREE-US-au-52b9b9
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG
+  - 🇪🇸ES_1|819KB/s
   - 🇩🇪 德国 | DEU 2
   - 巴西 004
-  - 🇭🇰 香港 | HKG 4
-  - FREE-AU-au-066212
-  - 🇩🇪 德国 | DEU 15
-  - 🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4
-  - 🇯🇵 日本 | JPN
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 210ms
-  - 🇬🇧 英国 | GBR 3
-  - 🇸🇬SG_1|1.2MB/s
-  - 🇳🇱 荷兰 | NLD 3
-  - JP - zhuhai.uk
-  - JP - zhuhai.uk 02
-  - 🇯🇵JP_1|3.3MB/s
-  - 🇩🇪 德国 | DEU 6
-  - HK - zhuhai.uk
-  - FREE-GB-au-db753c
-  - FREE-IN-au-3fda79
-  - FREE-CA-au-30e074
-  - FREE-KR-au-64e3ce
   - FREE-KR-au-88d4b1
-  - FREE-SG-au-6659be
-  - FREE-SG-au-45adc9
-  - 🇮🇹 意大利 | ITA 2
-  - FREE-SG-au-d1a9cf
-  - FREE-SG-au-df3d13
+  - 🇭🇰 香港 | HKG
+  - 🇮🇹 意大利 | ITA 6
+  - 🇬🇧 英国 | GBR 3
+  - 🇩🇪 德国 | DEU 10
+  - 🇩🇪 德国 | DEU 15
   - 🇬🇧 英国 | GBR
-  - 🇩🇪 德国 | DEU 13
-  - 🇭🇰 香港 | HKG 3
-  - 🇺🇸 美国 | USA 6
-  - FREE-SG-au-8c4448
-  - KR - zhuhai.uk
-  - FREE-SG-au-42a757
-  - SG - zhuhai.uk 02
-  - FREE-SG-au-a9d553
-  - FREE-SG-au-01e664
-  - FREE-SG-au-1eb418
-  - ID - zhuhai.uk
-  - NL_speednode_0022
-  - SG - zhuhai.uk
+  - FREE-AU-au-066212
+  - FREE-JP-au-78cb21
+  - 🇮🇹 意大利 | ITA 3
+  - 🇯🇵 日本 | JPN
+  - FREE-JP-au-f736a1
+  - FREE-US-au-915d05
+  - FREE-US-au-e73608
+  - 🇳🇱 荷兰 | NLD 3-2
+  - DE - zhuhai.uk
+  - FREE-BY-au-581e63
+  - JP - zhuhai.uk
   - 🇮🇹IT_6|1.8MB/s
-  - TH - zhuhai.uk 02
-  - TH - zhuhai.uk
-  - FREE-DE-au-76ce3f
-  - 🇩🇪 德国 | DEU 18
-  - VN - zhuhai.uk
+  - 🇯🇵JP_1|3.3MB/s
+  - FREE-KR-au-64e3ce
+  - JP - zhuhai.uk 02
+  - FREE-GB-au-db753c
+  - HK - zhuhai.uk
+  - FREE-IT-au-f48d3f
+  - FREE-SG-au-8c4448
+  - FREE-SG-au-6659be
+  - FREE-SG-au-df3d13
+  - FREE-SG-au-45adc9
+  - FREE-SG-au-d1a9cf
+  - FREE-SG-au-42a757
+  - 🇹🇼 🇨🇳 台湾 | TWN
+  - FREE-SG-au-a9d553
+  - KR - zhuhai.uk
+  - FREE-SG-au-1eb418
+  - FREE-SG-au-01e664
+  - SG - zhuhai.uk 02
+  - 🇮🇹 意大利 | ITA 5
+  - FREE-IN-au-3fda79
+  - SG - zhuhai.uk
+  - 🇸🇨_SC_塞舌尔->🇳🇱_NL_荷兰_IPV4
+  - 🇮🇹 意大利 | ITA 4
   - ES - zhuhai.uk
+  - VN - zhuhai.uk
+  - TH - zhuhai.uk
+  - TH - zhuhai.uk 02
   - FREE-SG-au-8dae64
+  - DE_speednode_0004
+  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 210ms
   - FREE-SG-au-a1c4d8
-  - FREE-US-au-dfd41d
-  - 🇩🇪 德国 | DEU 16
-  - 🇩🇪 德国 | DEU 7
-  - 🇩🇪 德国 | DEU 4
-  - FREE-KR-au-97644b
+  - ID - zhuhai.uk
+  - FREE-US-au-1a563e
+  - 🇺🇸 美国 | USA 5
+  - 🇳🇱 荷兰 | NLD 3
+  - FREE-US-au-b88cbb
   - 🇩🇪 德国 | DEU 5
-  - FREE-US-au-50e82b
-  - 🇷🇺 俄罗斯 | RUS
-  - 🇩🇪 德国 | DEU 12
-  - 🇵🇱 波兰 | POL
-  - 🇩🇪 德国 | DEU 9
-  - 🇸🇪 瑞典 | SWE
-  - 🇩🇪 德国 | DEU 17
+  - FREE-KR-au-97644b
+  - FREE-CA-au-30e074
+  - KR - zhuhai.uk 02
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -2227,11 +2053,8 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 2
   - 🇭🇰 香港 | HKG
-  - 🇭🇰 香港 | HKG 4
   - HK - zhuhai.uk
-  - 🇭🇰 香港 | HKG 3
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -2239,15 +2062,15 @@ proxy-groups:
 - name: JP-POOL
   type: url-test
   proxies:
-  - FREE-JP-au-6dc9ef
   - FREE-JP-au-bec380
+  - FREE-JP-au-6dc9ef
   - FREE-JP-au-61c45e
-  - FREE-JP-au-f736a1
   - FREE-JP-au-78cb21
   - 🇯🇵 日本 | JPN
+  - FREE-JP-au-f736a1
   - JP - zhuhai.uk
-  - JP - zhuhai.uk 02
   - 🇯🇵JP_1|3.3MB/s
+  - JP - zhuhai.uk 02
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -2255,75 +2078,73 @@ proxy-groups:
 - name: US-POOL
   type: url-test
   proxies:
-  - FREE-US-au-e24125
-  - FREE-US-au-95cae0
   - FREE-US-au-4878e9
-  - FREE-US-au-030263
   - FREE-US-au-c5f0d6
+  - FREE-US-au-95cae0
+  - FREE-US-au-030263
+  - US - zhuhai.uk 03
   - FREE-US-au-787aac
-  - FREE-US-au-507b75
   - FREE-US-au-4b7e1a
   - FREE-US-au-735cc3
-  - FREE-US-au-cb75bf
   - FREE-US-au-590392
+  - FREE-US-au-dfd41d
+  - FREE-US-au-cb75bf
+  - FREE-US-au-714fc4
+  - FREE-US-au-507b75
+  - FREE-US-au-50e82b
   - FREE-US-au-e92624
-  - US - zhuhai.uk 03
-  - FREE-US-au-1a563e
-  - FREE-US-au-1b16a3
+  - FREE-US-au-52b9b9
   - FREE-US-au-ea917d
   - FREE-US-au-2c2981
-  - FREE-US-au-b0f8ea
-  - FREE-US-au-652b48
-  - FREE-US-au-e86182
-  - FREE-US-au-03c673
+  - FREE-US-au-1b16a3
+  - FREE-US-au-e24125
+  - FREE-US-au-745f50
   - FREE-US-au-d30e2e
-  - FREE-US-au-0e9bde
+  - FREE-US-au-b0f8ea
+  - FREE-US-au-03c673
+  - FREE-US-au-e86182
   - FREE-US-au-e92a58
-  - FREE-US-au-714fc4
-  - FREE-US-au-838069
-  - FREE-US-au-ac2fab
-  - FREE-US-au-cb4694
   - FREE-US-au-8fc6be
-  - FREE-US-au-15a441
   - FREE-US-au-2a2b1b
   - 🇺🇸 美国 | USA
-  - FREE-US-au-a28299
   - FREE-US-au-10380c
-  - FREE-US-au-745f50
-  - FREE-US-au-4609bf
-  - FREE-US-au-22065f
-  - FREE-US-au-873300
+  - FREE-US-au-ac2fab
+  - FREE-US-au-15a441
+  - FREE-US-au-0e9bde
+  - FREE-US-au-838069
+  - FREE-US-au-cb4694
+  - FREE-US-au-a28299
+  - FREE-US-au-804c8f
+  - US - zhuhai.uk 04
   - FREE-US-au-404022
   - FREE-US-au-66f093
+  - FREE-US-au-873300
   - 🇺🇸US_9|2.7MB/s
-  - FREE-US-au-a27e6a
-  - FREE-US-au-d82b83
-  - FREE-US-au-e73608
-  - FREE-US-au-f6fd97
-  - FREE-US-au-915d05
-  - US - zhuhai.uk 06
-  - US - zhuhai.uk 02
+  - FREE-US-au-4609bf
+  - FREE-US-au-22065f
+  - US - zhuhai.uk
   - FREE-US-au-d78f3b
   - FREE-US-au-2a2679
-  - FREE-US-au-a6d03f
-  - FREE-US-au-7e11b4
-  - FREE-US-au-804c8f
-  - FREE-US-au-fa73dc
-  - 🇺🇸US_4|1.6MB/s
+  - FREE-US-au-d82b83
+  - FREE-US-au-f6fd97
   - FREE-US-au-1b2d76
-  - FREE-US-au-793a62
-  - FREE-US-au-b88cbb
-  - 美国 364
-  - FREE-US-au-48a795
-  - FREE-US-au-0a1d69
-  - 美国 365
-  - 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
-  - 美国 367
-  - 美国 370
-  - FREE-US-au-52b9b9
+  - FREE-US-au-a6d03f
+  - US - zhuhai.uk 06
+  - US - zhuhai.uk 02
+  - FREE-US-au-a27e6a
+  - FREE-US-au-fa73dc
   - 🇺🇸 美国 | USA 6
-  - FREE-US-au-dfd41d
-  - FREE-US-au-50e82b
+  - 美国 364
+  - 🇺🇸US_4|1.6MB/s
+  - 美国 370
+  - 🇺🇸 机场推荐:dafei.de 美国 89_IPV4
+  - 美国 365
+  - 美国 367
+  - FREE-US-au-915d05
+  - FREE-US-au-e73608
+  - FREE-US-au-1a563e
+  - 🇺🇸 美国 | USA 5
+  - FREE-US-au-b88cbb
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -2331,36 +2152,36 @@ proxy-groups:
 - name: LOW-LATENCY-POOL
   type: url-test
   proxies:
-  - FREE-US-au-e24125
-  - FREE-US-au-95cae0
   - FREE-US-au-4878e9
-  - FREE-US-au-030263
   - FREE-US-au-c5f0d6
+  - FREE-US-au-95cae0
+  - FREE-US-au-030263
+  - US - zhuhai.uk 03
   - FREE-US-au-787aac
-  - FREE-US-au-507b75
+  - 🇩🇪DE_2|2.9MB/s
   - FREE-US-au-4b7e1a
   - FREE-US-au-735cc3
-  - FREE-US-au-cb75bf
   - FREE-US-au-590392
-  - 🇩🇪DE_2|2.9MB/s
-  - FREE-IL-au-3aa6b3
+  - FREE-US-au-dfd41d
+  - FREE-US-au-cb75bf
+  - FREE-US-au-714fc4
+  - FREE-US-au-507b75
+  - FREE-US-au-50e82b
   - FREE-US-au-e92624
-  - US - zhuhai.uk 03
   - FREE-CA-au-ada29c
-  - FREE-DE-au-1a45c8
-  - FREE-DE-au-38aa75
-  - FREE-DE-au-aa84c9
+  - FREE-US-au-52b9b9
   - FREE-CA-au-549056
+  - FREE-DE-au-1a45c8
+  - FREE-IL-au-3aa6b3
   - FREE-CA-au-f04e0b
-  - FREE-US-au-1a563e
-  - FREE-US-au-1b16a3
   - FREE-US-au-ea917d
   - FREE-US-au-2c2981
-  - FREE-US-au-b0f8ea
-  - FREE-US-au-652b48
-  - FREE-US-au-e86182
-  - FREE-US-au-03c673
-  - FREE-US-au-d30e2e
+  - FREE-US-au-1b16a3
+  - FREE-DE-au-b19cdb
+  - FREE-US-au-e24125
+  - FREE-DE-au-359901
+  - FREE-US-au-745f50
+  - FREE-DE-au-09ce5a
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
